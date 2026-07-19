@@ -1,0 +1,129 @@
+\documentclass[a4paper]{article}
+
+\usepackage{xcolor,hyperref,mdframed,pdfpages}
+\usepackage[]{geometry}
+\usepackage{titlesec}
+\usepackage{tablefootnote}
+
+% Format the section style: removes number and centers the text
+\titleformat{\section}
+{\normalfont\Large\bfseries\centering} % Style and alignment
+{}                                    % Label (empty to remove number)
+{0pt}                                 % Separation between label and title
+{}                                    % Code preceding title body
+
+
+\begin{document}
+	\begin{center}
+		\vspace*{\fill}
+		{\huge\scshape AP190 Practicum Portfolio} \\
+		\vspace{8cm}
+		Submitted by: \\
+		\vspace{0.5cm}
+		{\color{red}\large\scshape Miel Gabriel Lagdan}\\
+		{Bachelor of Science in Applied Physics}\\
+		June 22, 2026 - July 31, 2026 \\
+		\vspace{3cm}
+		Submitted to: \\
+		\vspace{0.5cm}
+		{\large\scshape Eric M. Inocencio, MSc., LPT} \\
+		OJT Coordinator \\
+		Physics and Geology Unit\\
+		Department of Physical Sciences and Mathematics\\
+		University of the Philippines Manila
+		\vspace*{\fill}
+	\end{center}
+	\newpage
+	\tableofcontents
+	\newpage
+	
+	\vspace*{\fill}
+	\section{Course Description}
+	\vspace*{\fill}
+	\includepdf[pages=-]{1 Course Description.pdf}
+	\newpage
+	
+	\newpage
+	\vspace*{\fill}
+	\section{Training Portfolio}
+	\vspace*{\fill}
+	\newpage
+	
+	\subsection{Daily Journals}
+	This portion provides the daily journals accumulate during the internship dated June 22, 2026 to [insert end date here]. The following gives an outline of the main progress done.
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{r p{4.5in}}
+			\hline
+			\textbf{Date}&\textbf{Progress}\\
+			\hline
+			June 22, 2026&Orientation\\
+			&\textbf{B0:} Introduction to Paper (Bagunu and Galapon (2025)\\
+			June 23, 2026&\textbf{B0:} Primary Reading of Whole Paper.\\
+			June 24, 2026&\textbf{B1:} Start of Analysis and Derivations.\\
+			&\textbf{B1:} Research on the Weyl, simplest-Symmetrization, and Born-Jordan ordering rules. Provided short report on progress to the paper to supervisor.\\
+			June 25, 2026&\textbf{B1:} Derived relationship of the Schrodinger and Heisenberg pictures of quantum mechanics. \\
+			June 26, 2026&\textbf{B2:} Derivation of the images from the Born-Jordan quantization.\\
+			June 29, 2026&\textbf{B3:} Continuation of the derivation of the images from the Born-Jordan quantization.\\
+			June 30, 2026&\textbf{B4:} Derivation of the images as a result of the modifications to the differential quotient of first type.\\
+			July 1, 2026&\textbf{B5:} Suzuki’s analysis on Banach spaces.\\
+			&\textbf{B5:} Provision of the rigorous proof for the application of the differential quotient of the second type to operators.\\
+			July 2, 2026&\textbf{B5:} Derivation of the theorems (1).\\
+			July 3, 2026&\textbf{B5:} Derivation of the theorems (2).\\
+			&\textbf{B5:} Proof for Euler’s reflection formula and its relationship to the gamma and beta functions.\\
+			July 7, 2026&\textbf{B5:} Derivation of the theorems (3).\\
+			July 9, 2026&\textbf{BF:} Initial report/partial report to Dr. Ralph Ferrales.\\
+			July 13, 2026&Exploration of the derivation of the Weyl ordering.\\
+			July 14, 2026&Reading of Domingo’s paper (2016) on Algebra of Non-Weyl operators.\\
+			July 15, 2026&\textbf{B6:} Quantization of the Hamilton Equations of Motion\\
+			&\textbf{BA:} Exploration of case for the harmonic oscillator. \\
+			&Further research on the generalized Weyl transform.\\
+			July 16, 2026&\textbf{BF:} Completion of the Paper Analysis.\\
+			July 17, 2026&\textbf{BF:} Report of the Whole Paper.\\
+			\hline
+		\end{tabular}
+		\caption{The bold sections refer to sections worked on the paper. Please refer to Appendix \ref{sec:output1}.}
+	\end{table}
+	
+	\newpage
+	\subsection{On-The-Job Training Evaluation}
+	\newpage
+	
+	\subsection{Personal Professional Plan}
+	\includegraphics[width=\textwidth]{2.3 Personal Professional Plan.png}
+	
+	\newpage
+	\section{Appendix}
+	\subsection{Completion Certificate}
+	\newpage
+	
+	\subsection{Letter of Acceptance}
+	\noindent Please see attached file on next page.
+	\includepdf{3.2 Acceptance Letter.pdf}
+	
+	\subsection{Proposed Training and Design Schedule}
+	\subsection{Pictures of Daily Journal}
+	\newpage
+	
+	\subsection{List of References Read During the Training}
+	\vspace{0.5cm}
+	\input{3.5 References.tex}
+	
+	\subsection{Abstract of Proposed Thesis}
+	\vspace{0.5cm}
+	\begin{mdframed}
+	{\Large\textbf{Quantization Ambiguities in Entanglement-Enhanced Interferometric Phase Generators}}\\
+	Miel Gabriel Lagdan, Herbert B. Domingo \\
+	\vspace{0.25cm}
+	
+	\noindent Measurements involving photons are classically limited by the shot-noise limit. Entanglement in nonlinear interferometers enables these systems to approach or surpass the Heisenberg limit. However, the quantization of phase generators is plagued by ambiguities arising from different operator-ordering prescriptions (e.g., Weyl, Born-Jordan, and simplest symmetrization). This thesis investigates these ambiguities by deriving and comparing the phase sensitivities of entanglement-enhanced interferometric phase generators constructed under various ordering rules. Implications for quantum metrology in nonlinear media are discussed.
+	\end{mdframed}
+	
+	\subsection{Resume}
+	\noindent Please see attached file on next page.
+	\includepdf{3.7 Resume.pdf}
+	
+	\subsection{OUTPUT: Analysis of Paper (Bagunu \& Galapon)}\label{sec:output1}
+	\noindent Please see attached file on next page.
+	\includepdf[pages=-]{3.8 Report (BG).pdf}
+\end{document}
