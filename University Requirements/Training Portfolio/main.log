@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.24)  19 JUL 2026 22:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.24)  19 JUL 2026 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -885,7 +885,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<Background.jpg, id=63, 1419.3025pt x 1991.44pt>
+<Background.jpg, id=71, 1419.3025pt x 1991.44pt>
 File: Background.jpg Graphic file (type jpg)
 <use Background.jpg>
 Package pdftex.def Info: Background.jpg  used on input line 46.
@@ -935,7 +935,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
-<Background 2.jpg, id=85, 597.9138pt x 845.559pt>
+<Background 2.jpg, id=95, 597.9138pt x 845.559pt>
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
 Package pdftex.def Info: Background 2.jpg  used on input line 52.
@@ -948,12 +948,12 @@ File: Background 2.jpg Graphic file (type jpg)
 Package pdftex.def Info: Background 2.jpg  used on input line 57.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
  [3]
-<1 Course Description.pdf, id=96, 597.79335pt x 845.67947pt>
+<1 Course Description.pdf, id=106, 597.79335pt x 845.67947pt>
 File: 1 Course Description.pdf Graphic file (type pdf)
 <use 1 Course Description.pdf>
 Package pdftex.def Info: 1 Course Description.pdf  used on input line 60.
 (pdftex.def)             Requested size: 597.79189pt x 845.67741pt.
-<1 Course Description.pdf, id=98, page=1, 597.79335pt x 845.67947pt>
+<1 Course Description.pdf, id=108, page=1, 597.79335pt x 845.67947pt>
 File: 1 Course Description.pdf Graphic file (type pdf)
 <use 1 Course Description.pdf, page 1>
 Package pdftex.def Info: 1 Course Description.pdf , page1 used on input line 60
@@ -982,7 +982,7 @@ Package pdftex.def Info: 1 Course Description.pdf , page1 used on input line 60
  [4
 
  <./1 Course Description.pdf>]
-<1 Course Description.pdf, id=120, page=2, 597.79335pt x 845.67947pt>
+<1 Course Description.pdf, id=130, page=2, 597.79335pt x 845.67947pt>
 File: 1 Course Description.pdf Graphic file (type pdf)
 <use 1 Course Description.pdf, page 2>
 Package pdftex.def Info: 1 Course Description.pdf , page2 used on input line 60
@@ -1001,7 +1001,7 @@ Package pdftex.def Info: 1 Course Description.pdf , page2 used on input line 60
  [5
 
  <./1 Course Description.pdf>]
-<1 Course Description.pdf, id=138, page=3, 597.79335pt x 845.67947pt>
+<1 Course Description.pdf, id=148, page=3, 597.79335pt x 845.67947pt>
 File: 1 Course Description.pdf Graphic file (type pdf)
 <use 1 Course Description.pdf, page 3>
 Package pdftex.def Info: 1 Course Description.pdf , page3 used on input line 60
@@ -1020,7 +1020,7 @@ Package pdftex.def Info: 1 Course Description.pdf , page3 used on input line 60
  [6
 
  <./1 Course Description.pdf>]
-<1 Course Description.pdf, id=169, page=4, 597.79335pt x 845.67947pt>
+<1 Course Description.pdf, id=179, page=4, 597.79335pt x 845.67947pt>
 File: 1 Course Description.pdf Graphic file (type pdf)
 <use 1 Course Description.pdf, page 4>
 Package pdftex.def Info: 1 Course Description.pdf , page4 used on input line 60
@@ -1039,7 +1039,7 @@ Package pdftex.def Info: 1 Course Description.pdf , page4 used on input line 60
  [7
 
  <./1 Course Description.pdf>]
-<1 Course Description.pdf, id=176, page=5, 597.79335pt x 845.67947pt>
+<1 Course Description.pdf, id=186, page=5, 597.79335pt x 845.67947pt>
 File: 1 Course Description.pdf Graphic file (type pdf)
 <use 1 Course Description.pdf, page 5>
 Package pdftex.def Info: 1 Course Description.pdf , page5 used on input line 60
@@ -1058,7 +1058,7 @@ Package pdftex.def Info: 1 Course Description.pdf , page5 used on input line 60
  [8
 
  <./1 Course Description.pdf>]
-<1 Course Description.pdf, id=182, page=6, 597.79335pt x 845.67947pt>
+<1 Course Description.pdf, id=192, page=6, 597.79335pt x 845.67947pt>
 File: 1 Course Description.pdf Graphic file (type pdf)
 <use 1 Course Description.pdf, page 6>
 Package pdftex.def Info: 1 Course Description.pdf , page6 used on input line 60
@@ -1088,69 +1088,85 @@ File: Background 2.jpg Graphic file (type jpg)
 Package pdftex.def Info: Background 2.jpg  used on input line 106.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
  [11]
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 108.
+Package pdftex.def Info: Background 2.jpg  used on input line 115.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
- [12]
-<2.3 Personal Professional Plan.png, id=202, 754.31813pt x 450.9347pt>
+[12]
+<2.2 Future of BS Applied Physics.png, id=212, 1055.44313pt x 307.90031pt>
+File: 2.2 Future of BS Applied Physics.png Graphic file (type png)
+<use 2.2 Future of BS Applied Physics.png>
+Package pdftex.def Info: 2.2 Future of BS Applied Physics.png  used on input li
+ne 118.
+(pdftex.def)             Requested size: 418.25368pt x 122.01158pt.
+<2.3 Personal Professional Plan.png, id=214, 754.31813pt x 450.9347pt>
 File: 2.3 Personal Professional Plan.png Graphic file (type png)
 <use 2.3 Personal Professional Plan.png>
 Package pdftex.def Info: 2.3 Personal Professional Plan.png  used on input line
- 111.
+ 121.
 (pdftex.def)             Requested size: 418.25368pt x 250.03088pt.
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 113.
+Package pdftex.def Info: Background 2.jpg  used on input line 123.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
- [13 <./2.3 Personal Professional Plan.png>]
+ [13 <./2.2 Future of BS Applied Physics.png> <./2.3 Personal Professional Plan
+.png>]
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 116.
+Package pdftex.def Info: Background 2.jpg  used on input line 127.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
  [14]
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 121.
+Package pdftex.def Info: Background 2.jpg  used on input line 135.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
  [15]
-<3.2 Acceptance Letter.pdf, id=218, 597.6729pt x 844.83629pt>
+<3.2 Acceptance Letter.pdf, id=230, 597.6729pt x 844.83629pt>
 File: 3.2 Acceptance Letter.pdf Graphic file (type pdf)
 <use 3.2 Acceptance Letter.pdf>
-Package pdftex.def Info: 3.2 Acceptance Letter.pdf  used on input line 123.
+Package pdftex.def Info: 3.2 Acceptance Letter.pdf  used on input line 137.
 (pdftex.def)             Requested size: 597.67143pt x 844.83423pt.
-<3.2 Acceptance Letter.pdf, id=220, page=1, 597.6729pt x 844.83629pt>
+<3.2 Acceptance Letter.pdf, id=232, page=1, 597.6729pt x 844.83629pt>
 File: 3.2 Acceptance Letter.pdf Graphic file (type pdf)
 <use 3.2 Acceptance Letter.pdf, page 1>
 Package pdftex.def Info: 3.2 Acceptance Letter.pdf , page1 used on input line 1
-23.
+37.
 (pdftex.def)             Requested size: 597.67143pt x 844.83423pt.
 File: 3.2 Acceptance Letter.pdf Graphic file (type pdf)
 <use 3.2 Acceptance Letter.pdf, page 1>
 Package pdftex.def Info: 3.2 Acceptance Letter.pdf , page1 used on input line 1
-23.
+37.
 (pdftex.def)             Requested size: 598.173pt x 845.54323pt.
 File: 3.2 Acceptance Letter.pdf Graphic file (type pdf)
 <use 3.2 Acceptance Letter.pdf, page 1>
 Package pdftex.def Info: 3.2 Acceptance Letter.pdf , page1 used on input line 1
-23.
+37.
 (pdftex.def)             Requested size: 598.173pt x 845.54323pt.
 File: 3.2 Acceptance Letter.pdf Graphic file (type pdf)
 <use 3.2 Acceptance Letter.pdf, page 1>
 Package pdftex.def Info: 3.2 Acceptance Letter.pdf , page1 used on input line 1
-23.
+37.
 (pdftex.def)             Requested size: 598.173pt x 845.54323pt.
 File: 3.2 Acceptance Letter.pdf Graphic file (type pdf)
 <use 3.2 Acceptance Letter.pdf, page 1>
 Package pdftex.def Info: 3.2 Acceptance Letter.pdf , page1 used on input line 1
-23.
+37.
 (pdftex.def)             Requested size: 598.173pt x 845.54323pt.
  [16
 
  <./3.2 Acceptance Letter.pdf>]
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 128.
+Package pdftex.def Info: Background 2.jpg  used on input line 142.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
  [17]
 (./3.5 References.tex
@@ -1177,50 +1193,50 @@ Package pdftex.def Info: Background 2.jpg  used on input line 37.
 [18])
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 137.
+Package pdftex.def Info: Background 2.jpg  used on input line 151.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
  [19]
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 146.
+Package pdftex.def Info: Background 2.jpg  used on input line 160.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
  [20]
-<3.7 Resume.pdf, id=338, 597.50786pt x 845.04686pt>
+<3.7 Resume.pdf, id=350, 597.50786pt x 845.04686pt>
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf>
-Package pdftex.def Info: 3.7 Resume.pdf  used on input line 149.
+Package pdftex.def Info: 3.7 Resume.pdf  used on input line 163.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<3.7 Resume.pdf, id=340, page=1, 597.50786pt x 845.04686pt>
+<3.7 Resume.pdf, id=352, page=1, 597.50786pt x 845.04686pt>
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf, page 1>
-Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 149.
+Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 163.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf, page 1>
-Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 149.
+Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 163.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf, page 1>
-Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 149.
+Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 163.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf, page 1>
-Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 149.
+Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 163.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf, page 1>
-Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 149.
+Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 163.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
  [21
 
  <./3.7 Resume.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 158.
+Package pdftex.def Info: Background 2.jpg  used on input line 172.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
 [22] (./main.aux)
  ***********
@@ -1228,16 +1244,16 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 558136978FBD3167D7FADE4E75CE4894;2556.
+(rerunfilecheck)             Checksum: E93FBA922E74E61DF227EAA84094BAE0;3116.
  ) 
 Here is how much of TeX's memory you used:
- 22262 strings out of 467341
- 425053 string characters out of 5408002
- 838871 words of memory out of 5000000
- 50905 multiletter control sequences out of 15000+600000
+ 22276 strings out of 467341
+ 425495 string characters out of 5408002
+ 838874 words of memory out of 5000000
+ 50917 multiletter control sequences out of 15000+600000
  630654 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,108p,674b,901s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,108p,2280b,899s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/miell/Documents/texlive/2026/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><c:/Users/miell/Documents/texlive/2026/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb><c:/Users/miell/Documents/texlive/2026/texmf-dist/f
@@ -1246,10 +1262,10 @@ onts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/Users/miell/Documents/texlive/202
 /texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/mi
 ell/Documents/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 >
-Output written on main.pdf (22 pages, 1034199 bytes).
+Output written on main.pdf (22 pages, 1084188 bytes).
 PDF statistics:
- 461 PDF objects out of 1000 (max. 8388607)
- 349 compressed objects within 4 object streams
- 67 named destinations out of 1000 (max. 500000)
- 210 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 473 PDF objects out of 1000 (max. 8388607)
+ 359 compressed objects within 4 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 
