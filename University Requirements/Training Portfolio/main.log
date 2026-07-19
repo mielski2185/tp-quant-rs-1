@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.24)  19 JUL 2026 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.24)  19 JUL 2026 23:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -435,6 +435,35 @@ Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 )))
+(c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/latex/caption/subcaption.
+sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+
+(c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/latex/caption/caption3.st
+y
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen177
+\captionmargin=\dimen178
+\caption@leftmargin=\dimen179
+\caption@rightmargin=\dimen180
+\caption@width=\dimen181
+\caption@indent=\dimen182
+\caption@parindent=\dimen183
+\caption@hangindent=\dimen184
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count313
+\c@continuedfloat=\count314
+Package caption Info: hyperref package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count315
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count316
+)
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/latex/background/backgrou
 nd.sty
 Package: background 2014/03/04 v2.1 background material
@@ -450,7 +479,7 @@ tex
 \XKV@tempa@toks=\toks24
 \XKV@tempb@toks=\toks25
 )
-\XKV@depth=\count313
+\XKV@depth=\count317
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/latex/pgf/frontendlayer/t
@@ -462,8 +491,8 @@ s.sty
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgf
 util-common.tex
 \pgfutil@everybye=\toks26
-\pgfutil@tempdima=\dimen177
-\pgfutil@tempdimb=\dimen178
+\pgfutil@tempdima=\dimen185
+\pgfutil@tempdimb=\dimen186
 )
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgf
 util-latex.def
@@ -494,26 +523,26 @@ keys.code.tex
 keyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks29
 ))
-\pgf@x=\dimen179
-\pgf@y=\dimen180
-\pgf@xa=\dimen181
-\pgf@ya=\dimen182
-\pgf@xb=\dimen183
-\pgf@yb=\dimen184
-\pgf@xc=\dimen185
-\pgf@yc=\dimen186
-\pgf@xd=\dimen187
-\pgf@yd=\dimen188
+\pgf@x=\dimen187
+\pgf@y=\dimen188
+\pgf@xa=\dimen189
+\pgf@ya=\dimen190
+\pgf@xb=\dimen191
+\pgf@yb=\dimen192
+\pgf@xc=\dimen193
+\pgf@yc=\dimen194
+\pgf@xd=\dimen195
+\pgf@yd=\dimen196
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count314
-\c@pgf@countb=\count315
-\c@pgf@countc=\count316
-\c@pgf@countd=\count317
+\c@pgf@counta=\count318
+\c@pgf@countb=\count319
+\c@pgf@countc=\count320
+\c@pgf@countd=\count321
 \t@pgf@toka=\toks30
 \t@pgf@tokb=\toks31
 \t@pgf@tokc=\toks32
-\pgf@sys@id@count=\count318
+\pgf@sys@id@count=\count322
 
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/p
 gf.cfg
@@ -532,8 +561,8 @@ File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/p
 gfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count319
-\pgfsyssoftpath@bigbuffer@items=\count320
+\pgfsyssoftpath@smallbuffer@items=\count323
+\pgfsyssoftpath@bigbuffer@items=\count324
 )
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/p
 gfsysprotocol.code.tex
@@ -549,8 +578,8 @@ code.tex
 til.code.tex)
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathp
 arser.code.tex
-\pgfmath@dimen=\dimen189
-\pgfmath@count=\count321
+\pgfmath@dimen=\dimen197
+\pgfmath@count=\count325
 \pgfmath@box=\box62
 \pgfmath@toks=\toks33
 \pgfmath@stack@operand=\toks34
@@ -578,39 +607,39 @@ unctions.integerarithmetics.code.tex)
 alc.code.tex)
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathf
 loat.code.tex
-\c@pgfmathroundto@lastzeros=\count322
+\c@pgfmathroundto@lastzeros=\count326
 ))
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfint.c
 ode.tex)
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@picminx=\dimen190
-\pgf@picmaxx=\dimen191
-\pgf@picminy=\dimen192
-\pgf@picmaxy=\dimen193
-\pgf@pathminx=\dimen194
-\pgf@pathmaxx=\dimen195
-\pgf@pathminy=\dimen196
-\pgf@pathmaxy=\dimen197
-\pgf@xx=\dimen198
-\pgf@xy=\dimen199
-\pgf@yx=\dimen256
-\pgf@yy=\dimen257
-\pgf@zx=\dimen258
-\pgf@zy=\dimen259
+\pgf@picminx=\dimen198
+\pgf@picmaxx=\dimen199
+\pgf@picminy=\dimen256
+\pgf@picmaxy=\dimen257
+\pgf@pathminx=\dimen258
+\pgf@pathmaxx=\dimen259
+\pgf@pathminy=\dimen260
+\pgf@pathmaxy=\dimen261
+\pgf@xx=\dimen262
+\pgf@xy=\dimen263
+\pgf@yx=\dimen264
+\pgf@yy=\dimen265
+\pgf@zx=\dimen266
+\pgf@zy=\dimen267
 )
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@path@lastx=\dimen260
-\pgf@path@lasty=\dimen261
+\pgf@path@lastx=\dimen268
+\pgf@path@lasty=\dimen269
 )
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@shorten@end@additional=\dimen262
-\pgf@shorten@start@additional=\dimen263
+\pgf@shorten@end@additional=\dimen270
+\pgf@shorten@start@additional=\dimen271
 )
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorescopes.code.tex
@@ -618,19 +647,19 @@ File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box63
 \pgf@hbox=\box64
 \pgf@layerbox@main=\box65
-\pgf@picture@serial@count=\count323
+\pgf@picture@serial@count=\count327
 )
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgflinewidth=\dimen264
+\pgflinewidth=\dimen272
 )
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@pt@x=\dimen265
-\pgf@pt@y=\dimen266
-\pgf@pt@temp=\dimen267
+\pgf@pt@x=\dimen273
+\pgf@pt@y=\dimen274
+\pgf@pt@temp=\dimen275
 )
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorequick.code.tex
@@ -647,14 +676,14 @@ File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcorearrows.code.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowsep=\dimen268
+\pgfarrowsep=\dimen276
 )
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@max=\dimen269
-\pgf@sys@shading@range@num=\count324
-\pgf@shadingcount=\count325
+\pgf@max=\dimen277
+\pgf@sys@shading@range@num=\count328
+\pgf@shadingcount=\count329
 )
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
 fcoreimage.code.tex
@@ -693,8 +722,8 @@ File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/p
 gfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@nodesepstart=\dimen270
-\pgf@nodesepend=\dimen271
+\pgf@nodesepstart=\dimen278
+\pgf@nodesepend=\dimen279
 )
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/p
 gfcomp-version-1-18.sty
@@ -713,8 +742,8 @@ code.tex))
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgf
 for.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
-\pgffor@iter=\dimen272
-\pgffor@skip=\dimen273
+\pgffor@iter=\dimen280
+\pgffor@skip=\dimen281
 \pgffor@stack=\toks36
 \pgffor@toks=\toks37
 ))
@@ -725,34 +754,34 @@ Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgf
 libraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count326
-\pgfplotmarksize=\dimen274
+\pgf@plot@mark@count=\count330
+\pgfplotmarksize=\dimen282
 )
-\tikz@lastx=\dimen275
-\tikz@lasty=\dimen276
-\tikz@lastxsaved=\dimen277
-\tikz@lastysaved=\dimen278
-\tikz@lastmovetox=\dimen279
-\tikz@lastmovetoy=\dimen280
-\tikzleveldistance=\dimen281
-\tikzsiblingdistance=\dimen282
+\tikz@lastx=\dimen283
+\tikz@lasty=\dimen284
+\tikz@lastxsaved=\dimen285
+\tikz@lastysaved=\dimen286
+\tikz@lastmovetox=\dimen287
+\tikz@lastmovetoy=\dimen288
+\tikzleveldistance=\dimen289
+\tikzsiblingdistance=\dimen290
 \tikz@figbox=\box68
 \tikz@figbox@bg=\box69
 \tikz@tempbox=\box70
 \tikz@tempbox@bg=\box71
-\tikztreelevel=\count327
-\tikznumberofchildren=\count328
-\tikznumberofcurrentchild=\count329
-\tikz@fig@count=\count330
+\tikztreelevel=\count331
+\tikznumberofchildren=\count332
+\tikznumberofcurrentchild=\count333
+\tikz@fig@count=\count334
 
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmo
 dulematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count331
-\pgfmatrixcurrentcolumn=\count332
-\pgf@matrix@numberofcolumns=\count333
+\pgfmatrixcurrentrow=\count335
+\pgfmatrixcurrentcolumn=\count336
+\pgf@matrix@numberofcolumns=\count337
 )
-\tikz@expandcount=\count334
+\tikz@expandcount=\count338
 
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer
 /tikz/libraries/tikzlibrarytopaths.code.tex
@@ -808,16 +837,16 @@ LaTeX Font Info:    ... okay on input line 26.
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pd
 f.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count335
-\scratchdimen=\dimen283
+\scratchcounter=\count339
+\scratchdimen=\dimen291
 \scratchbox=\box74
-\nofMPsegments=\count336
-\nofMParguments=\count337
+\nofMPsegments=\count340
+\nofMParguments=\count341
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count338
-\MPscratchDim=\dimen284
-\MPnumerator=\count339
-\makeMPintoPDFobject=\count340
+\MPscratchCnt=\count342
+\MPscratchDim=\dimen292
+\MPnumerator=\count343
+\makeMPintoPDFobject=\count344
 \everyMPtoPDFconversion=\toks40
 )
 (c:/Users/miell/Documents/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstop
@@ -885,6 +914,8 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 <Background.jpg, id=71, 1419.3025pt x 1991.44pt>
 File: Background.jpg Graphic file (type jpg)
 <use Background.jpg>
@@ -1102,13 +1133,13 @@ File: Background 2.jpg Graphic file (type jpg)
 Package pdftex.def Info: Background 2.jpg  used on input line 115.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
 [12]
-<2.2 Future of BS Applied Physics.png, id=212, 1055.44313pt x 307.90031pt>
+<2.2 Future of BS Applied Physics.png, id=213, 1055.44313pt x 307.90031pt>
 File: 2.2 Future of BS Applied Physics.png Graphic file (type png)
 <use 2.2 Future of BS Applied Physics.png>
 Package pdftex.def Info: 2.2 Future of BS Applied Physics.png  used on input li
 ne 118.
 (pdftex.def)             Requested size: 418.25368pt x 122.01158pt.
-<2.3 Personal Professional Plan.png, id=214, 754.31813pt x 450.9347pt>
+<2.3 Personal Professional Plan.png, id=215, 754.31813pt x 450.9347pt>
 File: 2.3 Personal Professional Plan.png Graphic file (type png)
 <use 2.3 Personal Professional Plan.png>
 Package pdftex.def Info: 2.3 Personal Professional Plan.png  used on input line
@@ -1130,12 +1161,12 @@ File: Background 2.jpg Graphic file (type jpg)
 Package pdftex.def Info: Background 2.jpg  used on input line 135.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
  [15]
-<3.2 Acceptance Letter.pdf, id=230, 597.6729pt x 844.83629pt>
+<3.2 Acceptance Letter.pdf, id=231, 597.6729pt x 844.83629pt>
 File: 3.2 Acceptance Letter.pdf Graphic file (type pdf)
 <use 3.2 Acceptance Letter.pdf>
 Package pdftex.def Info: 3.2 Acceptance Letter.pdf  used on input line 137.
 (pdftex.def)             Requested size: 597.67143pt x 844.83423pt.
-<3.2 Acceptance Letter.pdf, id=232, page=1, 597.6729pt x 844.83629pt>
+<3.2 Acceptance Letter.pdf, id=233, page=1, 597.6729pt x 844.83629pt>
 File: 3.2 Acceptance Letter.pdf Graphic file (type pdf)
 <use 3.2 Acceptance Letter.pdf, page 1>
 Package pdftex.def Info: 3.2 Acceptance Letter.pdf , page1 used on input line 1
@@ -1166,10 +1197,142 @@ Package pdftex.def Info: 3.2 Acceptance Letter.pdf , page1 used on input line 1
  <./3.2 Acceptance Letter.pdf>]
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 142.
+Package pdftex.def Info: Background 2.jpg  used on input line 143.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
  [17]
-(./3.5 References.tex
+<3.3 Proposed Training and Design Schedule.pdf, id=271, 597.55246pt x 845.07718
+pt>
+File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
+<use 3.3 Proposed Training and Design Schedule.pdf>
+Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf  used on
+ input line 145.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+<3.3 Proposed Training and Design Schedule.pdf, id=273, page=1, 597.55246pt x 8
+45.07718pt>
+File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
+<use 3.3 Proposed Training and Design Schedule.pdf, page 1>
+Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page1 
+used on input line 145.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
+<use 3.3 Proposed Training and Design Schedule.pdf, page 1>
+Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page1 
+used on input line 145.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
+<use 3.3 Proposed Training and Design Schedule.pdf, page 1>
+Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page1 
+used on input line 145.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
+<use 3.3 Proposed Training and Design Schedule.pdf, page 1>
+Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page1 
+used on input line 145.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
+<use 3.3 Proposed Training and Design Schedule.pdf, page 1>
+Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page1 
+used on input line 145.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+ [18
+
+ <./3.3 Proposed Training and Design Schedule.pdf>]
+<3.3 Proposed Training and Design Schedule.pdf, id=294, page=2, 597.55246pt x 8
+45.07718pt>
+File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
+<use 3.3 Proposed Training and Design Schedule.pdf, page 2>
+Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page2 
+used on input line 145.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
+<use 3.3 Proposed Training and Design Schedule.pdf, page 2>
+Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page2 
+used on input line 145.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
+<use 3.3 Proposed Training and Design Schedule.pdf, page 2>
+Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page2 
+used on input line 145.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+ [19
+
+ <./3.3 Proposed Training and Design Schedule.pdf>]
+<3.3 Proposed Training and Design Schedule.pdf, id=316, page=3, 597.55246pt x 8
+45.07718pt>
+File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
+<use 3.3 Proposed Training and Design Schedule.pdf, page 3>
+Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page3 
+used on input line 145.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
+<use 3.3 Proposed Training and Design Schedule.pdf, page 3>
+Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page3 
+used on input line 145.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
+<use 3.3 Proposed Training and Design Schedule.pdf, page 3>
+Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page3 
+used on input line 145.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+ [20
+
+ <./3.3 Proposed Training and Design Schedule.pdf>]
+<3.3 Proposed Training and Design Schedule.pdf, id=322, page=4, 597.55246pt x 8
+45.07718pt>
+File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
+<use 3.3 Proposed Training and Design Schedule.pdf, page 4>
+Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page4 
+used on input line 145.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
+<use 3.3 Proposed Training and Design Schedule.pdf, page 4>
+Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page4 
+used on input line 145.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
+<use 3.3 Proposed Training and Design Schedule.pdf, page 4>
+Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page4 
+used on input line 145.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+ [21
+
+ <./3.3 Proposed Training and Design Schedule.pdf>]
+<Images/IMG_4442.png, id=328, 4914.36pt x 3685.77pt>
+File: Images/IMG_4442.png Graphic file (type png)
+<use Images/IMG_4442.png>
+Package pdftex.def Info: Images/IMG_4442.png  used on input line 153.
+(pdftex.def)             Requested size: 167.3021pt x 125.47198pt.
+<Images/IMG_4443.png, id=329, 3035.34pt x 4047.12pt>
+File: Images/IMG_4443.png Graphic file (type png)
+<use Images/IMG_4443.png>
+Package pdftex.def Info: Images/IMG_4443.png  used on input line 159.
+(pdftex.def)             Requested size: 167.3021pt x 223.05544pt.
+<Images/IMG_5042.png, id=330, 5733.42pt x 4300.065pt>
+File: Images/IMG_5042.png Graphic file (type png)
+<use Images/IMG_5042.png>
+Package pdftex.def Info: Images/IMG_5042.png  used on input line 165.
+(pdftex.def)             Requested size: 167.3021pt x 125.45325pt.
+<Images/IMG_5037.png, id=331, 5733.42pt x 4300.065pt>
+File: Images/IMG_5037.png Graphic file (type png)
+<use Images/IMG_5037.png>
+Package pdftex.def Info: Images/IMG_5037.png  used on input line 171.
+(pdftex.def)             Requested size: 167.3021pt x 125.45325pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--177
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--177
+[][]
+ []
+
+File: Background 2.jpg Graphic file (type jpg)
+<use Background 2.jpg>
+Package pdftex.def Info: Background 2.jpg  used on input line 178.
+(pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
+[22 <./Images/IMG_4442.png> <./Images/IMG_4443.png> <./Images/IMG_5042.png> <./
+Images/IMG_5037.png>] (./3.5 References.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -1190,55 +1353,55 @@ File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
 Package pdftex.def Info: Background 2.jpg  used on input line 37.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
-[18])
+[23])
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 151.
+Package pdftex.def Info: Background 2.jpg  used on input line 187.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
- [19]
+ [24]
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 160.
+Package pdftex.def Info: Background 2.jpg  used on input line 196.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
- [20]
-<3.7 Resume.pdf, id=350, 597.50786pt x 845.04686pt>
+ [25]
+<3.7 Resume.pdf, id=422, 597.50786pt x 845.04686pt>
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf>
-Package pdftex.def Info: 3.7 Resume.pdf  used on input line 163.
+Package pdftex.def Info: 3.7 Resume.pdf  used on input line 199.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<3.7 Resume.pdf, id=352, page=1, 597.50786pt x 845.04686pt>
+<3.7 Resume.pdf, id=424, page=1, 597.50786pt x 845.04686pt>
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf, page 1>
-Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 163.
+Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 199.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf, page 1>
-Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 163.
+Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 199.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf, page 1>
-Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 163.
+Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 199.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf, page 1>
-Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 163.
+Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 199.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf, page 1>
-Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 163.
+Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 199.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
- [21
+ [26
 
  <./3.7 Resume.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 172.
+Package pdftex.def Info: Background 2.jpg  used on input line 208.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
-[22] (./main.aux)
+[27] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
@@ -1247,25 +1410,26 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: E93FBA922E74E61DF227EAA84094BAE0;3116.
  ) 
 Here is how much of TeX's memory you used:
- 22276 strings out of 467341
- 425495 string characters out of 5408002
- 838874 words of memory out of 5000000
- 50917 multiletter control sequences out of 15000+600000
- 630654 words of font info for 50 fonts, out of 8000000 for 9000
+ 23776 strings out of 467341
+ 455620 string characters out of 5408002
+ 864048 words of memory out of 5000000
+ 52401 multiletter control sequences out of 15000+600000
+ 630953 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,108p,2280b,899s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,108p,2280b,896s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/miell/Documents/texlive/2026/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><c:/Users/miell/Documents/texlive/2026/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb><c:/Users/miell/Documents/texlive/2026/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/Users/miell/Documents/texlive/202
 6/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/miell/Documents
-/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/mi
-ell/Documents/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
->
-Output written on main.pdf (22 pages, 1084188 bytes).
+/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/Users/miel
+l/Documents/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
+c:/Users/miell/Documents/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmtt10.pfb>
+Output written on main.pdf (27 pages, 32852381 bytes).
 PDF statistics:
- 473 PDF objects out of 1000 (max. 8388607)
- 359 compressed objects within 4 object streams
- 69 named destinations out of 1000 (max. 500000)
- 231 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 551 PDF objects out of 1000 (max. 8388607)
+ 409 compressed objects within 5 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
 

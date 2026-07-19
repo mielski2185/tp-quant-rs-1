@@ -9,8 +9,8 @@
 \contentsline {subsection}{\numberline {3.1}Completion Certificate}{15}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Letter of Acceptance}{15}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Proposed Training and Design Schedule}{17}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Pictures of Daily Journal}{17}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}List of References Read During the Training}{18}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Abstract of Proposed Thesis}{20}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}Resume}{20}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}OUTPUT: Analysis of Paper (Bagunu \& Galapon)}{22}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.4}Pictures of Daily Journal}{22}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}List of References Read During the Training}{23}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Abstract of Proposed Thesis}{25}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Resume}{25}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}OUTPUT: Analysis of Paper (Bagunu \& Galapon)}{27}{subsection.3.8}%
