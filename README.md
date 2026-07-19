@@ -1,2 +1,3 @@
-# tp-quant-rs-1
-Quantization Ambiguities in Entanglement-Enhanced Interferometric Phase Generators
+# Quantization Ambiguities in Entanglement-Enhanced Interferometric Phase Generators
+
+Measurements involving photons are classically limited by the shot-noise limit. Entanglement in nonlinear interferometers enables these systems to approach or surpass the Heisenberg limit. However, the quantization of phase generators is plagued by ambiguities arising from different operator-ordering prescriptions (e.g., Weyl, Born-Jordan, and simplest symmetrization). This thesis investigates these ambiguities by deriving and comparing the phase sensitivities of entanglement-enhanced interferometric phase generators constructed under various ordering rules. Implications for quantum metrology in nonlinear media are discussed.
