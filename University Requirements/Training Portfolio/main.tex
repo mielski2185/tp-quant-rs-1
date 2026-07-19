@@ -1,9 +1,19 @@
 \documentclass[a4paper]{article}
 
 \usepackage{xcolor,hyperref,mdframed,pdfpages}
-\usepackage[]{geometry}
+\usepackage[top=6cm]{geometry}
 \usepackage{titlesec}
 \usepackage{tablefootnote}
+
+\usepackage[pages=all]{background}
+
+\backgroundsetup{
+	scale=1,
+	color=black,
+	opacity=1.0,
+	angle=0,
+	contents={\includegraphics[width=\paperwidth,height=\paperheight]{Background.jpg}}
+}
 
 % Format the section style: removes number and centers the text
 \titleformat{\section}
@@ -40,7 +50,11 @@
 	\vspace*{\fill}
 	\section{Course Description}
 	\vspace*{\fill}
+	\newpage
+	
+	\backgroundsetup{contents={}}
 	\includepdf[pages=-]{1 Course Description.pdf}
+	\backgroundsetup{contents={\includegraphics[width=\paperwidth,height=\paperheight]{Background.jpg}}}
 	\newpage
 	
 	\newpage
@@ -99,7 +113,11 @@
 	
 	\subsection{Letter of Acceptance}
 	\noindent Please see attached file on next page.
+	
+	\newpage
+	\backgroundsetup{contents={}}
 	\includepdf{3.2 Acceptance Letter.pdf}
+	\backgroundsetup{contents={\includegraphics[width=\paperwidth,height=\paperheight]{Background.jpg}}}
 	
 	\subsection{Proposed Training and Design Schedule}
 	\subsection{Pictures of Daily Journal}
@@ -121,7 +139,11 @@
 	
 	\subsection{Resume}
 	\noindent Please see attached file on next page.
+	\newpage
+	
+	\backgroundsetup{contents={}}
 	\includepdf{3.7 Resume.pdf}
+	\backgroundsetup{contents={\includegraphics[width=\paperwidth,height=\paperheight]{Background.jpg}}}
 	
 	\subsection{OUTPUT: Analysis of Paper (Bagunu \& Galapon)}\label{sec:output1}
 	\noindent Please see linked file to research repository. \\
