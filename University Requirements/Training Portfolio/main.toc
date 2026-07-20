@@ -9,8 +9,10 @@
 \contentsline {subsection}{\numberline {3.1}Completion Certificate}{32}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Letter of Acceptance}{32}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Proposed Training and Design Schedule}{34}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Pictures of Daily Journal}{39}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}List of References Read During the Training}{40}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Abstract of Proposed Thesis}{42}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}Resume}{42}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}OUTPUT: Analysis of Paper (Bagunu \& Galapon)}{44}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.4}Supervisor’s Evaluation}{39}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Pictures of Daily Journal}{39}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}List of References Read During the Training}{40}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Abstract of Proposed Thesis}{42}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Resume}{42}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}OUTPUT: Analysis of Paper (Bagunu \& Galapon)}{44}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Time Card}{44}{subsection.3.10}%
