@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.24)  19 JUL 2026 23:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.24)  21 JUL 2026 01:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1116,222 +1116,561 @@ Package pdftex.def Info: Background 2.jpg  used on input line 68.
  [10]
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 106.
+Package pdftex.def Info: Background 2.jpg  used on input line 105.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
  [11]
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+<2.1 Daily Journals.pdf, id=209, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf>
+Package pdftex.def Info: 2.1 Daily Journals.pdf  used on input line 108.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<2.1 Daily Journals.pdf, id=211, page=1, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 1>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page1 used on input line 108.
+
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 1>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page1 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 1>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page1 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 1>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page1 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 1>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page1 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [12
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=244, page=2, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 2>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page2 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 2>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page2 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 2>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page2 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[13
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=255, page=3, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 3>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page3 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 3>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page3 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 3>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page3 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [14
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=260, page=4, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 4>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page4 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 4>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page4 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 4>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page4 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [15
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=265, page=5, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 5>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page5 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 5>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page5 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 5>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page5 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [16
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=270, page=6, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 6>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page6 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 6>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page6 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 6>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page6 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [17
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=275, page=7, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 7>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page7 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 7>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page7 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 7>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page7 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [18
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=280, page=8, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 8>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page8 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 8>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page8 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 8>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page8 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [19
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=286, page=9, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 9>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page9 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 9>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page9 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 9>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page9 used on input line 108.
+
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [20
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=291, page=10, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 10>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page10 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 10>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page10 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 10>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page10 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [21
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=296, page=11, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 11>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page11 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 11>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page11 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 11>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page11 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [22
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=301, page=12, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 12>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page12 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 12>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page12 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 12>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page12 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [23
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=306, page=13, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 13>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page13 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 13>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page13 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 13>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page13 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [24
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=311, page=14, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 14>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page14 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 14>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page14 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 14>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page14 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [25
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=317, page=15, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 15>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page15 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 15>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page15 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 15>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page15 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [26
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=323, page=16, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 16>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page16 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 16>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page16 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 16>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page16 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [27
+
+ <./2.1 Daily Journals.pdf>]
+<2.1 Daily Journals.pdf, id=328, page=17, 614.295pt x 794.97pt>
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 17>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page17 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 17>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page17 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: 2.1 Daily Journals.pdf Graphic file (type pdf)
+<use 2.1 Daily Journals.pdf, page 17>
+Package pdftex.def Info: 2.1 Daily Journals.pdf , page17 used on input line 108
+.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [28
+
+ <./2.1 Daily Journals.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 115.
+Package pdftex.def Info: Background 2.jpg  used on input line 121.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
-[12]
-<2.2 Future of BS Applied Physics.png, id=213, 1055.44313pt x 307.90031pt>
+[29]
+<2.2 Future of BS Applied Physics.png, id=337, 1055.44313pt x 307.90031pt>
 File: 2.2 Future of BS Applied Physics.png Graphic file (type png)
 <use 2.2 Future of BS Applied Physics.png>
 Package pdftex.def Info: 2.2 Future of BS Applied Physics.png  used on input li
-ne 118.
+ne 124.
 (pdftex.def)             Requested size: 418.25368pt x 122.01158pt.
-<2.3 Personal Professional Plan.png, id=215, 754.31813pt x 450.9347pt>
+<2.3 Personal Professional Plan.png, id=339, 754.31813pt x 450.9347pt>
 File: 2.3 Personal Professional Plan.png Graphic file (type png)
 <use 2.3 Personal Professional Plan.png>
 Package pdftex.def Info: 2.3 Personal Professional Plan.png  used on input line
- 121.
+ 127.
 (pdftex.def)             Requested size: 418.25368pt x 250.03088pt.
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 123.
+Package pdftex.def Info: Background 2.jpg  used on input line 129.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
- [13 <./2.2 Future of BS Applied Physics.png> <./2.3 Personal Professional Plan
+ [30 <./2.2 Future of BS Applied Physics.png> <./2.3 Personal Professional Plan
 .png>]
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 127.
+Package pdftex.def Info: Background 2.jpg  used on input line 133.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
- [14]
+ [31]
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 135.
+Package pdftex.def Info: Background 2.jpg  used on input line 141.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
- [15]
-<3.2 Acceptance Letter.pdf, id=231, 597.6729pt x 844.83629pt>
+ [32]
+<3.2 Acceptance Letter.pdf, id=355, 597.6729pt x 844.83629pt>
 File: 3.2 Acceptance Letter.pdf Graphic file (type pdf)
 <use 3.2 Acceptance Letter.pdf>
-Package pdftex.def Info: 3.2 Acceptance Letter.pdf  used on input line 137.
+Package pdftex.def Info: 3.2 Acceptance Letter.pdf  used on input line 143.
 (pdftex.def)             Requested size: 597.67143pt x 844.83423pt.
-<3.2 Acceptance Letter.pdf, id=233, page=1, 597.6729pt x 844.83629pt>
+<3.2 Acceptance Letter.pdf, id=357, page=1, 597.6729pt x 844.83629pt>
 File: 3.2 Acceptance Letter.pdf Graphic file (type pdf)
 <use 3.2 Acceptance Letter.pdf, page 1>
 Package pdftex.def Info: 3.2 Acceptance Letter.pdf , page1 used on input line 1
-37.
+43.
 (pdftex.def)             Requested size: 597.67143pt x 844.83423pt.
 File: 3.2 Acceptance Letter.pdf Graphic file (type pdf)
 <use 3.2 Acceptance Letter.pdf, page 1>
 Package pdftex.def Info: 3.2 Acceptance Letter.pdf , page1 used on input line 1
-37.
+43.
 (pdftex.def)             Requested size: 598.173pt x 845.54323pt.
 File: 3.2 Acceptance Letter.pdf Graphic file (type pdf)
 <use 3.2 Acceptance Letter.pdf, page 1>
 Package pdftex.def Info: 3.2 Acceptance Letter.pdf , page1 used on input line 1
-37.
+43.
 (pdftex.def)             Requested size: 598.173pt x 845.54323pt.
 File: 3.2 Acceptance Letter.pdf Graphic file (type pdf)
 <use 3.2 Acceptance Letter.pdf, page 1>
 Package pdftex.def Info: 3.2 Acceptance Letter.pdf , page1 used on input line 1
-37.
+43.
 (pdftex.def)             Requested size: 598.173pt x 845.54323pt.
 File: 3.2 Acceptance Letter.pdf Graphic file (type pdf)
 <use 3.2 Acceptance Letter.pdf, page 1>
 Package pdftex.def Info: 3.2 Acceptance Letter.pdf , page1 used on input line 1
-37.
+43.
 (pdftex.def)             Requested size: 598.173pt x 845.54323pt.
- [16
+ [33
 
  <./3.2 Acceptance Letter.pdf>]
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 143.
+Package pdftex.def Info: Background 2.jpg  used on input line 149.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
- [17]
-<3.3 Proposed Training and Design Schedule.pdf, id=271, 597.55246pt x 845.07718
+ [34]
+<3.3 Proposed Training and Design Schedule.pdf, id=395, 597.55246pt x 845.07718
 pt>
 File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
 <use 3.3 Proposed Training and Design Schedule.pdf>
 Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf  used on
- input line 145.
+ input line 151.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<3.3 Proposed Training and Design Schedule.pdf, id=273, page=1, 597.55246pt x 8
+<3.3 Proposed Training and Design Schedule.pdf, id=397, page=1, 597.55246pt x 8
 45.07718pt>
 File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
 <use 3.3 Proposed Training and Design Schedule.pdf, page 1>
 Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page1 
-used on input line 145.
+used on input line 151.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
 <use 3.3 Proposed Training and Design Schedule.pdf, page 1>
 Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page1 
-used on input line 145.
+used on input line 151.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
 <use 3.3 Proposed Training and Design Schedule.pdf, page 1>
 Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page1 
-used on input line 145.
+used on input line 151.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
 <use 3.3 Proposed Training and Design Schedule.pdf, page 1>
 Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page1 
-used on input line 145.
+used on input line 151.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
 <use 3.3 Proposed Training and Design Schedule.pdf, page 1>
 Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page1 
-used on input line 145.
+used on input line 151.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [18
+ [35
 
  <./3.3 Proposed Training and Design Schedule.pdf>]
-<3.3 Proposed Training and Design Schedule.pdf, id=294, page=2, 597.55246pt x 8
+<3.3 Proposed Training and Design Schedule.pdf, id=418, page=2, 597.55246pt x 8
 45.07718pt>
 File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
 <use 3.3 Proposed Training and Design Schedule.pdf, page 2>
 Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page2 
-used on input line 145.
+used on input line 151.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
 <use 3.3 Proposed Training and Design Schedule.pdf, page 2>
 Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page2 
-used on input line 145.
+used on input line 151.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
 <use 3.3 Proposed Training and Design Schedule.pdf, page 2>
 Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page2 
-used on input line 145.
+used on input line 151.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [19
+ [36
 
  <./3.3 Proposed Training and Design Schedule.pdf>]
-<3.3 Proposed Training and Design Schedule.pdf, id=316, page=3, 597.55246pt x 8
+<3.3 Proposed Training and Design Schedule.pdf, id=438, page=3, 597.55246pt x 8
 45.07718pt>
 File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
 <use 3.3 Proposed Training and Design Schedule.pdf, page 3>
 Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page3 
-used on input line 145.
+used on input line 151.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
 <use 3.3 Proposed Training and Design Schedule.pdf, page 3>
 Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page3 
-used on input line 145.
+used on input line 151.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
 <use 3.3 Proposed Training and Design Schedule.pdf, page 3>
 Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page3 
-used on input line 145.
+used on input line 151.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [20
+ [37
 
  <./3.3 Proposed Training and Design Schedule.pdf>]
-<3.3 Proposed Training and Design Schedule.pdf, id=322, page=4, 597.55246pt x 8
+<3.3 Proposed Training and Design Schedule.pdf, id=445, page=4, 597.55246pt x 8
 45.07718pt>
 File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
 <use 3.3 Proposed Training and Design Schedule.pdf, page 4>
 Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page4 
-used on input line 145.
+used on input line 151.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
 <use 3.3 Proposed Training and Design Schedule.pdf, page 4>
 Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page4 
-used on input line 145.
+used on input line 151.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 3.3 Proposed Training and Design Schedule.pdf Graphic file (type pdf)
 <use 3.3 Proposed Training and Design Schedule.pdf, page 4>
 Package pdftex.def Info: 3.3 Proposed Training and Design Schedule.pdf , page4 
-used on input line 145.
+used on input line 151.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [21
+ [38
 
  <./3.3 Proposed Training and Design Schedule.pdf>]
-<Images/IMG_4442.png, id=328, 4914.36pt x 3685.77pt>
+<Images/IMG_4442.png, id=451, 4914.36pt x 3685.77pt>
 File: Images/IMG_4442.png Graphic file (type png)
 <use Images/IMG_4442.png>
-Package pdftex.def Info: Images/IMG_4442.png  used on input line 153.
+Package pdftex.def Info: Images/IMG_4442.png  used on input line 159.
 (pdftex.def)             Requested size: 167.3021pt x 125.47198pt.
-<Images/IMG_4443.png, id=329, 3035.34pt x 4047.12pt>
+<Images/IMG_4443.png, id=452, 3035.34pt x 2276.505pt>
 File: Images/IMG_4443.png Graphic file (type png)
 <use Images/IMG_4443.png>
-Package pdftex.def Info: Images/IMG_4443.png  used on input line 159.
-(pdftex.def)             Requested size: 167.3021pt x 223.05544pt.
-<Images/IMG_5042.png, id=330, 5733.42pt x 4300.065pt>
+Package pdftex.def Info: Images/IMG_4443.png  used on input line 165.
+(pdftex.def)             Requested size: 167.3021pt x 125.46869pt.
+<Images/IMG_5042.png, id=453, 5733.42pt x 4300.065pt>
 File: Images/IMG_5042.png Graphic file (type png)
 <use Images/IMG_5042.png>
-Package pdftex.def Info: Images/IMG_5042.png  used on input line 165.
+Package pdftex.def Info: Images/IMG_5042.png  used on input line 171.
 (pdftex.def)             Requested size: 167.3021pt x 125.45325pt.
-<Images/IMG_5037.png, id=331, 5733.42pt x 4300.065pt>
+<Images/IMG_5037.png, id=454, 5733.42pt x 4300.065pt>
 File: Images/IMG_5037.png Graphic file (type png)
 <use Images/IMG_5037.png>
-Package pdftex.def Info: Images/IMG_5037.png  used on input line 171.
+Package pdftex.def Info: Images/IMG_5037.png  used on input line 177.
 (pdftex.def)             Requested size: 167.3021pt x 125.45325pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--177
+Underfull \hbox (badness 10000) in paragraph at lines 157--183
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--177
+Underfull \hbox (badness 10000) in paragraph at lines 157--183
 [][]
  []
 
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 178.
+Package pdftex.def Info: Background 2.jpg  used on input line 184.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
-[22 <./Images/IMG_4442.png> <./Images/IMG_4443.png> <./Images/IMG_5042.png> <./
+[39 <./Images/IMG_4442.png> <./Images/IMG_4443.png> <./Images/IMG_5042.png> <./
 Images/IMG_5037.png>] (./3.5 References.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
@@ -1353,55 +1692,55 @@ File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
 Package pdftex.def Info: Background 2.jpg  used on input line 37.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
-[23])
+[40])
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 187.
+Package pdftex.def Info: Background 2.jpg  used on input line 193.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
- [24]
+ [41]
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 196.
+Package pdftex.def Info: Background 2.jpg  used on input line 202.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
- [25]
-<3.7 Resume.pdf, id=422, 597.50786pt x 845.04686pt>
+ [42]
+<3.7 Resume.pdf, id=544, 597.50786pt x 845.04686pt>
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf>
-Package pdftex.def Info: 3.7 Resume.pdf  used on input line 199.
+Package pdftex.def Info: 3.7 Resume.pdf  used on input line 205.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<3.7 Resume.pdf, id=424, page=1, 597.50786pt x 845.04686pt>
+<3.7 Resume.pdf, id=546, page=1, 597.50786pt x 845.04686pt>
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf, page 1>
-Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 199.
+Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 205.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf, page 1>
-Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 199.
+Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 205.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf, page 1>
-Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 199.
+Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 205.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf, page 1>
-Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 199.
+Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 205.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: 3.7 Resume.pdf Graphic file (type pdf)
 <use 3.7 Resume.pdf, page 1>
-Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 199.
+Package pdftex.def Info: 3.7 Resume.pdf , page1 used on input line 205.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
- [26
+ [43
 
  <./3.7 Resume.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
 File: Background 2.jpg Graphic file (type jpg)
 <use Background 2.jpg>
-Package pdftex.def Info: Background 2.jpg  used on input line 208.
+Package pdftex.def Info: Background 2.jpg  used on input line 214.
 (pdftex.def)             Requested size: 597.53827pt x 845.09245pt.
-[27] (./main.aux)
+[44] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
@@ -1410,10 +1749,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: E93FBA922E74E61DF227EAA84094BAE0;3116.
  ) 
 Here is how much of TeX's memory you used:
- 23776 strings out of 467341
- 455620 string characters out of 5408002
- 864048 words of memory out of 5000000
- 52401 multiletter control sequences out of 15000+600000
+ 23887 strings out of 467341
+ 458790 string characters out of 5408002
+ 864846 words of memory out of 5000000
+ 52495 multiletter control sequences out of 15000+600000
  630953 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,17n,108p,2280b,896s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1426,10 +1765,10 @@ onts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/Users/miell/Documents/texlive/202
 l/Documents/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
 c:/Users/miell/Documents/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmtt10.pfb>
-Output written on main.pdf (27 pages, 32852381 bytes).
+Output written on main.pdf (44 pages, 31801764 bytes).
 PDF statistics:
- 551 PDF objects out of 1000 (max. 8388607)
- 409 compressed objects within 5 object streams
- 75 named destinations out of 1000 (max. 500000)
- 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 679 PDF objects out of 1000 (max. 8388607)
+ 489 compressed objects within 5 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 376 words of extra memory for PDF output out of 10000 (max. 10000000)
 
