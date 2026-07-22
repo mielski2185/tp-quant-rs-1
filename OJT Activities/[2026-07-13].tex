@@ -1,0 +1,34 @@
+\documentclass[a4paper]{article}
+
+\usepackage[]{amsmath,gensymb,amsthm,mathtools,bm,braket}
+
+\title{July 13, 2026}
+\author{mielski}
+
+\begin{document}
+	\maketitle
+	Today, we begin our progress into answering how the differentiation operation is generalized for the quantization images,.
+	\section{Ordering}
+	We are familiar with the numerous ordering types by which are used in problems such as the Harmonic oscillator and the time of arrival operators.
+	\subsection{Weyl ordering}
+	The Weyl ordering scheme allows for the symmetric products of the operators $p$ and $q$\footnote{Fuuji \& Suzuki. A NEW SYMMETRIC EXPRESSION OF WEYL ORDERING. }\footnote{Bagunu \& Galapon. Quantization of the Hamilton equations of motion.}\footnote{Fan \& Fan. WEYL ORDERING FOR
+		ENTANGLED STATE REPRESENTATION.} for the Hamiltonian $h(p,q)$,
+	\begin{equation}
+		h(p,q)=q^np^m\to\textbf{T}_{m,n}=\frac{1}{2^n}\sum_{j=0}^n\binom{n}{j}q^jp^mq^{n-j}=\frac{1}{2^m}\sum_{j=0}^m\binom{m}{j}p^jq^np^{m-j}
+	\end{equation}
+	and thus for $m=3$ and $n=2$,
+	\begin{equation}
+		\textbf{T}_{3,2}=\frac{1}{4}p^3q^2+\frac{1}{2}qp^3q+\frac{1}{4}q^2p^3
+	\end{equation}
+	
+	In general, in accordance to the generalized Weyl transform\footnote{Domingo \& Galapon. Generalized Weyl transform for operator ordering: polynomial functions in phase space}, the quantization images could be written in the form
+	\begin{equation}\label{eqn:images of gWt}
+		\textbf{T}_{m,n}=\sum_{j=0}^{\min{(m,n)}}\frac{m!n!f^{j}(0)}{j!(m-j)!(n-j)!}\hbar^jp^{m-j}q^{n-j}
+	\end{equation}
+	wherein for Weyl quantization, $f(x)=e^{ix/2}\Theta(x)$, $\Theta(x)=1$ for the specified ordering rule.
+	Provided this, allowing $m=3$ and $n=2$, the images dictate
+	\begin{equation}
+		\textbf{T}_{3,2}=p^3q^2+3i\hbar p^2q-\frac{3}{2}\hbar^2p 
+	\end{equation}
+	which are equivalent once the first definition is translated to anti-normal ordering.
+\end{document}

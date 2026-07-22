@@ -1,0 +1,102 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Domingo2015-sr}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=4fdb48e74428c9fe5cece05003c8e58f}{%
+           family={Domingo},
+           familyi={D\bibinitperiod},
+           given={Herbert\bibnamedelima B},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=33f6c3eee23a0a79a934e5acbf038584}{%
+           family={Galapon},
+           familyi={G\bibinitperiod},
+           given={Eric\bibnamedelima A},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{970969e49c69ebcb5507bd43a710624c}
+      \strng{fullhash}{970969e49c69ebcb5507bd43a710624c}
+      \strng{fullhashraw}{970969e49c69ebcb5507bd43a710624c}
+      \strng{bibnamehash}{970969e49c69ebcb5507bd43a710624c}
+      \strng{authorbibnamehash}{970969e49c69ebcb5507bd43a710624c}
+      \strng{authornamehash}{970969e49c69ebcb5507bd43a710624c}
+      \strng{authorfullhash}{970969e49c69ebcb5507bd43a710624c}
+      \strng{authorfullhashraw}{970969e49c69ebcb5507bd43a710624c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The generalized Weyl transforms were developed from the Hermiticity condition and the ordering rules were represented by characteristic real-valued functions. The integral transforms give rise to transformation equations between Weyl quantization and differently ordered operators. The transforms also simplify evaluation of commutator and anticommutator of a set of operators following the same ordering rule.}
+      \field{journaltitle}{J. Math. Phys.}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Generalized Weyl transform for operator ordering: Polynomial functions in phase space}
+      \field{volume}{56}
+      \field{year}{2015}
+      \field{pages}{022104}
+      \range{pages}{1}
+    \endentry
+    \entry{Cohen1976-wr}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=150b13855a8f1ad8c907c2f22ec6c59f}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Leon},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{150b13855a8f1ad8c907c2f22ec6c59f}
+      \strng{fullhash}{150b13855a8f1ad8c907c2f22ec6c59f}
+      \strng{fullhashraw}{150b13855a8f1ad8c907c2f22ec6c59f}
+      \strng{bibnamehash}{150b13855a8f1ad8c907c2f22ec6c59f}
+      \strng{authorbibnamehash}{150b13855a8f1ad8c907c2f22ec6c59f}
+      \strng{authornamehash}{150b13855a8f1ad8c907c2f22ec6c59f}
+      \strng{authorfullhash}{150b13855a8f1ad8c907c2f22ec6c59f}
+      \strng{authorfullhashraw}{150b13855a8f1ad8c907c2f22ec6c59f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The problem of quantization in the phase-space formulation of quantum mechanics is considered. An integral equation for the phase-space eigenfunctions is derived which is equivalent to the standard eigenvalue equation for a quantum mechanical operator. A differential form is also given. A variational principle is derived for quasiprobability distributions. It is shown that the expected value of the classical Hamiltonian calculated with a trial quasiprobability distribution will be greater than the ground state energy only if the distribution is chosen from a certain class of functions. The notion of $\psi$-representability is introduced to classify these functions. They represent distributions which correspond to possible quantum mechanical states. Also, a general relation is given between different distribution functions.}
+      \field{journaltitle}{J. Math. Phys.}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{Quantization problem and variational principle in the phase-space formulation of quantum mechanics}
+      \field{volume}{17}
+      \field{year}{1976}
+      \field{pages}{1863\bibrangedash 1866}
+      \range{pages}{4}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

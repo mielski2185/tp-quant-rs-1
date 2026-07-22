@@ -1,0 +1,1239 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx,amsmath,mathtools,braket,bm,amsthm,amssymb,comment}
+\usepackage{hyperref}
+\usepackage[top=1in,bottom=1in,left=0.5in,right=0.5in]{geometry}
+\allowdisplaybreaks
+\usepackage[sorting=none,style=numeric]{biblatex}
+\addbibresource{refs.bib}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\usepackage[mathscr]{euscript}
+
+% Copied from mathrsfs.sty
+\DeclareSymbolFont{rsfs}{U}{rsfs}{m}{n}
+\DeclareSymbolFontAlphabet{\mathscrsfs}{rsfs}
+
+\title{\textbf{Quantization of the Hamilton Equations of Motion} \cite{Bagunu2025}}
+\author{Ramon Bagunu, Eric Galapon (Derived by Miel Lagdan)}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\noindent Ramon Bagunu and Eric Galapon's paper entitled "Quantization of the Hamiltonian equations of motion" was investigated. Initially, papers suggest that Born-Jordan ordering \textit{should} be the only ordering rule that will satisfy the relation between Schrodinger's matrix mechanics and Heisenberg's picture of quantum mechanics. The paper tackles on the investigation on the different images in quantization and asks if it will satisfy the Hamilton equations of motion in the quantum regime. The results show that arbitrary quantization will satisfy the Hamilton equations of motion, leading to a conclusion that all possible quantum images of the Hamiltonian will still exhibit the same quantum dynamical behavior and will display the correct quantum image. \\
+	
+	\textbf{ID}: \textit{tpg-td no. 1 s. 2026}
+	
+	\tableofcontents
+
+\section{Introduction}
+It has been of interest in the field on how varying images on quantization affect measurement when acted upon. This paper, produced by Bagunu and Galapon, seek answers on how the Hamilton Equations of Motion are quantized using the different quantization images and see if there is a significant difference among them.
+		\subsection{The Quantization Images}
+		Suppose that for a Hamiltonian with polynomial terms $H(q,p)=p^mq^n$, the quantized image is given by \cite{Bagunu2025,Born1926,Domingo2015} $\textbf{H}(\textbf{q,\textbf{p}})=\textbf{A}_{m,n}$. 
+		\begin{enumerate}
+			\item The \textbf{Weyl quantization} considers symmetric ordering such that
+			\begin{equation}\label{eqn:weyl}
+				\textbf{T}_{m,n}\coloneqq\frac{1}{2^n}\sum_{j=0}^n\binom{n}{j}\textbf{q}^j\textbf{p}^m\textbf{q}^{n-j}\qquad\text{or}\qquad\textbf{T}_{m,n}=\frac{1}{2^m}\sum_{j=0}^m\binom{m}{j}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-j}
+			\end{equation}
+			\item The \textbf{simplest symmetrization} only considers equally satisfactory quantizations such that
+			\begin{equation}\label{eqn:ss}
+				\textbf{S}_{m,n}\coloneqq\frac{1}{2}(\textbf{p}^m\textbf{q}^n+\textbf{q}^n\textbf{p}^m)
+			\end{equation}
+			\item The \textbf{Born-Jordan} considers all terms to be equally weighted such that
+			\begin{equation}\label{eqn:bj}
+				\textbf{B}_{m,n}\coloneqq\frac{1}{n+1}\sum_{j=0}^n\textbf{q}^j\textbf{p}^m\textbf{q}^{n-j}\qquad\text{or}\qquad\textbf{B}_{m,n}=\frac{1}{m+1}\sum_{j=0}^m\textbf{p}^m\textbf{q}^n\textbf{p}^{m-j}
+			\end{equation}
+		\end{enumerate}
+		\subsection{The Schrodinger and Heisenberg pictures}
+		It is possible to relate the Schrodinger and Heisenberg pictures of quantum mechanics \cite{deGossonshe}. We start with such equation
+		\begin{equation}
+			\psi(t)=U(t,t_0)~\psi(t_0)
+		\end{equation}
+		provided that
+		\begin{equation}
+			U(t,t_0)=e^{iH_S(t-t_0)/\hbar}
+		\end{equation}
+		is a family of unitary operators such that $i\hbar\dfrac{\partial\psi}{\partial t}=H_S\psi$. By for some observable $A_S$, the operators carry a dependence such that
+		\begin{equation}
+			A_H=U^\dagger A_SU
+		\end{equation}
+		whereby taking the time derivative finds that
+		\begin{equation}
+			\frac{dA_H}{dt}=\left(\frac{i}{\hbar}U^\dagger H_S\right)A_SU+U^\dagger\left(\frac{\partial A_S}{\partial t}U\right)+U^\dagger A_S\left(-\frac{i}{\hbar}H_SU\right)
+		\end{equation}
+		Simplifying, we get that
+		\begin{equation}
+			\frac{dA_H}{dt}=\frac{i}{\hbar}U^\dagger\left(H_SA_S-A_SH_S\right)U+U^\dagger\frac{\partial A_S}{\partial t}U
+		\end{equation}
+		\begin{equation}
+			\frac{dA_H}{dt}=\frac{i}{\hbar}(H_HA_H-A_HH_H)+\frac{\partial A_H}{\partial t}
+		\end{equation}
+		and finally
+		\begin{equation}
+			i\hbar\frac{dA_H}{dt}=i\hbar\frac{\partial A_H}{\partial t}+[A_H,H_H]
+		\end{equation}
+		where $H_H$ is the Hamiltonian in the Heisenberg picture. What follows is that suppose a ket in the Schrodinger picture is given
+		\begin{equation}
+			\ket{\psi_S(t)}=U(t,t_0)\ket{\psi_S(t_0)}
+		\end{equation}
+		becomes the constant ket in the Heisenberg picture such that $\ket{\psi_H}=U(t,t_0)^\dagger\ket{\psi_S(t)}=\ket{\psi(t_0)}$ where the time-independence is removed. By the same formulation, we find that
+		\begin{equation}
+			\ket{\psi_H}=U(t,t_0)^\dagger\ket{\psi_S(t)}=\ket{\psi_S(t_0)}
+		\end{equation}
+		Finally, it is found that
+		\begin{equation}
+			H_H(t)=U(t,t_0)^\dagger H_S U(t,t_0)\longrightarrow H_H(t)=H_S
+		\end{equation}
+		where a few key points are added
+		\begin{itemize}
+			\item In the Heisenberg picture, the energy is constant.
+			\item As the resulting energy is constant, in order for the equation (10) to be correct, it must be that the same quantization rules were applied.
+			\item Heisenberg's matrix mechanics will only agree in the Schrodinger picture if the Born-Jordan quantization was used.
+		\end{itemize}
+
+\section{The Born-Jordan Quantization}
+		\textbf{The Born-Jordan Quantization.} The derivation is as follows. We introduce two differentiation techniques \cite{Born1926} such that for the operator
+		\begin{equation}
+			\textbf{y}=\prod_{m=1}^s\textbf{y}_{l_m}=\textbf{y}_{l_1}\textbf{y}_{l_2}\textbf{y}_{l_3}\ldots\textbf{y}_{l_s}
+		\end{equation}
+		the partial derivative with respect to $\textbf{y}_k$ is provided by
+		\begin{equation}
+			\left(\frac{d\textbf{y}}{d\textbf{y}_k}\right)_1=\sum_{r=1}^{s}\delta_{l,k}\prod_{m=r+1}^{s}\textbf{y}_{l_m}\prod_{m=1}^{r-1}\textbf{y}_{l_m}
+		\end{equation}
+		\begin{equation}
+			\left(\frac{d\textbf{y}}{d\textbf{y}_k}\right)_2=\lim_{\delta\to0}\frac{\textbf{y}(\textbf{y}_1,\textbf{y}_2,\ldots,\textbf{y}_k+\delta\textbf{I},\ldots,\textbf{y}_s)-\textbf{y}(\textbf{y}_1,\textbf{y}_2,\ldots,\textbf{y}_s)}{\delta}
+		\end{equation}
+		where the resulting quantization must let the two differentiations be the same. 
+		
+		\subsection{The partial derivative with respect to momentum}
+		For an arbitrary Hamiltonian $H(q,p)=p^mq^n$,
+		\begin{equation}
+			\textbf{H}=\sum_{j=0}^{n}a_j^{(n)}\textbf{q}^{n-j}\textbf{p}^m\textbf{q}^j=\sum_{j=0}^mb^{(m)}_j\textbf{p}^{m-j}\textbf{q}^n\textbf{p}^j
+		\end{equation}
+		Expanding, we find
+		\begin{equation}
+			\textbf{H}=a_0^{(n)}\textbf{p}^m\textbf{q}^n+a_1^{(n)}\textbf{q}\textbf{p}^m\textbf{q}^{n-1}+a_2^{(n)}\textbf{q}^2\textbf{p}^m\textbf{q}^{n-2}+\cdots
+		\end{equation}
+		and find the derivative of each term using two definitons of the partial derivative. For the first definition, we have the following:
+		\begin{align}
+			\left(\frac{\partial\textbf{p}^m\textbf{q}^n}{\partial\textbf{p}}\right)_1&=\textbf{p}^{m-1}\textbf{q}^n+\textbf{p}^{m-2}\textbf{q}^n\textbf{p}+\textbf{p}^{m-3}\textbf{q}^n\textbf{p}^{2}+\cdots+\textbf{q}^n\textbf{p}^{m-1} \\
+			\left(\frac{\partial\textbf{q}\textbf{p}^m\textbf{q}^{n-1}}{\partial\textbf{p}}\right)_1&=\textbf{p}^{m-1}\textbf{q}^n+\textbf{p}^{m-2}\textbf{q}^n\textbf{p}+\textbf{p}^{m-3}\textbf{q}^n\textbf{p}^{2}+\cdots+\textbf{q}^n\textbf{p}^{m-1} \\
+			\left(\frac{\partial\textbf{q}^2\textbf{p}^m\textbf{q}^{n-2}}{\partial\textbf{p}}\right)_1&=\textbf{p}^{m-1}\textbf{q}^n+\textbf{p}^{m-2}\textbf{q}^n\textbf{p}+\textbf{p}^{m-3}\textbf{q}^n\textbf{p}^{2}+\cdots+\textbf{q}^n\textbf{p}^{m-1}
+		\end{align}
+		for which the same pattern emerges for all terms. Thus, we can generalize this formulation such that
+		\begin{equation}
+			\left( \frac{\partial\textbf{H}}{\partial\textbf{p}}\right)_1=\sum_{k=0}^na_k^{(n)}\sum_{j=0}^{m-1}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-1-j}
+		\end{equation}
+		where the constant $\sum_{k=0}^na_k^{(n)=1}$ is normalized. Thus
+		\begin{equation}
+						\left( \frac{\partial\textbf{H}}{\partial\textbf{p}}\right)_1=\sum_{j=0}^{m-1}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-1-j}
+		\end{equation}
+		We now find the derivative of $\textbf{H}$ using the second defintion. Allow,
+		\begin{align}
+			\left( \frac{\partial\textbf{p}^m\textbf{q}^n}{\partial\textbf{p}}\right)_2&=\lim_{\delta\to0}\frac{(\textbf{p}+\delta\textbf{I})^m\textbf{q}^n-\textbf{p}^m\textbf{q}^n}{\delta}=\lim_{\delta\to0}\frac{\left(	\displaystyle \sum_{k=0}^{m}\binom{m}{k}\textbf{p}^{m-k}(\delta\textbf{I})^k\right)\textbf{q}^n-\textbf{p}^m\textbf{q}^n}{\delta} \\
+			&=\lim_{\delta\to0}\frac{\left(\displaystyle \sum_{k=1}^{m}\binom{m}{k}\textbf{p}^{m-k}(\delta\textbf{I})^k\right)\textbf{q}^n}{\delta}=\lim_{\delta\to0}m\textbf{p}^{m-1}\textbf{q}^n=m\textbf{p}^{m-1}\textbf{q}^n\\
+			\left( \frac{\partial\textbf{q}\textbf{p}^m\textbf{q}^{n-1}}{\partial\textbf{p}}\right)_2&=\lim_{\delta\to0}\frac{\textbf{q}(\textbf{p}+\delta\textbf{I})^m\textbf{q}^{n-1}-\textbf{q}\textbf{p}^m\textbf{q}^{n-1}}{\delta}=\lim_{\delta\to0}\frac{\textbf{q}\left(	\displaystyle \sum_{k=0}^{m}\binom{m}{k}\textbf{p}^{m-k}(\delta\textbf{I})^k\right)\textbf{q}^{n-1}-\textbf{q}\textbf{p}^m\textbf{q}^{n-1}}{\delta} \\
+			&=\lim_{\delta\to0}\frac{\textbf{q}\left(\displaystyle \sum_{k=1}^{m}\binom{m}{k}\textbf{p}^{m-k}(\delta\textbf{I})^k\right)\textbf{q}^{n-1}}{\delta}=\lim_{\delta\to0}m\textbf{q}\textbf{p}^{m-1}\textbf{q}^{n-1}=m\textbf{q}\textbf{p}^{m-1}\textbf{q}^{n-1} \\
+			\left( \frac{\partial\textbf{q}^2\textbf{p}^m\textbf{q}^{n-2}}{\partial\textbf{p}}\right)_2&=\lim_{\delta\to0}\frac{\textbf{q}^2(\textbf{p}+\delta\textbf{I})^m\textbf{q}^{n-2}-\textbf{q}^2\textbf{p}^m\textbf{q}^{n-2}}{\delta}=\lim_{\delta\to0}\frac{\textbf{q}^2\left(	\displaystyle \sum_{k=0}^{m}\binom{m}{k}\textbf{p}^{m-k}(\delta\textbf{I})^k\right)\textbf{q}^{n-2}-\textbf{q}^2\textbf{p}^m\textbf{q}^{n-2}}{\delta} \\
+			&=\lim_{\delta\to0}\frac{\textbf{q}^2\left(\displaystyle \sum_{k=1}^{m}\binom{m}{k}\textbf{p}^{m-k}(\delta\textbf{I})^k\right)\textbf{q}^{n-2}}{\delta}=\lim_{\delta\to0}m\textbf{q}^2\textbf{p}^{m-1}\textbf{q}^{n-2}=m\textbf{q}^2\textbf{p}^{m-1}\textbf{q}^{n-2}
+		\end{align}
+		Thus, we can generalize this formulation such that
+		\begin{equation}
+			\left( \frac{\partial\textbf{H}}{\partial\textbf{p}}\right)_2=m\sum_{j=0}^{n}a_j^{(n)}\textbf{q}^j\textbf{p}^{m-1}\textbf{q}^{n-j}
+		\end{equation}
+		and equating the two differentials together, we find
+		\begin{align}
+			\left( \frac{\partial\textbf{H}}{\partial\textbf{p}}\right)_1&=\left( \frac{\partial\textbf{H}}{\partial\textbf{p}}\right)_2\\
+			\sum_{j=0}^{m-1}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-1-j}&=m\sum_{j=0}^{n}a_j^{(n)}\textbf{q}^j\textbf{p}^{m-1}\textbf{q}^{n-j}\label{eqn:ref2}
+		\end{align}
+		Recall that the Born-Jordan image is found using
+		\begin{align}
+			\textbf{B}_{m,n}\coloneqq\frac{1}{n+1}\sum_{j=0}^n\textbf{q}^j\textbf{p}^m\textbf{q}^{n-j}&=\frac{1}{m+1}\sum_{j=0}^{m}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-j} \\
+			\textbf{B}_{m-1,n}\coloneqq\frac{1}{n+1}\sum_{j=0}^n\textbf{q}^j\textbf{p}^m\textbf{q}^{n-j}&=\frac{1}{m}\sum_{j=0}^{m}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-1-j} \label{eqn:ref1}
+		\end{align}
+		using \ref{eqn:ref1}, we rewrite \ref{eqn:ref2},
+		\begin{equation}
+			\frac{m}{n+1}\sum_{j=0}^{n}\textbf{q}^j\textbf{p}^{m-1}\textbf{q}^{n-j}\label{eqn:ref2}=m\sum_{j=0}^{n}a_j^{(n)}\textbf{q}^j\textbf{p}^{m-1}\textbf{q}^{n-j}
+		\end{equation}
+		It must be that $a_j^{(n)}=\dfrac{1}{n+1}$. The Hamiltonian $\textbf{H}$ should be written
+		\begin{equation}
+			\textbf{H}=\frac{1}{n+1}\sum_{j=0}^n\textbf{q}^j\textbf{p}^m\textbf{q}^{n-j}
+		\end{equation}
+		
+		\subsection{The partial derivative with respect to position}
+		We similarly do the operations for the partial derivative with respect to the position $\textbf{q}$.
+		Expanding, we find
+		\begin{equation}
+			\textbf{H}=b_0^{(n)}\textbf{q}^n\textbf{p}^m+b_1^{(n)}\textbf{p}\textbf{q}^n\textbf{p}^{m-1}+b_2^{(n)}\textbf{p}^2\textbf{q}^m\textbf{q}^{n-2}+\cdots
+		\end{equation}
+		and find the derivative of each term using two definitons of the partial derivative. For the first definition, we have the following:
+		\begin{align}
+			\left(\frac{\partial\textbf{q}^m\textbf{p}^n}{\partial\textbf{q}}\right)_1&=\textbf{q}^{n-1}\textbf{p}+\textbf{q}^{n-2}\textbf{p}^m\textbf{q}+\textbf{q}^{n-3}\textbf{p}^m\textbf{q}^{2}+\cdots+\textbf{p}^m\textbf{q}^{n-1} \\
+			\left(\frac{\partial\textbf{p}\textbf{q}^n\textbf{p}^{m-1}}{\partial\textbf{q}}\right)_1&=\textbf{q}^{n-1}\textbf{p}+\textbf{q}^{n-2}\textbf{p}^m\textbf{q}+\textbf{q}^{n-3}\textbf{p}^m\textbf{q}^{2}+\cdots+\textbf{p}^m\textbf{q}^{n-1} \\
+			\left(\frac{\partial\textbf{p}^2\textbf{q}^n\textbf{p}^{m-2}}{\partial\textbf{p}}\right)_1&=\textbf{q}^{n-1}\textbf{p}+\textbf{q}^{n-2}\textbf{p}^m\textbf{q}+\textbf{q}^{n-3}\textbf{p}^m\textbf{q}^{2}+\cdots+\textbf{p}^m\textbf{q}^{n-1}
+		\end{align}
+		for which the same pattern emerges for all terms. Thus, we can generalize this formulation such that
+		\begin{equation}
+			\left( \frac{\partial\textbf{H}}{\partial\textbf{q}}\right)_1=\sum_{k=0}^mb_k^{(m)}\sum_{j=0}^{n-1}\textbf{q}^j\textbf{p}^m\textbf{q}^{n-1-j}
+		\end{equation}
+		where the constant $\sum_{k=0}^nb_k^{(m)=1}$ is normalized. Thus
+		\begin{equation}
+			\left( \frac{\partial\textbf{H}}{\partial\textbf{q}}\right)_1=\sum_{j=0}^{n-1}\textbf{q}^j\textbf{p}^m\textbf{q}^{n-1-j}
+		\end{equation}
+		We now find the derivative of $\textbf{H}$ using the second defintion. Allow,
+		\begin{align}
+			\left( \frac{\partial\textbf{q}^n\textbf{p}^m}{\partial\textbf{q}}\right)_2&=\lim_{\delta\to0}\frac{(\textbf{q}+\delta\textbf{I})^n\textbf{p}^m-\textbf{q}^n\textbf{p}^m}{\delta}=\lim_{\delta\to0}\frac{\left(	\displaystyle \sum_{k=0}^{n}\binom{n}{k}\textbf{q}^{n-k}(\delta\textbf{I})^k\right)\textbf{p}^m-\textbf{q}^n\textbf{p}^m}{\delta} \\
+			&=\lim_{\delta\to0}\frac{\left(\displaystyle \sum_{k=1}^{n}\binom{n}{k}\textbf{q}^{n-k}(\delta\textbf{I})^k\right)\textbf{p}^m}{\delta}=\lim_{\delta\to0}n\textbf{q}^{n-1}\textbf{p}^n=n\textbf{q}^{n-1}\textbf{p}^m\\
+			\left( \frac{\partial\textbf{p}\textbf{q}^n\textbf{p}^{m-1}}{\partial\textbf{q}}\right)_2&=\lim_{\delta\to0}\frac{\textbf{p}(\textbf{q}+\delta\textbf{I})^n\textbf{p}^{m-1}-\textbf{p}\textbf{q}^n\textbf{p}^{m-1}}{\delta}=\lim_{\delta\to0}\frac{\textbf{p}\left(	\displaystyle \sum_{k=0}^{n}\binom{n}{k}\textbf{q}^{n-k}(\delta\textbf{I})^k\right)\textbf{p}^{m-1}-\textbf{p}\textbf{q}^n\textbf{p}^{m-1}}{\delta} \\
+			&=\lim_{\delta\to0}\frac{\textbf{p}\left(\displaystyle \sum_{k=1}^{n}\binom{n}{k}\textbf{q}^{n-k}(\delta\textbf{I})^k\right)\textbf{p}^{m-1}}{\delta}=\lim_{\delta\to0}n\textbf{p}\textbf{q}^{n-1}\textbf{p}^{m-1}=n\textbf{p}\textbf{q}^{n-1}\textbf{p}^{m-1} \\
+			\left( \frac{\partial\textbf{p}^2\textbf{q}^n\textbf{p}^{m-2}}{\partial\textbf{q}}\right)_2&=\lim_{\delta\to0}\frac{\textbf{p}^2(\textbf{q}+\delta\textbf{I})^n\textbf{p}^{m-2}-\textbf{p}^2\textbf{q}^n\textbf{p}^{m-2}}{\delta}=\lim_{\delta\to0}\frac{\textbf{p}^2\left(	\displaystyle \sum_{k=0}^{n}\binom{n}{k}\textbf{q}^{n-k}(\delta\textbf{I})^k\right)\textbf{p}^{m-2}-\textbf{p}^2\textbf{q}^n\textbf{p}^{m-2}}{\delta} \\
+			&=\lim_{\delta\to0}\frac{\textbf{p}^2\left(\displaystyle \sum_{k=1}^{n}\binom{n}{k}\textbf{p}^{n-k}(\delta\textbf{I})^k\right)\textbf{p}^{m-2}}{\delta}=\lim_{\delta\to0}n\textbf{p}^2\textbf{q}^{n-1}\textbf{p}^{m-2}=n\textbf{p}^2\textbf{q}^{n-1}\textbf{p}^{m-2}
+		\end{align}
+		Thus, we can generalize this formulation such that
+		\begin{equation}
+			\left( \frac{\partial\textbf{H}}{\partial\textbf{q}}\right)_2=n\sum_{j=0}^{m}b_j^{(m)}\textbf{p}^j\textbf{q}^{n-1}\textbf{p}^{m-j}
+		\end{equation}
+		and equating the two differentials together, we find
+		\begin{align}
+			\left( \frac{\partial\textbf{H}}{\partial\textbf{q}}\right)_1&=\left( \frac{\partial\textbf{H}}{\partial\textbf{q}}\right)_2\\
+			\sum_{j=0}^{n-1}\textbf{q}^j\textbf{p}^m\textbf{q}^{n-1-j}&=n\sum_{j=0}^{m}b_j^{(m)}\textbf{p}^j\textbf{q}^{n-1}\textbf{p}^{m-j}\label{eqn:ref4}
+		\end{align}
+		Recall that the Born-Jordan image is found using
+		\begin{align}
+			\textbf{B}_{m,n}\coloneqq\frac{1}{n+1}\sum_{j=0}^n\textbf{q}^j\textbf{p}^m\textbf{q}^{n-j}&=\frac{1}{m+1}\sum_{j=0}^{m}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-j} \\
+			\textbf{B}_{m,n-1}\coloneqq\frac{1}{n}\sum_{j=0}^n\textbf{q}^j\textbf{p}^m\textbf{q}^{n-1-j}&=\frac{1}{m+1}\sum_{j=0}^{m}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-j} \label{eqn:ref3}
+		\end{align}
+		using \ref{eqn:ref3}, we rewrite \ref{eqn:ref4},
+		\begin{equation}
+			\frac{n}{m+1}\sum_{j=0}^{m}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-j} =n\sum_{j=0}^{m}b_j^{(m)}\textbf{p}^j\textbf{q}^{n-1}\textbf{p}^{m-j}
+		\end{equation}
+		It must be that $b_j^{(m)}=\dfrac{1}{m+1}$. The Hamiltonian $\textbf{H}$ should be written
+		\begin{equation}
+			\textbf{H}=\frac{1}{m+1}\sum_{j=0}^m\textbf{p}^j\textbf{q}^n\textbf{p}^{m-j}
+		\end{equation}
+		We can see therefore that the partial derivatives are only variations of the Born-Jordan images, that is
+		\begin{eqnarray}
+			\left(\frac{\partial\textbf{B}_{m,n}}{\partial\textbf{p}}\right)_1=\left(\frac{\partial\textbf{B}_{m,n}}{\partial\textbf{p}}\right)_2&=m\textbf{B}_{m-1,n} \\
+			\left(\frac{\partial\textbf{B}_{m,n}}{\partial\textbf{q}}\right)_1=\left(\frac{\partial\textbf{B}_{m,n}}{\partial\textbf{q}}\right)_2&=n\textbf{B}_{m,n-1}
+		\end{eqnarray}
+		
+\section{The Differential Quotient of First-Type}
+We consider the differential quotient of first-type for images of the Weyl and simplest symmetrization.
+	\subsection{Weyl-generated images}
+	We find the partial derivative with respect to the momentum. From the definition of the Weyl image from \ref{eqn:weyl}
+	\begin{equation}
+		\textbf{T}_{m,n}=\frac{1}{2^n}\sum_{j=0}^n\binom{n}{j}\textbf{q}^j\textbf{p}^m\textbf{q}^{n-j}=\frac{1}{2^n}\left(\binom{n}{0}\textbf{p}^m\textbf{q}^n+\binom{n}{1}\textbf{q}\textbf{p}^m\textbf{q}^{n-1}+\binom{n}{2}\textbf{q}^2\textbf{p}^m\textbf{q}^{n-2}+\cdots+\binom{n}{n}\textbf{q}^n\textbf{p}^m\right) 
+	\end{equation}
+	where we find the images of each of the terms to be
+	\begin{align}
+		\left(\frac{\partial\textbf{p}^m\textbf{q}^n}{\partial\textbf{p}}\right)_1&=\textbf{p}^{m-1}\textbf{q}+\textbf{p}^{m-2}\textbf{q}^n\textbf{p}+\textbf{p}^{m-3}\textbf{q}^n\textbf{p}^{2}+\cdots+\textbf{q}^n\textbf{p}^{m-1} \\
+		\left(\frac{\partial\textbf{q}\textbf{p}^m\textbf{q}^{n-1}}{\partial\textbf{p}}\right)_1&=\textbf{p}^{m-1}\textbf{q}+\textbf{p}^{m-2}\textbf{q}^n\textbf{p}+\textbf{p}^{m-3}\textbf{q}^n\textbf{p}^{2}+\cdots+\textbf{q}^n\textbf{p}^{m-1} \\
+		\left(\frac{\partial\textbf{q}^2\textbf{p}^m\textbf{q}^{n-2}}{\partial\textbf{p}}\right)_1&=\textbf{p}^{m-1}\textbf{q}+\textbf{p}^{m-2}\textbf{q}^n\textbf{p}+\textbf{p}^{m-3}\textbf{q}^n\textbf{p}^{2}+\cdots+\textbf{q}^n\textbf{p}^{m-1}
+	\end{align}
+	where we can generalize such that
+	\begin{equation}
+		\left(\frac{\partial\textbf{T}_{m,n}}{\partial\textbf{p}}\right)_1=\frac{1}{2^n}\sum_{k=0}^n\binom{n}{k}\sum_{j=0}^{m-1}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-1-j}
+	\end{equation}
+	but $\displaystyle\sum_{k=0}^n\binom{n}{k}=2^n$. Thus
+	\begin{equation}
+		\left(\frac{\partial\textbf{T}_{m,n}}{\partial\textbf{p}}\right)_1=\sum_{j=0}^{m-1}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-1-j}=m\textbf{B}_{m-1,n}
+	\end{equation}
+	Similarly, for the partial derivative with respect to the position, we define the terms to be
+	\begin{equation}
+		\textbf{T}_{m,n}=\frac{1}{2^m}\sum_{j=0}^m\binom{m}{j}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-j}=\frac{1}{2^m}\left(\binom{m}{0}\textbf{q}^n\textbf{p}^m+\binom{m}{1}\textbf{p}\textbf{q}^n\textbf{p}^{m-1}+\binom{m}{2}\textbf{q}^2\textbf{p}^m\textbf{q}^{n-2}+\cdots+\binom{m}{m}\textbf{p}^m\textbf{q}^n\right) 
+	\end{equation}
+	where we find the images of each of the terms to be
+	\begin{align}
+		\left(\frac{\partial\textbf{q}^m\textbf{p}^n}{\partial\textbf{q}}\right)_1&=\textbf{q}^{n-1}\textbf{p}^m+\textbf{q}^{n-2}\textbf{p}^m\textbf{q}+\textbf{q}^{n-3}\textbf{p}^m\textbf{q}^{2}+\cdots+\textbf{p}^m\textbf{q}^{n-1} \\
+		\left(\frac{\partial\textbf{p}\textbf{q}^n\textbf{p}^{m-1}}{\partial\textbf{q}}\right)_1&=\textbf{q}^{n-1}\textbf{p}^m+\textbf{q}^{n-2}\textbf{p}^m\textbf{q}+\textbf{q}^{n-3}\textbf{p}^m\textbf{q}^{2}+\cdots+\textbf{p}^m\textbf{q}^{n-1} \\
+		\left(\frac{\partial\textbf{p}^2\textbf{q}^n\textbf{p}^{m-2}}{\partial\textbf{p}}\right)_1&=\textbf{q}^{n-1}\textbf{p}^m+\textbf{q}^{n-2}\textbf{p}^m\textbf{q}+\textbf{q}^{n-3}\textbf{p}^m\textbf{q}^{2}+\cdots+\textbf{p}^m\textbf{q}^{n-1}
+	\end{align}
+	where we can generalize such that
+	\begin{equation}
+		\left(\frac{\partial\textbf{T}_{m,n}}{\partial\textbf{q}}\right)_1=\frac{1}{2^m}\sum_{k=0}^m\binom{m}{k}\sum_{j=0}^{n-1}\textbf{q}^j\textbf{p}^m\textbf{q}^{n-1-j}
+	\end{equation}
+	but $\displaystyle\sum_{k=0}^m\binom{m}{k}=2^n$. Thus
+	\begin{equation}
+		\left(\frac{\partial\textbf{T}_{m,n}}{\partial\textbf{q}}\right)_1=\sum_{j=0}^{n-1}\textbf{q}^j\textbf{p}^m\textbf{q}^{n-1-j}=n\textbf{B}_{m,n-1}
+	\end{equation}
+	\subsection{Simplest symmetrization generated terms}
+	Consider the generated images from simplest symmetrization
+	\begin{equation}
+		\textbf{S}_{m,n}\coloneqq\frac{1}{2}(\textbf{p}^m\textbf{q}^n+\textbf{q}^n\textbf{p}^m)
+	\end{equation}
+	where we find the partial derivative of each term to be
+	\begin{align}
+		\left( \frac{\partial\textbf{S}_{m,n}}{\partial\textbf{p}}\right)_1&=\frac{1}{2}\left(2[\textbf{p}^{m-1}\textbf{q}^n+\textbf{p}^{m-2}\textbf{q}^n\textbf{p}+\textbf{p}^{m-3}\textbf{q}^n\textbf{p}^2+\cdots+\textbf{q}^n\textbf{p}^{m-1}]\right)=m\textbf{B}_{m-1,n}
+	\end{align}
+	Similarly, for the partial derivative with respect to the position, we define
+	\begin{align}
+		\left( \frac{\partial\textbf{S}_{m,n}}{\partial\textbf{q}}\right)_1&=\frac{1}{2}\left(2[\textbf{q}^{n-1}\textbf{p}^m+\textbf{q}^{n-2}\textbf{p}^m\textbf{q}+\textbf{q}^{n-3}\textbf{p}^m\textbf{q}^2+\cdots+\textbf{p}^m\textbf{q}^{n-1}]\right)=n\textbf{B}_{m,n-1}
+	\end{align}
+	
+	We see, from the given derivations, the differential quotient of first type leads us to the Born-Jordan images with index shift $m-1$ and $n-1$ for differentials of momentum and position, respectively.
+	\begin{eqnarray}
+		\left(\frac{\partial\textbf{T}_{m,n}}{\partial\textbf{p}}\right)_1=\left(\frac{\partial\textbf{S}_{m,n}}{\partial\textbf{p}}\right)_1=\left(\frac{\partial\textbf{B}_{m,n}}{\partial\textbf{p}}\right)_1&=m\textbf{B}_{m-1,n} \\
+		\left(\frac{\partial\textbf{T}_{m,n}}{\partial\textbf{q}}\right)_1=\left(\frac{\partial\textbf{S}_{m,n}}{\partial\textbf{q}}\right)_1=\left(\frac{\partial\textbf{B}_{m,n}}{\partial\textbf{q}}\right)_1&=n\textbf{B}_{m,n-1}
+	\end{eqnarray}
+	
+\section{Modifications to the Differential Quotient of First Type}
+We now consider modifications to the formulation of the differential quotient of first type.
+\subsection{Differential quotient with Weyl basis}
+Allow the modification such that
+\begin{equation}
+	\left( \frac{\partial\textbf{y}}{\partial\textbf{y}_k}\right)_W=\frac{n}{2^{n-1}}\sum_{r=1}^s\delta_{l_r,k}\binom{n-1}{l-1}\prod_{m=r+1}^s\textbf{y}_{l_m}\prod_{m=1}^{r-1}\textbf{y}_{l_m}
+\end{equation}
+We use this to calculate for the partial derivative with respect to momentum and position for the quantization images mentioned here. Starting with the Weyl images, we have
+\begin{equation}
+	\textbf{T}_{m,n}=\frac{1}{2^n}\sum_{j=0}^n\binom{n}{j}\textbf{q}^j\textbf{p}^m\textbf{q}^{n-j}=\frac{1}{2^n}\left(\binom{n}{0}\textbf{p}^m\textbf{q}^n+\binom{n}{1}\textbf{q}\textbf{p}^m\textbf{q}^{n-1}+\binom{n}{2}\textbf{q}^2\textbf{p}^m\textbf{q}^{n-2}+\cdots+\binom{n}{n}\textbf{q}^n\textbf{p}^m\right) 
+\end{equation}
+and finding the image's derivative, we find
+\begin{multline}
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{p}}\right)_W=\frac{1}{2^n}\frac{m}{2^{m-1}}\biggl(\binom{n}{0}\left[\binom{m-1}{0}\textbf{p}^{m-1}\textbf{q}^n+\binom{m-1}{1}\textbf{p}^{m-2}\textbf{q}^n\textbf{p}+\cdots+\binom{m-1}{m-1}\textbf{q}^n\textbf{p}^{m-1}\right]\\+\binom{n}{1}\left[\binom{m-1}{0}\textbf{p}^{m-1}\textbf{q}^n+\binom{m-1}{1}\textbf{p}^{m-2}\textbf{q}^n\textbf{p}+\cdots+\binom{m-1}{m-1}\textbf{q}^n\textbf{p}^{m-1}\right]+\cdots\\+\binom{n}{n}\left[\binom{m-1}{0}\textbf{p}^{m-1}\textbf{q}^n+\binom{m-1}{1}\textbf{p}^{m-2}\textbf{q}^n\textbf{p}+\cdots+\binom{m-1}{m-1}\textbf{q}^n\textbf{p}^{m-1}\right]\biggr) 
+\end{multline}
+which simplifies to
+\begin{equation}
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{p}}\right)_W=\frac{1}{2^n}\frac{m}{2^{m-1}}\sum_{k=0}^{n}\binom{n}{k}\sum_{j=0}^{m-1}\binom{m-1}{j}\textbf{p}^j\textbf{q}^{n}\textbf{p}^{m-1-j}
+\end{equation}
+but $\displaystyle\sum_{k=0}^n\binom{n}{k}=2^n$. Thus
+\begin{equation}
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{p}}\right)_W=\frac{m}{2^{m-1}}\sum_{j=0}^{m-1}\binom{m-1}{j}\textbf{p}^j\textbf{q}^{n}\textbf{p}^{m-1-j}=m\textbf{T}_{m-1,n}
+\end{equation}
+Similarly, for the case of the partial derivative with respect to the position, we find that
+\begin{multline}
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{q}}\right)_W=\frac{1}{2^m}\frac{n}{2^{n-1}}\biggl(\binom{m}{0}\left[\binom{n-1}{0}\textbf{q}^{n-1}\textbf{p}^m+\binom{n-1}{1}\textbf{q}^{n-2}\textbf{p}^m\textbf{q}+\cdots+\binom{n-1}{n-1}\textbf{p}^m\textbf{q}^{n-1}\right]\\+\binom{m}{1}\left[\binom{n-1}{0}\textbf{q}^{n-1}\textbf{p}^m+\binom{n-1}{1}\textbf{q}^{n-2}\textbf{p}^m\textbf{q}+\cdots+\binom{n-1}{n-1}\textbf{p}^m\textbf{q}^{n-1}\right]+\cdots\\+\binom{m}{m}\left[\binom{n-1}{0}\textbf{q}^{n-1}\textbf{p}^m+\binom{n-1}{1}\textbf{q}^{n-2}\textbf{p}^m\textbf{q}+\cdots+\binom{n-1}{n-1}\textbf{p}^m\textbf{q}^{n-1}\right]\biggr) 
+\end{multline}
+which simplifies to
+\begin{equation}
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{q}}\right)_W=\frac{1}{2^m}\frac{n}{2^{n-1}}\sum_{k=0}^m\binom{m}{k}\sum_{j=0}^{n-1}\binom{n-1}{j}\textbf{q}^j\textbf{p}^{m}\textbf{q}^{n-1-j}
+\end{equation}
+but $\displaystyle\sum_{k=0}^m\binom{m}{k}=2^n$. Thus
+\begin{equation}
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{q}}\right)_W=\frac{n}{2^{n-1}}
+	\sum_{j=0}^{n-1}\binom{n-1}{j}\textbf{q}^j\textbf{p}^{m}\textbf{q}^{n-1-j}=n\textbf{T}_{m,n-1}
+\end{equation}
+
+As for the simplest symmetrization images, we have
+\begin{equation}
+	\textbf{S}_{m,n}\coloneqq\frac{1}{2}(\textbf{p}^m\textbf{q}^n+\textbf{q}^n\textbf{p}^m)
+\end{equation}
+and finding the image's derivative, we find
+\begin{multline}
+	\left(\frac{\partial\textbf{S}_{m,n}}{\partial\textbf{p}}\right)_W=\frac{1}{2}\frac{m}{2^{m-1}}\biggl(\left[\binom{m-1}{0}\textbf{p}^{m-1}\textbf{q}^n+\binom{m-1}{1}\textbf{p}^{m-2}\textbf{q}^n\textbf{p}+\cdots+\binom{m-1}{m-1}\textbf{q}^n\textbf{p}^{m-1}\right]\\+\left[\binom{m-1}{0}\textbf{p}^{m-1}\textbf{q}^n+\binom{m-1}{1}\textbf{p}^{m-2}\textbf{q}^n\textbf{p}+\cdots+\binom{m-1}{m-1}\textbf{q}^n\textbf{p}^{m-1}\right]\biggr)
+\end{multline}
+which simplifies to
+\begin{equation}
+	\left(\frac{\partial\textbf{S}_{m,n}}{\partial\textbf{p}}\right)_W=\frac{m}{2^{m-1}}\sum_{j=0}^{m-1}\binom{m-1}{j}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-1-j}=m\textbf{T}_{m-1,n}
+\end{equation}
+Similarly, for the case of the partial derivative with respect to the position, we find that
+\begin{multline}
+		\left(\frac{\partial\textbf{S}_{m,n}}{\partial\textbf{q}}\right)_W=\frac{1}{2}\frac{n}{2^{n-1}}\biggl(\left[\binom{n-1}{0}\textbf{q}^{n-1}\textbf{p}^m+\binom{n-1}{1}\textbf{q}^{n-2}\textbf{p}^m\textbf{q}+\cdots+\binom{n-1}{n-1}\textbf{p}^m\textbf{q}^{n-1}\right]\\+\left[\binom{n-1}{0}\textbf{q}^{n-1}\textbf{p}^m+\binom{n-1}{1}\textbf{q}^{n-2}\textbf{p}^m\textbf{q}+\cdots+\binom{n-1}{n-1}\textbf{p}^m\textbf{q}^{n-1}\right]\biggr)
+\end{multline}
+which simplifies to
+\begin{equation}
+	\left(\frac{\partial\textbf{S}_{m,n}}{\partial\textbf{q}}\right)_W=\frac{n}{2^{n-1}}\sum_{j=0}^{n-1}\binom{n-1}{j}\textbf{q}^j\textbf{p}^m\textbf{q}^{n-1-j}=n\textbf{T}_{m,n-1}
+\end{equation}
+
+For the Born-Jordan images, we find for the terms
+\begin{equation}
+	\textbf{B}_{m,n}\coloneqq\frac{1}{n+1}\sum_{j=0}^n\textbf{q}^j\textbf{p}^m\textbf{q}^{n-j}=\frac{1}{n+1}\left(\textbf{p}^m\textbf{q}^n+\textbf{q}\textbf{p}^m\textbf{q}^{n-1}+\textbf{q}^2\textbf{p}^m\textbf{q}^{n-2}+\cdots+\textbf{q}^n\textbf{p}^m\right)
+\end{equation}
+and finding the image's derivative, we find
+\begin{multline}
+	\left( \frac{\partial\textbf{B}_{m,n}}{\partial\textbf{p}}\right)_W=\frac{m}{2^{m-1}}\frac{1}{n+1}\biggl(\left[\binom{m-1}{0}\textbf{p}^{m-1}\textbf{q}^n+\binom{m-1}{1}\textbf{p}^{m-2}\textbf{q}^n\textbf{p}+\cdots+\binom{m-1}{m-1}\textbf{q}^n\textbf{p}^{m-1}\right]\\+\left[\binom{m-1}{0}\textbf{p}^{m-1}\textbf{q}^n+\binom{m-1}{1}\textbf{p}^{m-2}\textbf{q}^n\textbf{p}+\cdots+\binom{m-1}{m-1}\textbf{q}^n\textbf{p}^{m-1}\right]\\+\left[\binom{m-1}{0}\textbf{p}^{m-1}\textbf{q}^n+\binom{m-1}{1}\textbf{p}^{m-2}\textbf{q}^n\textbf{p}+\cdots+\binom{m-1}{m-1}\textbf{q}^n\textbf{p}^{m-1}\right]+\cdots\biggr)
+\end{multline}
+which continues repeatedly for $n+1$ terms. That is, simplifying
+\begin{equation}
+	\left( \frac{\partial\textbf{B}_{m,n}}{\partial\textbf{p}}\right)_W=\frac{m}{2^{m-1}}\frac{1}{n+1}\sum_{j=0}^{m-1}\binom{m-1}{j}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-1-j}(n+1)=m\textbf{T}_{m-1,n}
+\end{equation}
+Similarly, for the case of the partial derivative with respect to the position, we find that
+\begin{multline}
+	\left( \frac{\partial\textbf{B}_{m,n}}{\partial\textbf{q}}\right)_W=\frac{n}{2^{n-1}}\frac{1}{m+1}\biggl(\left[\binom{n-1}{0}\textbf{q}^{n-1}\textbf{p}^m+\binom{n-1}{1}\textbf{q}^{n-2}\textbf{p}^m\textbf{q}+\cdots+\binom{n-1}{n-1}\textbf{p}^m\textbf{q}^{n-1}\right]\\+\left[\binom{n-1}{0}\textbf{q}^{n-1}\textbf{p}^m+\binom{n-1}{1}\textbf{q}^{n-2}\textbf{p}^m\textbf{q}+\cdots+\binom{n-1}{n-1}\textbf{p}^m\textbf{q}^{n-1}\right]\\+\left[\binom{n-1}{0}\textbf{q}^{n-1}\textbf{p}^m+\binom{n-1}{1}\textbf{q}^{n-2}\textbf{p}^m\textbf{q}+\cdots+\binom{n-1}{n-1}\textbf{p}^m\textbf{q}^{n-1}\right]+\cdots\biggr)
+\end{multline}
+which continues repeatedly for $m+1$ terms. That is, simplifying
+\begin{equation}
+	\left( \frac{\partial\textbf{B}_{m,n}}{\partial\textbf{q}}\right)_W=\frac{n}{2^{n-1}}\frac{1}{m+1}\sum_{j=0}^{n-1}\binom{n-1}{j}\textbf{q}^j\textbf{p}^m\textbf{q}^{n-1-j}(m+1)=n\textbf{T}_{m,n-1}
+\end{equation}
+From this modified differential quotient, all of the results indicate that they are in the form of the Weyl images.
+\begin{eqnarray}
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{p}}\right)_W=\left( \frac{\partial\textbf{S}_{m,n}}{\partial\textbf{p}}\right)_W=\left( \frac{\partial\textbf{B}_{m,n}}{\partial\textbf{p}}\right)_W&=m\textbf{T}_{m-1,n} \\
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{q}}\right)_W=\left( \frac{\partial\textbf{S}_{m,n}}{\partial\textbf{q}}\right)_W=\left( \frac{\partial\textbf{B}_{m,n}}{\partial\textbf{q}}\right)_W&=n\textbf{T}_{m,n-1}
+\end{eqnarray}
+
+\subsection{Differential quotient with simplest symmetrization basis}
+Consider the modified formulation such that
+\begin{equation}
+	\left( \frac{\partial\textbf{y}}{\partial\textbf{y}_k}\right)_S=\frac{n}{2}\sum_{r=1}^s\delta_{l_r,k}(\delta_{l,1}+\delta_{l,k})\prod_{m=r+1}^s\textbf{y}_{l_m}\prod_{m=1}^{m-1}\textbf{y}_{l_m}
+\end{equation}
+We use this to calculate for the partial derivative with respect to momentum and position for the quantization images mentioned here. Starting with the Weyl images, we have
+\begin{equation}
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{p}}\right) _S=\frac{m}{2}\frac{1}{2^n}\left(\binom{n}{0}[\textbf{p}^{m-1}\textbf{q}^n+\textbf{q}^{n}\textbf{p}^{m-1}]+\binom{n}{1}[\textbf{p}^{m-1}\textbf{q}^n+\textbf{q}^{n}\textbf{p}^{m-1}]+\cdots+\binom{m}{m}[\textbf{p}^{m-1}\textbf{q}^n+\textbf{q}^{n}\textbf{p}^{m-1}]\right)
+\end{equation}
+which simplifies to
+\begin{equation}
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{p}}\right) _S=\frac{m}{2^{n+1}}\sum_{k=0}^n\binom{n}{k}(\textbf{p}^{m-1}\textbf{q}^n+\textbf{q}^n\textbf{p}^{m-1})
+\end{equation}
+but $\displaystyle\sum_{k=0}^n\binom{n}{k}=2^n$. Thus
+\begin{equation}
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{p}}\right) _S=\frac{m}{2}(\textbf{p}^{m-1}\textbf{q}^n+\textbf{q}^n\textbf{p}^{m-1})=m\textbf{S}_{m-1,n}
+\end{equation}
+Similarly, for the case of the partial derivative with respect to the position, we find that
+\begin{equation}
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{q}}\right) _S=\frac{n}{2}\frac{1}{2^m}\left(\binom{m}{0}[\textbf{q}^{n-1}\textbf{p}^m+\textbf{p}^m\textbf{q}^{n-1}]+\binom{m}{1}[\textbf{q}^{n-1}\textbf{p}^m+\textbf{p}^m\textbf{q}^{n-1}]+\cdots+\binom{m}{m}[\textbf{q}^{n-1}\textbf{p}^m+\textbf{p}^m\textbf{q}^{n-1}]\right)
+\end{equation}
+which simplifies to
+\begin{equation}
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{q}}\right) _S=\frac{n}{2^{m+1}}\sum_{k=0}^m\binom{m}{k}(\textbf{p}^{m}\textbf{q}^{n-1}+\textbf{q}^{n-1}\textbf{p}^{m})
+\end{equation}
+but $\displaystyle\sum_{k=0}^m\binom{m}{k}=2^m$. Thus
+\begin{equation}
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{q}}\right) _S=\frac{n}{2}(\textbf{p}^{m}\textbf{q}^{n-1}+\textbf{q}^{n-1}\textbf{p}^{m})=n\textbf{S}_{m,n-1}
+\end{equation}
+
+As for the simplest symmetrization images, we have
+\begin{equation}
+	\textbf{S}_{m,n}\coloneqq\frac{1}{2}(\textbf{p}^m\textbf{q}^n+\textbf{q}^n\textbf{p}^m)
+\end{equation}
+and finding the image's derivative, we find
+\begin{equation}
+	\left(\frac{\partial\textbf{S}_{m,n}}{\partial\textbf{p}}\right)_S=\frac{m}{2}\frac{1}{2}\left( [\textbf{p}^{m-1}\textbf{q}+\textbf{q}^n\textbf{p}^{m-1}]+[\textbf{p}^{m-1}\textbf{q}+\textbf{q}^n\textbf{p}^{m-1}]\right) 
+\end{equation}
+which simplifies to
+\begin{equation}
+	\left(\frac{\partial\textbf{S}_{m,n}}{\partial\textbf{p}}\right)_S=\frac{m}{2}\left(\textbf{p}^{m-1}\textbf{q}^n+\textbf{q}^n\textbf{p}^{m-1}\right) =m\textbf{S}_{m-1,n}
+\end{equation}
+Similarly, for the case of the partial derivative with respect to the position, we find that
+\begin{equation}
+	\left(\frac{\partial\textbf{S}_{m,n}}{\partial\textbf{q}}\right)_S=\frac{n}{2}\frac{1}{2}\left( [\textbf{q}^{n-1}\textbf{p}^m+\textbf{p}^m\textbf{q}^{n-1}]+[\textbf{q}^{n-1}\textbf{p}+\textbf{p}^m\textbf{q}^{n-1}]\right) 
+\end{equation}
+which simplifies to
+\begin{equation}
+	\left(\frac{\partial\textbf{S}_{m,n}}{\partial\textbf{q}}\right)_S=\frac{n}{2}\left(\textbf{p}^{m}\textbf{q}^{n-1}+\textbf{q}^{n-1}\textbf{p}^{m}\right) =n\textbf{S}_{m,n-1}
+\end{equation}
+
+For the Born-Jordan images, we find for the terms
+\begin{equation}
+	\textbf{B}_{m,n}\coloneqq\frac{1}{n+1}\sum_{j=0}^n\textbf{q}^j\textbf{p}^m\textbf{q}^{n-j}=\frac{1}{n+1}\left(\textbf{p}^m\textbf{q}^n+\textbf{q}\textbf{p}^m\textbf{q}^{n-1}+\textbf{q}^2\textbf{p}^m\textbf{q}^{n-2}+\cdots+\textbf{q}^n\textbf{p}^m\right)
+\end{equation}
+and finding the image's derivative, we find
+\begin{equation}
+	\left( \frac{\partial\textbf{B}_{m,n}}{\partial\textbf{p}}\right)_S=\frac{m}{2}\frac{1}{n+1}\left([\textbf{p}^{m-1}\textbf{q}^n+\textbf{q}^n\textbf{p}^{m-1}]+[\textbf{p}^{m-1}\textbf{q}^n+\textbf{q}^n\textbf{p}^{m-1}]+[\textbf{p}^{m-1}\textbf{q}^n+\textbf{q}^n\textbf{p}^{m-1}]+\cdots\right) 
+\end{equation}
+which continues repeatedly for $n+1$ terms. That is, simplifying
+\begin{equation}
+	\left( \frac{\partial\textbf{B}_{m,n}}{\partial\textbf{p}}\right)_S=\frac{m}{2}\frac{1}{n+1}\left(\textbf{p}^{m-1}\textbf{q}^n+\textbf{q}^n\textbf{p}^{m-1}\right)(n+1)=\frac{m}{2}\left(\textbf{p}^{m-1}\textbf{q}^n+\textbf{q}^n\textbf{p}^{m-1}\right)=m\textbf{S}_{m-1,n}
+\end{equation}
+Similarly, for the case of the partial derivative with respect to the position, we find that
+\begin{equation}
+	\left( \frac{\partial\textbf{B}_{m,n}}{\partial\textbf{q}}\right)_S=\frac{n}{2}\frac{1}{m+1}\left([\textbf{q}^{n-1}\textbf{p}^m+\textbf{p}^m\textbf{q}^{n-1}]+[\textbf{q}^{n-1}\textbf{p}^m+\textbf{p}^m\textbf{q}^{n-1}]+[\textbf{q}^{n-1}\textbf{p}^m+\textbf{p}^m\textbf{q}^{n-1}]+\cdots\right) 
+\end{equation}
+which continues repeatedly for $n+1$ terms. That is, simplifying
+\begin{equation}
+	\left( \frac{\partial\textbf{B}_{m,n}}{\partial\textbf{q}}\right)_S=\frac{n}{2}\frac{1}{m+1}\left(\textbf{p}^{m}\textbf{q}^{n-1}+\textbf{q}^{n-1}\textbf{p}^{m}\right)(m+1)=\frac{n}{2}\left(\textbf{p}^{m}\textbf{q}^{n-1}+\textbf{q}^{n-1}\textbf{p}^{m}\right)=n\textbf{S}_{m,n-1}
+\end{equation}
+From this modified differential quotient, all of the results indicate that they are in the form of simplest symmetrization images.
+\begin{eqnarray}
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{p}}\right)_S=\left( \frac{\partial\textbf{S}_{m,n}}{\partial\textbf{p}}\right)_S=\left( \frac{\partial\textbf{B}_{m,n}}{\partial\textbf{p}}\right)_S&=m\textbf{S}_{m-1,n}\\
+	\left( \frac{\partial\textbf{T}_{m,n}}{\partial\textbf{q}}\right)_S=\left( \frac{\partial\textbf{S}_{m,n}}{\partial\textbf{q}}\right)_S=\left( \frac{\partial\textbf{B}_{m,n}}{\partial\textbf{q}}\right)_S&=n\textbf{S}_{m,n-1}
+\end{eqnarray}
+Redefining the original differential quotient of first type to leads to a preferred quantization. It can be observed that these modified differentiation rules cannot be generalized into arbitrary ordering, and that they are tailored to be consistent only in their respective basis.
+
+\section{The Differential Quotient of the Second-Type}
+The generality of the differential quotient of the second-type is explored. This method was explored in a paper titled "General Formulation of Quantum Analysis,"\cite{Suzuki} where quantum derivatives were developed for non-commutative operators in the Banach space, which utilizes the Leibniz rule.
+\subsection{Suzuki's Analysis}
+Suzuki's 1999 paper \cite{Suzuki} starts with the definition of the Gâteaux differential and (G)-differentiability, which begins through an explanation of the Banach space. 
+
+\begin{definition}
+	A \textbf{Banach space }is a normed space which is complete in the metric defined by its norm. This means that every Cauchy sequence is required to converge.\cite{Hille1996-oh,Suzuki,Rudin1990-le}
+\end{definition}
+The importance of working in Banach spaces lies in their completeness. Because every Cauchy sequence converges, limiting processes, such as those used to define derivatives, are well-behaved and remain within the space. In particular, the norm induces a metric given by $  d(x,y) := \|x - y\| = \|y - x\|  $. This completeness is crucial when studying differentiability, as it guarantees that the relevant limits exist in the space. This allows for the following defintion.
+\begin{definition}
+	Let $y=f(x)$ on $\mathscrsfs{X}$ to $\mathscrsfs{D}$ be defined on an finitely open set $\mathcal{D}$ and suppose that for every $x\in\mathcal{D}$ and $h\in\mathscrsfs{X}$ the quotient $[f(x+\zeta h)-f(x)]/\zeta$, which defined for $0<|\zeta|<\rho(x,h)$, tends to the unique limit as $\zeta\to0$. We then say that
+	\begin{enumerate}
+		\item $f(x)$ is (G)-differentiable in $\mathcal{D}$;
+		\item \begin{equation}
+			\delta f(x;h)=\delta_x^hf=\lim_{\zeta\to0}\frac{1}{\zeta}[f(x+\zeta h)-f(x)]
+		\end{equation}
+		\item $f(x)$ possesses a Gâteaux differential in $\mathcal{D}$.
+	\end{enumerate}
+\end{definition}
+
+At this juncture, it is important to dicuss the concept of \textit{homogeneity}.
+\begin{definition}
+	A function $f(x)$ defined on $\mathscrsfs{X}\text{ to }\mathscrsfs{D}$ is said to be homogeneous of degree $n$ if 
+	\begin{equation}
+		f(\alpha x)=\alpha^nf(x)
+	\end{equation}
+	and such a function is called bounded if there exists an $M>0$ such that
+	\begin{equation}
+		\|f(x)\|\leq M\|x\|^n
+	\end{equation} 
+\end{definition}
+For the purposes of this discussion, we define the Fréchet space.
+\begin{definition}
+	Let $y=f(x)$ on $\mathscrsfs{X}$ to $\mathscrsfs{D}$ be defined on an open set $\mathcal{D}$. We say that $f(x)$ is (F)-differentiable and possesses a total or a Fréchet differential on $\mathcal{D}$ if
+	\begin{enumerate}
+		\item $\delta(x;h)$ exists as a bounded homogeneous function of degree one in $h$;
+		\item \begin{equation}
+			\lim_{\|h\|\to0}\frac{1}{\|h\|}\|f(x+h)-f(x)-\delta f(x;h)\|
+		\end{equation}
+	\end{enumerate}
+\end{definition}
+And in fact, bullet 2 is actually implied by 1.
+\begin{theorem}
+	$f(x)$ is (G)-differentiable in the finitely open set $\mathcal{D}$ if and only if for every $x\in\mathcal{D}$ and $h\in\mathscrsfs{X}$, $f(x+\zeta h)$ is a holomorphic function of $\zeta$ when $|\zeta|<\rho(x,h).$
+\end{theorem}
+
+With the necessary requisites, we define an arbitrary operator $\textbf{A}$. Thus, the Gâteaux differential reads
+\begin{equation}
+	d\textbf{F}(\textbf{A})=\lim_{h\to0}\frac{\textbf{F}(\textbf{A}+hd\textbf{A})-f(\textbf{A})}{h}
+\end{equation}
+where $h\in\mathbb{C}$ and for a fixed operator $d\textbf{A}$. As the Gâteaux differential exists, the function $\textbf{F}(\textbf{A})$ is considered (G)-differentiable and exists as a bounded homogeneous function of degree one in $h$. Thus, the Fréchet differential reads
+\begin{equation}
+	\lim_{B\to0}\frac{\|\textbf{F}(\textbf{A}+\textbf{B})-\textbf{F}(\textbf{A})-\mathscrsfs{L}(\textbf{B})\|}{\|\textbf{B}\|}
+\end{equation}
+where $\mathscrsfs{L}$ is the Fréchet derivative. The differentiation $df(\textbf{A}/d\textbf{A})$ of $f(\textbf{A})$ with respect to $\textbf{A}$ in the analysis is represented by
+\begin{equation}
+	\frac{df(\textbf{A})}{d\textbf{A}}=f_1(\textbf{A},\delta_\textbf{A})\to d\textbf{F}(\textbf{A})=f_1(\textbf{A},\delta_\textbf{A})\cdot d\textbf{A}
+\end{equation}
+where $f_1(\textbf{A},\delta_\textbf{A})$ is expressed in terms of the relevant operator $\textbf{A}$ and the inner derivation $\delta_\textbf{A}$. This derivative is referred to as a \textit{hyperoperator}. This inner derivation allows $\delta_\textbf{A}\cdot Q\equiv[\textbf{A},Q]=\textbf{A}Q-Q\textbf{A}$.
+\begin{theorem}
+	When $\textbf{F}(\textbf{A})\in\mathcal{D}_\textbf{A}$, we have
+	\begin{equation}
+		\delta_\textbf{A}d\textbf{F}(\textbf{A})=\delta_{\textbf{F}(\textbf{A})}d\textbf{A}
+	\end{equation}
+	and consequently
+	\begin{equation}
+		d\textbf{F}(\textbf{A})=\delta_{\textbf{A}\to d\textbf{A}}\textbf{F}(\textbf{A})=\int_0^1\textbf{F}^{(1)}(\textbf{A}-t\delta_\textbf{A})dt\cdot d\textbf{A}=\frac{\delta_{\textbf{F}(\textbf{A})}}{\delta_{d\textbf{A}}}\cdot d\textbf{A}
+	\end{equation}
+	for any choice of definitions of the diﬀerential $d\textbf{F}(\textbf{A})$.
+\end{theorem}
+With this, we can rewrite
+\begin{equation}
+	d\textbf{F}(\textbf{A})=\lim_{h\to0}\frac{\textbf{F}(\textbf{A}+hd\textbf{A})-f(\textbf{A})}{h}=\frac{d\textbf{F}(\textbf{A})}{d\textbf{A}}\cdot d\textbf{A}
+\end{equation}
+which follows the following theorem.
+\begin{theorem}[Invariance of the Quantum Derivative]
+	When $\textbf{F}(\textbf{A})\in\mathcal{D}_\textbf{A}$, the quantum derivative $d\textbf{F}(\textbf{A})/d\textbf{A}$ is invariant for any choice of definitions of the diﬀerential $d\textbf{F}(\textbf{A})$ satisfying the Leibniz rule, and it is given by
+	\begin{equation}
+		\frac{d\textbf{F}(\textbf{A})}{d\textbf{A}}=\frac{\delta_{\textbf{F}(\textbf{A})}}{\delta_{d\textbf{A}}}=\int_0^1\textbf{F}^{(1)}(\textbf{A}-t\delta_\textbf{A})dt
+	\end{equation}
+\end{theorem}
+where it is clear that regardless of the definitions of the differential of $d\textbf{F}(\textbf{A})$, the ratio of the two hyperoperators remains the same. It proves the invariance of the quantum derivative, different ways of defining the differential lead to the same quantum derivative (as long as they obey the Leibniz rule).
+
+Finally, we set so that auxiliary operator $\{\textbf{H}_j\}$ satisfy the following
+\begin{itemize}
+	\item $[\textbf{H}_j,\textbf{H}_k]=0$ for $j\neq k$
+	\item $[\textbf{H}_j,\textbf{A}_k]=0$ for $j\neq k$
+	\item $[\textbf{H}_j,[\textbf{H}_k,\textbf{A}_k]]=0$ for $j\neq k$
+	\item $[\textbf{H}_j,[\textbf{H}_j,\textbf{A}_j]]=0$
+\end{itemize}
+where using these auxiliary operators, we introduce the following partial differential
+\begin{equation}
+	d_j\textbf{F}\equiv[\textbf{H}_j,\textbf{F}]\equiv\delta_{\textbf{H}_j}\textbf{F}
+\end{equation}
+and thus
+\begin{equation}
+	d\textbf{F}(\textbf{A})=[\textbf{H},\textbf{F}(\textbf{A})]
+\end{equation}
+
+\subsection{The Theorems}
+As the mathematical foundation is established, we begin the derivation for the quantization using the differential quotient of second-type. Given the classical function $f=f(q,p)$, its partial derivative is given by
+\begin{equation}
+	\frac{\partial f(q,p)}{\partial p}=\lim_{\delta\to0}\frac{f(q,p+\delta)-f(q,p)}{\delta}\qquad\qquad\frac{\partial f(q,p)}{\partial q}=\lim_{\delta\to0}\frac{f(q+\delta,p)-f(q,p)}{\delta}
+\end{equation}
+and as such, for an operator function $\textbf{F}=\textbf{F}(\textbf{q},\textbf{p})$ the partial derivative are
+\begin{equation}
+	\frac{\partial\textbf{F}(\textbf{q},\textbf{p})}{\textbf{p}}=\lim_{\delta\to0}\frac{\textbf{F}(\textbf{q},\textbf{p}+\delta\textbf{I})-\textbf{F}(\textbf{q},\textbf{p})}{\delta}\qquad\qquad\frac{\partial\textbf{F}(\textbf{q},\textbf{p})}{\textbf{q}}=\lim_{\delta\to0}\frac{\textbf{F}(\textbf{q}+\delta\textbf{I},\textbf{p})-\textbf{F}(\textbf{q},\textbf{p})}{\delta}
+\end{equation}
+where the following is considered.
+\begin{theorem}
+	The differential quotient of second type is linear.
+\end{theorem}
+
+\begin{proof}
+	Consider two operator functions such that $\textbf{F}=\textbf{F}(\textbf{q},\textbf{p})$ and $\textbf{G}=\textbf{G}(\textbf{q},\textbf{p})$ and two scalars $a$ and $b$. Thus
+	\begin{equation}
+		\frac{\partial(a\textbf{F}+b\textbf{G})}{\partial \textbf{p}}=\lim_{\delta\to0}\frac{a\textbf{F}(\textbf{q},\textbf{p}+\delta\textbf{I})+b\textbf{G}(\textbf{q},\textbf{p}+\delta\textbf{I})-(a\textbf{F}(\textbf{q},\textbf{p})+b\textbf{G}(\textbf{q},\textbf{p}))}{\delta}
+	\end{equation}
+	Simplifying
+	\begin{equation}
+		\frac{\partial(a\textbf{F}+b\textbf{G})}{\partial \textbf{p}}=\lim_{\delta\to0}\frac{a\textbf{F}(\textbf{q},\textbf{p}+\delta\textbf{I})-a\textbf{F}(\textbf{q},\textbf{p})}{\delta}+\lim_{\delta\to0}\frac{b\textbf{G}(\textbf{q},\textbf{p}+\delta\textbf{I})-b\textbf{G}(\textbf{q},\textbf{p})}{\delta}
+	\end{equation}
+	and finally
+	\begin{equation}
+		\frac{\partial(a\textbf{F}+b\textbf{G})}{\partial \textbf{p}}=a\lim_{\delta\to0}\frac{\textbf{F}(\textbf{q},\textbf{p}+\delta\textbf{I})-\textbf{F}(\textbf{q},\textbf{p})}{\delta}+b\lim_{\delta\to0}\frac{\textbf{G}(\textbf{q},\textbf{p}+\delta\textbf{I})-\textbf{G}(\textbf{q},\textbf{p})}{\delta}=a\frac{\partial\textbf{F}}{\partial\textbf{p}}+b\frac{\partial\textbf{G}}{\partial\textbf{q}}
+	\end{equation}
+\end{proof}
+And without loss for generality,
+\begin{theorem}\label{thm: dqost}
+	Let $f(q,p)=p^mq^n$ with its arbitrarily-quantized quantum image $\textbf{F}(\textbf{q},\textbf{p})=\textbf{A}_{m,n}$. The partial derivative is given by
+	\begin{equation}
+		\frac{\partial f(q,p)}{\partial p}=mp^{m-1}q^n\longrightarrow\frac{\partial\textbf{F}(\textbf{q},\textbf{p})}{\partial\textbf{p}}=m\textbf{A}_{m-1,n}
+	\end{equation}
+	and
+	\begin{equation}
+		\frac{\partial f(q,p)}{\partial q}=np^{m}q^{n-1}\longrightarrow\frac{\partial\textbf{F}(\textbf{q},\textbf{p})}{\partial\textbf{q}}=n\textbf{A}_{m,n-1}
+	\end{equation}
+\end{theorem}
+\begin{proof}
+	Consider the operator function $\textbf{F}(\textbf{q},\textbf{p})=\textbf{A}_{m,n}=\displaystyle\sum_{j=0}^n a_j^{(n)}\textbf{q}^j\textbf{p}^m\textbf{q}^{n-j}$. Per the limit definition,
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial\textbf{p}}=\lim_{\delta\to0}\sum_{j=0}^n\frac{\textbf{q}^j(\textbf{p}+\delta\textbf{I})^m\textbf{q}^{n-j}-\textbf{q}^j\textbf{p}^m\textbf{q}^{n-j}}{\delta}
+	\end{equation}
+	and we expand the binomial term
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial\textbf{p}}=\lim_{\delta\to0}\sum_{j=0}^na_j^{(n)}\frac{\textbf{q}^j\left(\sum_{k=0}^m\binom{m}{k}\textbf{p}^{m-k}(\delta\textbf{I})^k\right)\textbf{q}^{n-j}-\textbf{q}^j\textbf{p}^m\textbf{q}^{n-j}}{\delta}=\lim_{\delta\to0}\sum_{j=0}^na_j^{(n)}\frac{\textbf{q}^j\sum_{k=1}^m\binom{m}{k}\textbf{p}^{m-k}\delta^k\textbf{q}^{n-j}}{\delta}
+	\end{equation}
+	and further simplifying\footnote{At $k>1$, we see that $\delta^k>\delta$, and proceeding terms $k>1$ are equal to 0.}
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial\textbf{p}}=m\sum_{j=0}^na_j^{(n)}\textbf{q}^j\textbf{p}^{m-1}\textbf{q}^{n-j}=m\textbf{A}_{m-1,n}
+	\end{equation}
+	
+	Next, consider that
+	$\textbf{F}(\textbf{q},\textbf{p})=\textbf{A}_{m,n}=\displaystyle\sum_{j=0}^n b_j^{(m)}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-j}$. Per the limit definition,
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial\textbf{p}}=\lim_{\delta\to0}\sum_{j=0}^n\frac{\textbf{q}^j(\textbf{p}+\delta\textbf{I})^m\textbf{q}^{n-j}-\textbf{q}^j\textbf{p}^m\textbf{q}^{n-j}}{\delta}
+	\end{equation}
+	and we expand the binomial term
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial\textbf{q}}=\lim_{\delta\to0}\sum_{j=0}^mb_j^{(m)}\frac{\textbf{p}^j\left(\sum_{k=0}^n\binom{n}{k}\textbf{q}^{n-k}(\delta\textbf{I})^k\right)\textbf{p}^{m-j}-\textbf{p}^j\textbf{q}^n\textbf{p}^{m-j}}{\delta}=\lim_{\delta\to0}\sum_{j=0}^mb_j^{(m)}\frac{\textbf{p}^j\sum_{k=1}^n\binom{n}{k}\textbf{q}^{n-k}\delta^k\textbf{p}^{m-j}}{\delta}
+	\end{equation}
+	and further simplifying\footnote{At $k>1$, we see that $\delta^k>\delta$, and proceeding terms $k>1$ are equal to 0.}
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial\textbf{q}}=n\sum_{j=0}^mb_j^{(m)}\textbf{p}^j\textbf{q}^{n-1}\textbf{p}^{m-j}=n\textbf{A}_{m,n-1}
+	\end{equation}
+\end{proof}
+For completeness, let's consider the problem of negative indices.
+\begin{theorem}
+	Let $f=f(q,p)=p^{-m}q^n$ with its arbitrarily-quantized quantum image $\textbf{F}(\textbf{q},\textbf{p})=\textbf{A}_{-m,n}$. The partial derivative with respect to the momentum is given by
+	\begin{equation}
+		\frac{\partial f(q,p)}{\partial p}=-mp^{-m-1}q^n\longrightarrow\frac{\partial\textbf{F}(\textbf{q},\textbf{p})}{\partial \textbf{p}}=-m\textbf{A}_{-m-1,n}
+	\end{equation}
+\end{theorem}
+\begin{proof}
+	Consider the image
+	\begin{equation}
+		\textbf{F}(\textbf{q},\textbf{p})=\textbf{A}_{-m,n}=\sum_{j=0}^na_j^{(n)}\textbf{q}^j\textbf{p}^m\textbf{q}^{n-j}
+	\end{equation}
+	such that we can define the derivative
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial \textbf{p}}=\lim_{\delta\to0}\sum_{j=0}^n\frac{a_j^{(n)}}{\delta}\left[\textbf{q}^j\left(\textbf{p}+\delta\textbf{I}\right)^{-m}\textbf{q}^{n-j}-\textbf{q}^j\textbf{p}^{-m}\textbf{q}^{n-j}\right]=\lim_{\delta\to0}\sum_{j=0}^n\frac{a_j^{(n)}}{\delta}\left[\textbf{q}^j\left\{(\textbf{p}+\delta\textbf{I})^{-m}-\textbf{p}^{-m}\right\}\textbf{q}^{n-j}\right]
+	\end{equation}
+	and we factor our a term $\textbf{p}^{-m}(\textbf{p}+\delta\textbf{I})^{-m}$
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial \textbf{p}}=\lim_{\delta\to0}\sum_{j=0}^n\frac{a_j^{(n)}}{\delta}\left[\textbf{q}^j\left\{(\textbf{p}+\delta\textbf{I})^{m}-\textbf{p}^{m}\right\}(\textbf{p}^{-m}(\textbf{p}+\delta\textbf{I})^{-m})\textbf{q}^{n-j}\right]
+	\end{equation}
+	and we expand the binomial
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial \textbf{p}}=\lim_{\delta\to0}\sum_{j=0}^n\frac{a_j^{(n)}}{\delta}\left[\textbf{q}^j\left\{\left(\textbf{p}^{m}-\sum_{k=0}^m\binom{m}{k}\textbf{p}^{m-k}(\delta\textbf{I})^k\right)\right\}(\textbf{p}^{-m}(\textbf{p}+\delta\textbf{I})^{-m})\textbf{q}^{n-j}\right]
+	\end{equation}
+	and produce the terms for $k=0$ such that
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial \textbf{p}}=\lim_{\delta\to0}\sum_{j=0}^n\frac{a_j^{(n)}}{\delta}\left[\textbf{q}^j\left\{\left(-\sum_{k=1}^m\binom{m}{k}\textbf{p}^{m-k}(\delta\textbf{I})^k\right)\right\}(\textbf{p}^{-m}(\textbf{p}+\delta\textbf{I})^{-m})\textbf{q}^{n-j}\right]
+	\end{equation}
+	and produce the terms for $k=1$ (and disregarding the rest as $\delta^k>\delta$), we find
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial \textbf{p}}=-m\sum_{j=0}^na_j^{(n)}\left[\textbf{q}^j\textbf{p}^{m-1}\textbf{p}^{-m}\textbf{p}^{-m}\textbf{q}^{n-j}\right]=-m\sum_{j=0}^na_j^{(n)}\textbf{q}^j\textbf{p}^{-m-1}\textbf{q}^{n-j}=-m\textbf{A}_{-m-1,n}
+	\end{equation}
+\end{proof}
+
+\begin{theorem}
+	Let $f=f(q,p)=p^{m}q^{-n}$ with its arbitrarily-quantized quantum image $\textbf{F}(\textbf{q},\textbf{p})=\textbf{A}_{m,-n}$. The partial derivative with respect to the position is given by
+	\begin{equation}
+		\frac{\partial f(q,p)}{\partial q}=-np^{m}q^{-n-1}\longrightarrow\frac{\partial\textbf{F}(\textbf{q},\textbf{p})}{\partial \textbf{q}}=-n\textbf{A}_{m,-n-1}
+	\end{equation}
+\end{theorem}
+\begin{proof}
+	Consider the image
+	\begin{equation}
+		\textbf{F}(\textbf{q},\textbf{p})=\textbf{A}_{m,-n}=\sum_{j=0}^mb_j^{(m)}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-j}
+	\end{equation}
+	such that we can define the derivative
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial \textbf{q}}=\lim_{\delta\to0}\sum_{j=0}^m\frac{b_j^{(m)}}{\delta}\left[\textbf{p}^j\left(\textbf{q}+\delta\textbf{I}\right)^{-n}\textbf{p}^{m-j}-\textbf{p}^j\textbf{q}^{-n}\textbf{p}^{m-j}\right]=\lim_{\delta\to0}\sum_{j=0}^m\frac{b_j^{(m)}}{\delta}\left[\textbf{p}^j\left\{(\textbf{q}+\delta\textbf{I})^{-n}-\textbf{q}^{-n}\right\}\textbf{p}^{m-j}\right]
+	\end{equation}
+	and we factor our a term $\textbf{q}^{-n}(\textbf{q}+\delta\textbf{I})^{-n}$
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial \textbf{q}}=\lim_{\delta\to0}\sum_{j=0}^m\frac{b_j^{(m)}}{\delta}\left[\textbf{p}^j\left\{(\textbf{q}+\delta\textbf{I})^{n}-\textbf{q}^{n}\right\}(\textbf{q}^{-n}(\textbf{q}+\delta\textbf{I})^{-n})\textbf{p}^{m-j}\right]
+	\end{equation}
+	and we expand the binomial
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial \textbf{q}}=\lim_{\delta\to0}\sum_{j=0}^n\frac{b_j^{(m)}}{\delta}\left[\textbf{p}^j\left\{\left(\textbf{q}^{n}-\sum_{k=0}^m\binom{n}{k}\textbf{q}^{n-k}(\delta\textbf{I})^k\right)\right\}(\textbf{q}^{-n}(\textbf{q}+\delta\textbf{I})^{-n})\textbf{p}^{m-j}\right]
+	\end{equation}
+	and produce the terms for $k=0$ such that
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial \textbf{q}}=\lim_{\delta\to0}\sum_{j=0}^n\frac{b_j^{(m)}}{\delta}\left[\textbf{p}^j\left\{\left(-\sum_{k=1}^n\binom{n}{k}\textbf{q}^{n-k}(\delta\textbf{I})^k\right)\right\}(\textbf{q}^{-n}(\textbf{q}+\delta\textbf{I})^{-n})\textbf{p}^{m-j}\right]
+	\end{equation}
+	and produce the terms for $k=1$ (and disregarding the rest as $\delta^k>\delta$), we find
+	\begin{equation}
+		\frac{\partial \textbf{F}(\textbf{q},\textbf{p})}{\partial \textbf{q}}=-n\sum_{j=0}^nb_j^{(m)}\left[\textbf{p}^j\textbf{q}^{n-1}\textbf{q}^{-n}\textbf{q}^{-n}\textbf{p}^{m-j}\right]=-n\sum_{j=0}^nb_j^{(m)}\textbf{p}^j\textbf{q}^{-n-1}\textbf{p}^{m-j}=-n\textbf{A}_{m,-n-1}
+	\end{equation}
+\end{proof}
+
+This generalization allows us to say that for any arbitrary quantization $A_{m,n}$ that the partial derivative using the differential quotient of the second-type will be invariant. No specific quantization is preferred by the differential quotient of the second-type. Recall that the quantizations of the differential quotient of the first-type was found to be
+\begin{equation}
+	\left(\frac{\partial \textbf{T}_{m,n}}{\partial\textbf{p}}\right)_W=m\textbf{T}_{m-1,n}\qquad\qquad\left(\frac{\partial\textbf{T}_{m,n}}{\partial\textbf{q}}\right)_W=n\textbf{T}_{m,n-1}
+\end{equation}
+\begin{equation}
+	\left(\frac{\partial \textbf{S}_{m,n}}{\partial\textbf{p}}\right)_S=m\textbf{S}_{m-1,n}\qquad\qquad\left(\frac{\partial\textbf{S}_{m,n}}{\partial\textbf{q}}\right)_S=n\textbf{S}_{m,n-1}
+\end{equation}
+\begin{equation}
+	\left(\frac{\partial \textbf{B}_{m,n}}{\partial\textbf{p}}\right)_1=m\textbf{B}_{m-1,n}\qquad\qquad\left(\frac{\partial\textbf{B}_{m,n}}{\partial\textbf{q}}\right)_1=n\textbf{B}_{m,n-1}
+\end{equation}
+and by Theorem \ref{thm: dqost}, the following is considered true
+\begin{equation}
+	\left(\frac{\partial\textbf{T}_{m,n}}{\partial\textbf{p}}\right)_W=\left(\frac{\partial\textbf{T}_{m,n}}{\partial\textbf{p}}\right)_2\qquad\qquad\left(\frac{\partial\textbf{T}_{m,n}}{\partial\textbf{q}}\right)_W=\left(\frac{\partial\textbf{T}_{m,n}}{\partial\textbf{q}}\right)_2
+\end{equation}
+\begin{equation}
+	\left(\frac{\partial\textbf{S}_{m,n}}{\partial\textbf{p}}\right)_S=\left(\frac{\partial\textbf{S}_{m,n}}{\partial\textbf{p}}\right)_2\qquad\qquad\left(\frac{\partial\textbf{S}_{m,n}}{\partial\textbf{q}}\right)_S=\left(\frac{\partial\textbf{S}_{m,n}}{\partial\textbf{q}}\right)_2
+\end{equation}
+\begin{equation}
+	\left(\frac{\partial\textbf{B}_{m,n}}{\partial\textbf{p}}\right)_1=\left(\frac{\partial\textbf{B}_{m,n}}{\partial\textbf{p}}\right)_2\qquad\qquad\left(\frac{\partial\textbf{B}_{m,n}}{\partial\textbf{q}}\right)_1=\left(\frac{\partial\textbf{B}_{m,n}}{\partial\textbf{q}}\right)_2
+\end{equation}
+
+\begin{theorem}
+	For an arbitrarily-quantized operator$\textbf{F}(\textbf{q},\textbf{p})=\textbf{A}_{m,n}$ multiple differentiation with respect to the momentum yields
+	\begin{equation}
+		\frac{\partial^s\textbf{A}_{m,n}}{\partial\textbf{p}^s}=\frac{m!}{(m-s)!}\textbf{A}_{m-s,n}
+	\end{equation}
+	where $s\in\mathbb{Z}_+$. 
+\end{theorem}
+\begin{proof}
+	Using mathematical induction, we first assume that, from Theorem \ref{thm: dqost} that this theorem is applicable for $s=u$. Thus, the $s=u+1$th derivative is then
+	\begin{equation}
+		\frac{\partial^{u+1}{\textbf{A}_{m,n}}}{\partial\textbf{p}^{u+1}}=\frac{\partial}{\partial\textbf{p}}\left(\frac{n!}{(m-s)!}\textbf{A}_{m-s,n}\right)=\frac{m!}{(m-s)!}\lim_{\delta\to0}\sum_{j=0}^{m-s}\frac{a_j^{(n)}}{\delta}\left[\textbf{q}^j\left\{(\textbf{p}+\delta\textbf{I})^{m-s}-\textbf{p}^{m-s}\right\}\textbf{q}^{n-j}\right]
+	\end{equation}
+	and expanding the binomial term allows
+	\begin{equation}
+		\frac{\partial^{u+1}{\textbf{A}_{m,n}}}{\partial\textbf{p}^{u+1}}=\frac{m!}{(m-s)!}\lim_{\delta\to0}\sum_{j=0}^{m-s}\frac{a_j^{(n)}}{\delta}\left[\textbf{q}^j\left\{\left(\sum_{k=0}^{m-s}\binom{m-s}{k}\textbf{p}^{m-s-k}(\delta\textbf{I})^k\right)-\textbf{p}^{m-s}\right\}\textbf{q}^{n-j}\right]
+	\end{equation}
+	where allowing the binomial term be $k=0$ removes the term $-\textbf{p}^{m-s}$. 
+	\begin{equation}
+		\frac{\partial^{u+1}{\textbf{A}_{m,n}}}{\partial\textbf{p}^{u+1}}=\frac{m!}{(m-s)!}\lim_{\delta\to0}\sum_{j=0}^{m-s}\frac{a_j^{(n)}}{\delta}\left[\textbf{q}^j\left\{\left(\sum_{k=1}^{m-s}\binom{m-s}{k}\textbf{p}^{m-s-k}(\delta\textbf{I})^k\right)\right\}\textbf{q}^{n-j}\right]
+	\end{equation}
+	Further exploration of $k=1$ onwards removes all other terms altogether. 
+	\begin{equation}
+		\frac{\partial^{u+1}{\textbf{A}_{m,n}}}{\partial\textbf{p}^{u+1}}=\frac{m!}{(m-s)!}(m-s)\sum_{j=0}^{m-s}a_j^{(n)}\textbf{q}^j\textbf{p}^{m-s-1}\textbf{q}^{n-j}=
+	\end{equation}
+	Finally,
+	\begin{equation}
+		\frac{\partial^{u+1}{\textbf{A}_{m,n}}}{\partial\textbf{p}^{u+1}}=\frac{m!}{(m-s-1)!}\sum_{j=0}^{m-s}a_j^{(n)}\textbf{q}^j\textbf{p}^{m-s-1}\textbf{q}^{n-j}=\frac{m!}{(m-s-1)!}\textbf{A}_{m-s-1,n}
+	\end{equation}
+	Since it's applicable for all $s=u+1$, it must be its applicable for all $s\in\mathbb{Z}_+$.
+\end{proof}
+
+\begin{theorem}
+	For an arbitrarily-quantized operator$\textbf{F}(\textbf{q},\textbf{p})=\textbf{A}_{m,n}$ multiple differentiation with respect to the position yields
+	\begin{equation}
+		\frac{\partial^t\textbf{A}_{m,n}}{\partial\textbf{q}^t}=\frac{n!}{(n-t)!}\textbf{A}_{m,n-t}
+	\end{equation}
+	where $t\in\mathbb{Z}_+$. 
+\end{theorem}
+\begin{proof}
+	Using mathematical induction, we first assume that, from Theorem \ref{thm: dqost} that this theorem is applicable for $t=u$. Thus, the $t=u+1$th derivative is then
+	\begin{equation}
+		\frac{\partial^{u+1}{\textbf{A}_{m,n}}}{\partial\textbf{q}^{u+1}}=\frac{\partial}{\partial\textbf{q}}\left(\frac{n!}{(n-t)!}\textbf{A}_{m,n-t}\right)=\frac{n!}{(n-t)!}\lim_{\delta\to0}\sum_{j=0}^{n-t}\frac{b_j^{(m)}}{\delta}\left[\textbf{p}^j\left\{(\textbf{q}+\delta\textbf{I})^{n-t}-\textbf{q}^{n-t}\right\}\textbf{p}^{m-j}\right]
+	\end{equation}
+	and expanding the binomial term allows
+	\begin{equation}
+		\frac{\partial^{u+1}{\textbf{A}_{m,n}}}{\partial\textbf{q}^{u+1}}=\frac{n!}{(n-t)!}\lim_{\delta\to0}\sum_{j=0}^{n-t}\frac{b_j^{(m)}}{\delta}\left[\textbf{p}^j\left\{\left(\sum_{k=0}^{n-t}\binom{n-t}{k}\textbf{q}^{n-t-k}(\delta\textbf{I})^k\right)-\textbf{q}^{n-t}\right\}\textbf{p}^{m-j}\right]
+	\end{equation}
+	where allowing the binomial term be $k=0$ removes the term $-\textbf{q}^{n-t}$. 
+	\begin{equation}
+		\frac{\partial^{u+1}{\textbf{A}_{m,n}}}{\partial\textbf{q}^{u+1}}=\frac{n!}{(n-t)!}\lim_{\delta\to0}\sum_{j=0}^{n-t}\frac{b_j^{(m)}}{\delta}\left[\textbf{p}^j\left\{\left(\sum_{k=1}^{n-t}\binom{n-t}{k}\textbf{q}^{n-t-k}(\delta\textbf{I})^k\right)\right\}\textbf{p}^{m-j}\right]
+	\end{equation}
+	Further exploration of $k=1$ onwards removes all other terms altogether. 
+	\begin{equation}
+		\frac{\partial^{u+1}{\textbf{A}_{m,n}}}{\partial\textbf{q}^{u+1}}=\frac{n!}{(n-t)!}(n-t)\sum_{j=0}^{n-t}b_j^{(m)}\textbf{p}^j\textbf{q}^{n-t-1}\textbf{p}^{m-j}=
+	\end{equation}
+	Finally,
+	\begin{equation}
+		\frac{\partial^{u+1}{\textbf{A}_{m,n}}}{\partial\textbf{q}^{u+1}}=\frac{n!}{(n-t-1)!}\sum_{j=0}^{n-t}b_j^{(m)}\textbf{p}^j\textbf{q}^{n-t-1}\textbf{p}^{m-j}=\frac{n!}{(n-t-1)!}\textbf{A}_{m,n-t-1}
+	\end{equation}
+	Since it's applicable for all $t=u+1$, it must be its applicable for all $t\in\mathbb{Z}_+$.
+\end{proof}
+
+A few key points are to mind.
+\begin{itemize}
+	\item The theorems proven here are to provide a complete proof for the full compatibility of differentiation rules to the operator regime.
+	\item Such theorems are supposed to be consistent with classical rules of differentiation, and such rigor is applied to do so.
+\end{itemize}
+
+So far, the results have been consistent. In terms of multiple differentiation, it is evident that it follows the standard lowering exponent operation seen in polynomials with degree $n$. We apply in the case wherein it is possible for the indices to be negative.
+
+\begin{theorem}
+	For an arbitrarily-quantized operator $\textbf{A}_{-m,n}$, multiple differentiation with respect to the momentum	gives
+	\begin{equation}
+		\frac{\partial^s\textbf{A}_{-m,n}}{\partial\textbf{p}^s}=(-1)^{s}\frac{(m+s-1)!}{(m-1)!}\textbf{A}_{-m,n}
+	\end{equation}
+\end{theorem}
+\begin{proof}
+	Begin with the case such that we have
+	\begin{equation}
+		\frac{\partial^s\textbf{A}_{-m,n}}{\partial\textbf{p}^s}=\frac{(-m)!}{(-m-s)!}\textbf{A}_{-m,n}
+	\end{equation}
+	However, for such factorials, it is given by the gamma function, that is
+	\begin{equation}
+		\Gamma(z)=\int_0^\infty e^{-t}t^{z-1}~dt
+	\end{equation}
+	We begin using the introduction of the beta function, that is,
+	\begin{equation}
+		\text{B}(x,y)=\int_0^1t^{x-1}(1-t)^{y-1}~dt
+	\end{equation}
+	The gamma function and beta functions are connected by the following relation. Allow for the equations
+	\begin{equation}
+		\Gamma(x)\Gamma(y)=\left(\int_0^\infty e^{-u}u^{x-1}~du\right) \left(\int_0^\infty e^{-v}v^{y-1}~dv\right)=\int_0^\infty\int_0^\infty e^{-(u+v)}u^{x-1}v^{y-1}~du~dv
+	\end{equation}
+	and allow $s=u+v$ and $v=s-u$
+	\begin{equation}
+		\Gamma(x)\Gamma(y)=\int_0^\infty\int_0^\infty e^{-s}u^{x-1}(s-u)^{y-1}~du~ds=\int_0^\infty\int_0^\infty e^{-s}u^{x-1}\left(1-\frac{u}{s}\right)^{y-1}s^{y-1}~du~ds
+	\end{equation}
+	and allow for $t=\dfrac{u}{s}$ such that $u=st$ and $du=s~dt$
+	\begin{equation}
+		\Gamma(x)\Gamma(y)=\int_0^\infty\int_0^\infty e^{-s}(st)^{x-1}\left(1-t\right)^{y-1}s^{y}~dt~ds=\left(\int_0^\infty e^{-s}s^{x+y-1}~ds\right)\left(\int_0^1t^{x-1}(1-t)^{y-1}\right) 
+	\end{equation}
+	and see that
+	\begin{equation}
+		\Gamma(x)\Gamma(y)=\Gamma(x+y)\text{B}(x,y)\longrightarrow\text{B}(x,y)=\frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}
+	\end{equation}
+	
+	In the case for where $-z$ and $y=1+z$, we see that
+	\begin{equation}
+		\Gamma(-z)\Gamma(1+z)=\int_0^1t^{-z-1}(1-t)^{z}~dt=-\pi\csc(\pi z)\longrightarrow\Gamma(-z)=\frac{-\pi\csc{\pi z}}{\Gamma(1+z)}
+	\end{equation}
+	and we can rewrite the ratio of the multiple differentiation with respect to the momentum
+	\begin{equation}
+		\frac{(-m)!}{(-m-s)!}=\lim_{z\to m}\frac{(-z)!}{(-z-s)!}=\lim_{z\to m}\frac{\dfrac{-\pi\csc{\pi z}}{\Gamma(1+z)}}{\dfrac{-\pi\csc{\pi(z+s)}}{\Gamma(1+z+s)}}=\lim_{z\to m}\frac{\sin(\pi(z+s))\Gamma(1+z+s)}{\sin{(\pi z)}\Gamma(1+z)}=(-1)^s\frac{(m+s)!}{m!}
+	\end{equation}
+	by which the act of differentiation reduces the constant $m$ by acting as if a ladder operator. Thus the constant becomes $(-1)^s((m+s-1)!/(m-1)!)$. By mathematical induction, allow our theorem to be true when $s=u$. Then, for $s=u+1$,
+	\begin{equation}
+		\frac{\partial^{u+1}\textbf{A}_{-m,n}}{\partial\textbf{p}}=\frac{\partial}{\partial\textbf{p}}\left((-1)^u\frac{(m+u-1)!}{(m-1)!}\textbf{A}_{-m-u,n}\right) 
+	\end{equation}
+	and by taking the derivative
+	\begin{equation}
+		\frac{\partial^{u+1}\textbf{A}_{-m,n}}{\partial\textbf{p}}=(-1)^u\frac{(m+u-1)!}{(m-1)!}\lim_{\delta\to0}\sum_{j=0}^n\frac{a_j^{(n)}}{\delta}\textbf{q}^j\left[(\textbf{p}+\delta\textbf{I})^{-m-u}+\textbf{p}^{-m-u}\right]\textbf{q}^{n-j}
+	\end{equation}
+	
+	We turn our attention to the summation. We allow
+	\begin{equation}
+		\lim_{\delta\to0}\sum_{j=0}^n\frac{a_j^{(n)}}{\delta}\textbf{q}^j\left[(\textbf{p}+\delta\textbf{I})^{-m-u}+\textbf{p}^{-m-u}\right]\textbf{q}^{n-j}=\lim_{\delta\to0}\sum_{j=0}^n\frac{a_j^{(n)}}{\delta}\textbf{q}^j\left[\textbf{p}^{m+u}-(\textbf{p}+\delta\textbf{I})^{m+u}\right](\textbf{p}^{-m-u}(\textbf{p}+\delta\textbf{I})^{-m-u})\textbf{q}^{n-j}
+	\end{equation}
+	and expanding
+	\begin{equation}
+		\lim_{\delta\to0}\sum_{j=0}^n\frac{a_j^{(n)}}{\delta}\textbf{q}^j\left[\textbf{p}^{m+u}-\sum_{k=0}^{m+u}\binom{m+u}{k}\textbf{p}^{m+u-k}\delta^k\right](\textbf{p}^{-m-u}(\textbf{p}+\delta\textbf{I})^{-m-u})\textbf{q}^{n-j}
+	\end{equation}
+	where we further see that
+	\begin{equation}
+		\sum_{j=0}^n a_j^{(n)}\textbf{q}^j\left[-(m+u)\textbf{p}^{m+u-1}\right](\textbf{p}^{-m-u}\textbf{p}^{-m-u})\textbf{q}^{n-j}=-(m+u)\sum_{j=0}^n a_j^{(n)}\textbf{q}^j\textbf{p}^{-m-u-1}\textbf{q}^{n-j}
+	\end{equation}
+	
+	Finally, we return to our main equation,
+	\begin{equation}
+		\frac{\partial^{u+1}\textbf{A}_{-m,n}}{\partial\textbf{p}}=\frac{\partial}{\partial\textbf{p}}\left((-1)^u\frac{(m+u-1)!}{(m-1)!}\textbf{A}_{-m-u,n}\right) =(-1)^{u+1}\frac{(m+u)!}{(m-1)!}\textbf{A}_{-m-u-1,n}
+	\end{equation}
+	for which works for all $s=u+1$, and must therefore work for all $s\in\mathbb{Z}_+$.
+\end{proof}
+
+A similar theorem is proposed for the multiple partial derivative with respect to the position utilizing the reflection formula.
+\begin{theorem}
+	For an arbitrarily-quantized operator $\textbf{A}_{m,-n}$, multiple differentiation with respect to the position	gives
+	\begin{equation}
+		\frac{\partial^s\textbf{A}_{m,-n}}{\partial\textbf{q}^t}=(-1)^{t}\frac{(n+t-1)!}{(t-1)!}\textbf{A}_{m,-n-t}
+	\end{equation}
+\end{theorem}
+\begin{proof}
+By mathematical induction, allow our theorem to be true when $t=u$. Then, for $t=u+1$,
+\begin{equation}
+	\frac{\partial^{u+1}\textbf{A}_{m,-n}}{\partial\textbf{q}}=\frac{\partial}{\partial\textbf{q}}\left((-1)^u\frac{(n+u-1)!}{(n-1)!}\textbf{A}_{m,-n-t}\right) 
+\end{equation}
+and by taking the derivative
+\begin{equation}
+	\frac{\partial^{u+1}\textbf{A}_{m,-n}}{\partial\textbf{q}}=(-1)^u\frac{(n+t-1)!}{(n-1)!}\lim_{\delta\to0}\sum_{j=0}^m\frac{b_j^{(m)}}{\delta}\textbf{p}^j\left[(\textbf{q}+\delta\textbf{I})^{-n-u}+\textbf{q}^{-n-u}\right]\textbf{p}^{m-j}
+\end{equation}
+
+We turn our attention to the summation. We allow
+\begin{equation}
+	\lim_{\delta\to0}\sum_{j=0}^m\frac{b_j^{(m)}}{\delta}\textbf{p}^j\left[(\textbf{q}+\delta\textbf{I})^{-n-u}+\textbf{q}^{-n-u}\right]\textbf{p}^{m-j}=\lim_{\delta\to0}\sum_{j=0}^m\frac{b_j^{(m)}}{\delta}\textbf{p}^j\left[\textbf{q}^{n+u}-(\textbf{q}+\delta\textbf{I})^{n+u}\right](\textbf{q}^{-n-u}(\textbf{q}+\delta\textbf{I})^{-n-u})\textbf{p}^{m-j}
+\end{equation}
+and expanding
+\begin{equation}
+	\lim_{\delta\to0}\sum_{j=0}^m\frac{b_j^{(m)}}{\delta}\textbf{p}^j\left[\textbf{q}^{n+u}-\sum_{k=0}^{n+u}\binom{n+u}{k}\textbf{q}^{n+u-k}\delta^k\right](\textbf{q}^{-n-u}(\textbf{q}+\delta\textbf{I})^{-n-u})\textbf{p}^{m-j}
+\end{equation}
+where we further see that
+\begin{equation}
+	\sum_{j=0}^m b_j^{(m)}\textbf{p}^j\left[-(n+u)\textbf{q}^{n+u-1}\right](\textbf{q}^{-n-u}\textbf{q}^{-n-u})\textbf{p}^{m-j}=-(n+u)\sum_{j=0}^m b_j^{(m)}\textbf{p}^j\textbf{q}^{-n-u-1}\textbf{p}^{m-j}
+\end{equation}
+
+Finally, we return to our main equation,
+\begin{equation}
+	\frac{\partial^{u+1}\textbf{A}_{m,-n}}{\partial\textbf{q}}=\frac{\partial}{\partial\textbf{q}}\left((-1)^u\frac{(n+u-1)!}{(n-1)!}\textbf{A}_{m,n-u}\right) =(-1)^{u+1}\frac{(n+u)!}{(n-1)!}\textbf{A}_{m,-n-u-1}
+\end{equation}
+for which works for all $t=u+1$, and must therefore work for all $t\in\mathbb{Z}_+$.
+\end{proof}
+
+And finally, we prove for the compatibility of our operators on the invariance of order of differentiation.
+\begin{theorem}
+	The order of differentiation does not affect the resulting partial derivative. That is, for an arbitrarily-ordered operator $\textbf{A}_{m,n}$
+	\begin{equation}
+		\frac{\partial^{s+t}\textbf{A}_{m,n}}{\partial\textbf{q}^t\textbf{p}^s}=\frac{\partial^{s+t}\textbf{A}_{m,n}}{\partial\textbf{p}^s\textbf{q}^t}
+	\end{equation}
+	for $s,t\in\mathbb{Z}_+$.
+\end{theorem}
+\begin{proof}
+	Recall that for multiple differentiation with respect to the momentum
+	\begin{equation}
+		\frac{\partial^s\textbf{A}_{m,n}}{\partial\textbf{p}^s}=\frac{m!}{(m-s)!}\textbf{A}_{m-s,n}
+	\end{equation}
+	and taking the appropriate multiple differentiation with respect to the position
+	\begin{equation}
+		\frac{\partial^{s+t}\textbf{A}_{m,n}}{\partial\textbf{q}^t\partial\textbf{p}^s}=\frac{m!}{(m-s)!}\frac{\partial^t\textbf{A}_{m-s,n}}{\partial\textbf{q}^t}=\frac{m!}{(m-s)!}\frac{n!}{(n-t)!}\textbf{A}_{m-s,n-t}
+	\end{equation}
+	
+	Similarly, allow for the multiple differentiation with respect to the position
+	\begin{equation}
+		\frac{\partial^t\textbf{A}_{m,n}}{\partial\textbf{q}^t}=\frac{n!}{(n-t)!}\textbf{A}_{m,n-t}
+	\end{equation}
+	and taking the appropriate multiple differentiation with respect to the momentum
+	\begin{equation}
+		\frac{\partial^{s+t}\textbf{A}_{m,n}}{\partial\textbf{p}^s\partial\textbf{q}^t}=\frac{n!}{(n-t)!}\frac{\partial^s\textbf{A}_{m,n-t}}{\partial\textbf{p}^s}=\frac{n!}{(n-t)!}\frac{m!}{(m-s)!}\textbf{A}_{m-s,n-t}
+	\end{equation}
+	
+	We see that the differentiation order does affect result.
+	\begin{equation}
+		\frac{\partial^{s+t}\textbf{A}_{m,n}}{\partial\textbf{q}^t\partial\textbf{p}^s}=\frac{\partial^{s+t}\textbf{A}_{m,n}}{\partial\textbf{p}^s\partial\textbf{q}^t}
+	\end{equation}
+	
+	The order of $\textbf{q}$ and $\textbf{p}$ is irrelevant when dealing with quantum derivatives. This is interesting, as \textbf{q} and \textbf{p} do not commute.
+\end{proof}
+The product rule of differentiation and the rule for the differentiation of a function of a function will no longer be valid, in general. Only when all of the matrices that appear commute with each other will all of the rules of ordinary analysis be valid for this differentiation.
+
+\section{Quantization of the Hamilton Equations of Motion}
+The verification of the properties of the differentiation operation for operators allow us to prove the equivalence of the Hamilton equations of motion in the quantum regime. We provide the commutation relation for an arbitrary quantum image $\textbf{A}_{m,n}$.
+\begin{equation}
+	[\textbf{A}_{m,n},\textbf{q}]=\sum_{j=0}^na_j^{(n)}\textbf{q}^{j}\textbf{p}^m\textbf{q}^{n-j+1}-\sum_{j=0}^na_j^{(n)}\textbf{q}^{j+1}\textbf{p}^m\textbf{q}^{n-j}=\sum_{j=0}^na_j^{(n)}\textbf{q}^{j}\textbf{p}^m\textbf{q}^{n-j+1}-\sum_{j=0}^na_j^{(n)}\textbf{q}^{j}\textbf{q}\textbf{p}^m\textbf{q}^{n-j}
+\end{equation}
+
+From the right hand side formulation, we find for the commutator of the momentum with position $\textbf{q}$, in general, 
+\begin{equation}
+	\textbf{p}^m\textbf{q}-\textbf{q}\textbf{p}^m=-i\hbar m\textbf{p}^{m-1}
+\end{equation}
+from the relation
+\begin{equation}\label{eqn:Hq commutation}
+	[\textbf{p},\textbf{q}]=\textbf{p}\textbf{q}-\textbf{q}\textbf{p}=-i\hbar\textbf{I}
+\end{equation}
+
+By induction, where we say that \ref{eqn:Hq commutation} holds for all $m=k$
+\begin{equation}
+	[\textbf{p}^k,\textbf{q}]=\textbf{p}^k\textbf{q}-\textbf{q}\textbf{p}^k=-ik\hbar\textbf{\textbf{p}}^{k-1}
+\end{equation}
+Now, allow that $m=k+1$ by
+\begin{equation}
+	\textbf{p}[\textbf{p}^k,\textbf{q}]=\textbf{p}^{k+1}\textbf{q}-\textbf{p}\textbf{q}\textbf{p}^{k}=-ik\hbar\textbf{p}^{k}
+\end{equation}
+and using \ref{eqn:Hq commutation},
+\begin{align}
+	\textbf{p}[\textbf{p}^k,\textbf{q}]=\textbf{p}^{k+1}\textbf{q}-(\textbf{q}\textbf{p}-i\hbar\textbf{I})\textbf{p}^{k}&=-ik\hbar\textbf{p}^{k} \\
+	\textbf{p}^{k+1}\textbf{q}-\textbf{q}\textbf{p}^{k+1}&=-i(k+1)\hbar\textbf{p}^{k}
+\end{align}
+where the equality holds for all $m=k+1$ and must therefore hold for all $m$.
+
+We develop the commutation relation such
+\begin{align}
+	[\textbf{A}_{m,n},\textbf{q}]&=\sum_{j=0}^na_j^{(n)}\textbf{q}^{j}\textbf{p}^m\textbf{q}^{n-j+1}-\sum_{j=0}^na_j^{(n)}\textbf{q}^{j}(\textbf{p}^{m}\textbf{q}+i\hbar m\textbf{p}^{m-1})\textbf{q}^{n-j} \\
+	&=\sum_{j=0}^na_j^{(n)}\textbf{q}^{j}\textbf{p}^m\textbf{q}^{n-j+1}-\sum_{j=0}^na_j^{(n)}\textbf{q}^{j}\textbf{p}^{m}\textbf{q}\textbf{q}^{n-j}-i\hbar m\sum_{j=0}^na_j^{(n)}\textbf{q}^{j}\textbf{p}^{m-1}\textbf{q}^{n-j}  \\
+	[\textbf{A}_{m,n},\textbf{q}]&=-i\hbar m\sum_{j=0}^na_j^{(n)}\textbf{q}^{j}\textbf{p}^{m-1}\textbf{q}^{n-j}=-i\hbar m\textbf{A}_{m-1,n}
+\end{align}
+but recall that for a given arbitrary image $\textbf{A}_{m,n}$,
+\begin{equation}
+	\frac{\partial\textbf{A}_{m,n}}{\partial\textbf{p}}=m\textbf{A}_{m-1,n}
+\end{equation}
+and therefore,
+\begin{equation}
+	[\textbf{A}_{m,n},\textbf{q}]=-i\hbar \frac{\partial\textbf{A}_{m,n}}{\partial\textbf{p}}
+\end{equation}
+
+Similarly, the commutation relation is read as
+\begin{equation}
+	[\textbf{A}_{m,n},\textbf{p}]=\sum_{j=0}^mb_j^{(m)}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-j+1}-\sum_{j=0}^mb_j^{(m)}\textbf{p}^{j+1}\textbf{q}^{n}\textbf{p}^{m-j}
+\end{equation}
+and the right hand side can be rewritten using the same procedure as Eq. \ref{eqn:Hq commutation}
+
+From the right hand side formulation, we find for the commutator of the position with momentum $\textbf{p}$, in general, 
+\begin{equation}
+	\textbf{q}^n\textbf{p}-\textbf{p}\textbf{q}^n=i\hbar n\textbf{q}^{n-1}
+\end{equation}
+from the relation
+\begin{equation}\label{eqn:Hq commutation2}
+	[\textbf{q},\textbf{p}]=\textbf{q}\textbf{p}-\textbf{p}\textbf{q}=i\hbar\textbf{I}
+\end{equation}
+
+By induction, where we say that \ref{eqn:Hq commutation2} holds for all $n=k$
+\begin{equation}
+	[\textbf{q}^k,\textbf{p}]=\textbf{q}^k\textbf{p}-\textbf{p}\textbf{q}^k=ik\hbar\textbf{\textbf{q}}^{k-1}
+\end{equation}
+Now, allow that $n=k+1$ by
+\begin{equation}
+	\textbf{q}[\textbf{q}^k,\textbf{p}]=\textbf{q}^{k+1}\textbf{p}-\textbf{q}\textbf{p}\textbf{q}^{k}=ik\hbar\textbf{q}^{k}
+\end{equation}
+and using \ref{eqn:Hq commutation2},
+\begin{align}
+	\textbf{q}[\textbf{q}^k,\textbf{p}]=\textbf{q}^{k+1}\textbf{p}-(\textbf{p}\textbf{q}-i\hbar\textbf{I})\textbf{q}^{k}&=ik\hbar\textbf{q}^{k} \\
+	\textbf{q}^{k+1}\textbf{p}-\textbf{p}\textbf{q}^{k+1}&=i(k+1)\hbar\textbf{q}^{k}
+\end{align}
+where the equality holds for all $n=k+1$ and must therefore hold for all $n$.
+
+We develop the commutation relation as such
+\begin{align}
+	[\textbf{A}_{m,n},\textbf{p}]&=\sum_{j=0}^mb_j^{(m)}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-j+1}-\sum_{j=0}^mb_j^{(m)}\textbf{p}^{j}(\textbf{q}^n\textbf{p}-i\hbar n\textbf{q}^{n-1})\textbf{p}^{m-j} \\
+	&=\sum_{j=0}^mb_j^{(m)}\textbf{p}^j\textbf{q}^n\textbf{p}^{m-j+1}-\sum_{j=0}^mb_j^{(m)}\textbf{p}^{j}\textbf{q}^n\textbf{p}\textbf{p}^{m-j}+i\hbar n\sum_{j=0}^mb_j^{(m)}\textbf{p}^{j}\textbf{q}^{n-1}\textbf{p}^{m-j} \\
+	[\textbf{A}_{m,n},\textbf{p}]&=i\hbar n\sum_{j=0}^mb_j^{(m)}\textbf{p}^{j}\textbf{q}^{n-1}\textbf{p}^{m-j}=i\hbar n\textbf{A}_{m,n-1}
+\end{align}
+but recall that for a given arbitrary image $\textbf{A}_{m,n}$
+\begin{equation}
+	\frac{\partial\textbf{A}_{m,n}}{\partial\textbf{q}}=n\textbf{A}_{m,n-1}
+\end{equation}
+and therefore,
+\begin{equation}
+	[\textbf{A}_{m,n},\textbf{p}]=i\hbar\frac{\partial\textbf{A}_{m,n}}{\partial\textbf{q}}
+\end{equation}
+
+We note the following
+\begin{itemize}
+	\item Arbitrary ordering (Weyl, Born-Jordan, simplest-symmetrization) satisfies the quantum equations of motion.
+	\item The chioce of ordering does not affect the validity of the equations motion.
+	\item All the possible quantum images of the Hamiltonian will still exhibit the same quantum dynamical behavior and will display the correct quantum image, that is, if the main concern is if it satisfies the equations of motion (which it does).
+\end{itemize}
+
+\section{Conclusions}
+\begin{enumerate}
+	\item The study was able to express the Hamilton equations of motion in the quantum regime.
+	\item Initially, an equivalence of the Schrodinger and Heisenberg pictures of quantum mechanics was only made possible through Born-Jordan quantization.
+	\item It was seen, however, that the differentiation procedure (DQFT) laid out by Born and Jordan in their paper eventually leads to terms which are Born-Jordan images.
+	\item One could easily transform this DFQT by introducing necessary constants and terms (which are normalized) such that under quantization will result in terms which are either Weyl or simplest symmetrization.
+	\item Whilst the DQST is only applicable to the Born-Jordan quantization, through the Theorems, it was shown that any arbitrary quantization will produce a derivative in that arbitrary quantization's image.
+	\item The construction of the Hamilton equations of motion using any of the quantization rules will result to the correct quantum image. The dynamics of the operators follow the same behavior as the classical counterpart.
+\end{enumerate}
+
+\newpage
+\printbibliography
+
+\vspace{0.25cm}
+\begin{center}
+	{\Large\textbf{APPENDIX}}
+\end{center}
+We introduce the problem of the harmonic oscillator utilizing the quantization images shown here today. In the classical case, the harmonic oscillator is written as
+\begin{equation}\label{eqn:harmonic oscillator}
+	H=\frac{1}{2\mu}p^2+\frac{1}{2}\mu\omega^2q^2
+\end{equation}
+for mass $\mu$ and frequency $\omega$.
+
+\textbf{Weyl quantization.} Using Weyl quantization, the variables are transformed such that 
+\begin{equation}
+	p\mapsto\textbf{T}_{1,0}\qquad\qquad q\mapsto\textbf{T}_{0,1}
+\end{equation}
+and \ref{eqn:harmonic oscillator} is rewritten as
+\begin{equation}
+	\textbf{H}_W=\frac{1}{2\mu}\textbf{T}_{2,0}+\frac{1}{2}\mu\omega^2\textbf{T}_{0,2}
+\end{equation}
+and finding the commutator of the Hamiltonian with position gives
+\begin{equation}
+	[\textbf{H}_W,\textbf{T}_{0,1}]=\left[\frac{1}{2\mu}\textbf{T}_{2,0}\textbf{T}_{0,1}+\frac{1}{2}\mu\omega^2\textbf{T}_{0,2}\textbf{T}_{0,1}\right]-\left[\frac{1}{2\mu}\textbf{T}_{0,1}\textbf{T}_{2,0}+\frac{1}{2}\mu\omega^2\textbf{T}_{0,1}\textbf{T}_{0,2}\right]=\frac{1}{2\mu}[\textbf{T}_{2,0},\textbf{T}_{0,1}]-\frac{1}{2}\mu\omega^2[\textbf{T}_{0,2},\textbf{T}_{0,1}]
+\end{equation}
+
+\cite{Domingo2015} writes the explicit commutation relation for all quantization types. For Weyl quantization,
+\begin{multline}
+	[\textbf{T}_{m,n},\textbf{T}_{r,s}]=2\sum_{j=0}^\infty\frac{(i\hbar/2)^{2j+1}}{(2j+1)!}\sum_{k=0}^{2j+1}(-1)^k\binom{2j+1}{k}\frac{m!}{(m-k)!}\frac{n!}{(n-2j-1+k)!}\\\times\frac{r!}{(r-2j-1+k)!}\frac{s!}{(s-k)!}\textbf{T}_{m+r-2j-1,n+s-2j-1}
+\end{multline}
+where, for $m=2$, $s=1$, $n,r=0$, we find
+\begin{equation}
+	[\textbf{T}_{2,0},\textbf{T}_{0,1}]=2\sum_{j=0}^\infty\frac{(i\hbar/2)^{2j+1}}{(2j+1)!}\sum_{k=0}^{2j+1}(-1)^k\binom{2j+1}{k}\frac{2!}{(2-k)!}\frac{1}{(-2j-1+k)!}\frac{1}{(-2j-1+k)!}\frac{1!}{(1-k)!}\textbf{T}_{2-2j,-2j-1}
+\end{equation}
+In this case, the value of $k$ must not be so that it would produce negative factorials. We set $k=1$ as the maximum, letting $2j+1=0$ and $j=0$.
+\begin{equation}
+	[\textbf{T}_{2,0},\textbf{T}_{0,1}]=2(i\hbar/2)(-1)\frac{2!}{(1)!}\frac{1}{(0)!}\frac{1}{(0)!}\frac{1!}{(0)!}\textbf{T}_{1,0}=-i2\hbar\textbf{T}_{1,0}
+\end{equation}
+
+When $m,s=0$, $n=1$, and $r=2$,
+\begin{equation}
+	[\textbf{T}_{0,1},\textbf{T}_{2,0}]=2\sum_{j=0}^\infty\frac{(i\hbar/2)^{2j+1}}{(2j+1)!}\sum_{k=0}^{2j+1}(-1)^k\binom{2j+1}{k}\frac{0!}{(-k)!}\frac{1!}{(-2j+k)!}\frac{2!}{(1-2j+k)!}\frac{0!}{(-k)!}\textbf{T}_{1-2j,-2j}
+\end{equation}
+for which $k$ could only be zero otherwise negative factorials would appear. As $j$ could only be defined for integers, this commutator would need to be set to 0. Finally,
+\begin{equation}
+	[\textbf{H}_W,\textbf{T}_{0,1}]=\frac{1}{2\mu}[\textbf{T}_{2,0},\textbf{T}_{0,1}]-\frac{1}{2}\mu\omega^2[\textbf{T}_{0,1},\textbf{T}_{2,0}]=-\frac{i\hbar}{\mu}\textbf{T}_{1,0}
+\end{equation}
+
+By the Theorems, the derivative here is given
+\begin{equation}
+	\frac{\partial\textbf{H}_{W}}{\partial\textbf{p}}=\frac{1}{\mu}\textbf{T}_{1,0}
+\end{equation}
+and finally an equality is found
+\begin{equation}
+	[\textbf{H}_W,\textbf{q}]=-i\hbar\frac{\partial\textbf{H}_{W}}{\partial\textbf{p}}
+\end{equation}
+
+Similarly, we find the commutation relation with the momentum operator.
+\begin{equation}\label{eqn:weyl-momentum}
+	[\textbf{H}_W,\textbf{T}_{1,0}]=\frac{1}{2\mu}[\textbf{T}_{2,0},\textbf{T}_{1,0}]+\frac{1}{2}\mu\omega^2[\textbf{T}_{0,2},\textbf{T}_{1,0}]
+\end{equation}
+and the commutation relations are written
+\begin{equation}
+	[\textbf{T}_{2,0},\textbf{T}_{1,0}]=2\sum_{j=0}^\infty\frac{(i\hbar/2)^{2j+1}}{(2j+1)!}\sum_{k=0}^{2j+1}(-1)^k\binom{2j+1}{k}\frac{2!}{(2-k)!}\frac{1}{(-2j-1+k)!}\frac{1}{(-2j+k)!}\frac{1}{(-k)!}\textbf{T}_{2-2j,-2j}
+\end{equation}
+by which would only result in real values if $k=0$. As the value of $j$ is an integer, $j$ forces the commutator to be 0.
+\begin{equation}
+	[\textbf{T}_{2,0},\textbf{T}_{1,0}]=0
+\end{equation}
+
+Further,
+\begin{equation}
+	[\textbf{T}_{0,2},\textbf{T}_{1,0}]=2\sum_{j=0}^\infty\frac{(i\hbar/2)^{2j+1}}{(2j+1)!}\sum_{k=0}^{2j+1}(-1)^k\binom{2j+1}{k}\frac{1}{(-k)!}\frac{2!}{(1-2j+k)!}\frac{1}{(-2j+k)!}\frac{1}{(-k)!}\textbf{T}_{-2j,1-2j}
+\end{equation}
+by which we are forced to say that $k=0$ for the commutator to be real valued.
+\begin{equation}
+	[\textbf{T}_{0,2},\textbf{T}_{1,0}]=2\sum_{j=0}^\infty\frac{(i\hbar/2)^{2j+1}}{(2j+1)!}(2j+1)\frac{2!}{(1-2j)!}\frac{1}{(-2j)!}\textbf{T}_{-2j,1-2j}
+\end{equation}
+and further set $j=0$ such that the factorials are well-behaved.
+\begin{equation}
+	[\textbf{T}_{0,2},\textbf{T}_{1,0}]=2\frac{i\hbar}{2}\frac{2!}{1!}\frac{1}{0!}\textbf{T}_{0,1}=2i\hbar\textbf{T}_{0,1}
+\end{equation}
+
+We then write for Eq. \ref{eqn:weyl-momentum}
+\begin{equation}
+	[\textbf{H}_W,\textbf{T}_{1,0}]=i\hbar\mu\omega^2\textbf{T}_{0,1}
+\end{equation}
+
+In a similar fashion we compute for the derivative of $\textbf{H}_W$ with respect to the position
+\begin{equation}
+	\frac{\partial\textbf{H}_W}{\partial\textbf{q}}=\mu\omega^2\textbf{T}_{0,1}
+\end{equation}
+and find the equality to be
+\begin{equation}
+	[\textbf{H}_W,\textbf{p}]=i\hbar\frac{\partial\textbf{H}_W}{\partial\textbf{q}}
+\end{equation}
+
+\textbf{Simplest symmetrization}. The variables are transformed such that
+\begin{equation}
+	p\mapsto\textbf{S}_{1,0}\qquad\qquad q\mapsto\textbf{S}_{0,1}
+\end{equation}
+and that \ref{eqn:harmonic oscillator} is rewritten as
+\begin{equation}
+	\textbf{H}_S=\frac{1}{2\mu}\textbf{S}_{2,0}+\frac{1}{2}\mu\omega^2\textbf{S}_{0,2}
+\end{equation}
+and the commutation relation to be
+\begin{equation}
+	[\textbf{H}_S,\textbf{S}_{0,1}]=\frac{1}{2\mu}[\textbf{S}_{2,0},\textbf{S}_{0,1}]+\frac{1}{2}\mu\omega^2[\textbf{S}_{0,2},\textbf{S}_{0,1}]
+\end{equation}
+
+The commutation relation is written by \cite{Domingo2015} for simplest symmetrization
+\begin{multline}
+	[\textbf{S}_{m,n},\textbf{S}_{r,s}]=2\sum_{j=0}^{+\infty}\frac{(i\hbar/2)^{2j+1}}{(2j+1)!}\sum_{k=0}^{2j+1}\binom{2j+1}{k}(-1)^k\sum_{\ell=0}^{+\infty}\frac{(i\hbar/2)^{2\ell}}{(2\ell)!}\sum_{t=0}^{+\infty}\frac{(i\hbar/2)^{2t}}{(2t)!}\frac{m!}{(m-k-2\ell)!}\frac{n!}{(n-2j-1+k-2\ell)!}\\\times\frac{r!}{(r-2j-1+k-2t)!}\frac{s!}{(s-k-2t)!}\sum_{u=0}^{+\infty}\frac{(-i\hbar/2)^uE_u}{u!}\frac{(m+r-2j-1-2\ell-2t)!}{(m+r-2j-1-2\ell-2t-u)!}\\\times\frac{(n+s-2j-1-2\ell-2t)!}{(n+s-2j-1-2\ell-2t-u)!}\textbf{S}_{m+r-2j-1-2\ell-2t-u,n+s-2j-1-2\ell-2t-u}
+\end{multline}
+and thus
+\begin{multline}
+	[\textbf{S}_{2,0},\textbf{S}_{0,1}]=2\sum_{j=0}^{+\infty}\frac{(i\hbar/2)^{2j+1}}{(2j+1)!}\sum_{k=0}^{2j+1}\binom{2j+1}{k}(-1)^k\sum_{\ell=0}^{+\infty}\frac{(i\hbar/2)^{2\ell}}{(2\ell)!}\sum_{t=0}^{+\infty}\frac{(i\hbar/2)^{2t}}{(2t)!}\frac{2!}{(2-k-2\ell)!}\frac{1}{(-2j-1+k-2\ell)!}\\\times\frac{1}{(-2j-1+k-2t)!}\frac{1}{(1-k-2t)!}\sum_{u=0}^{+\infty}\frac{(-i\hbar/2)^uE_u}{u!}\frac{(1-2j-2\ell-2t)!}{(1-2j-2\ell-2t-u)!}\\\times\frac{(-2j-2\ell-2t)!}{(-2j-2\ell-2t-u)!}\textbf{S}_{1-2j-2\ell-2t-u,-2j-2\ell-2t-u}
+\end{multline}
+where for values of $j,\ell,t,u>0$ will result in negative factorials. We set $j,\ell,t,u=0$. In the case for $k$, we set $k=1$.
+\begin{equation}
+	[\textbf{S}_{2,0},\textbf{S}_{0,1}]=-2i\hbar\textbf{S}_{1,0}
+\end{equation}
+
+Similarly, the commutation relation is written
+\begin{multline}
+	[\textbf{S}_{0,2},\textbf{S}_{0,1}]=2\sum_{j=0}^{+\infty}\frac{(i\hbar/2)^{2j+1}}{(2j+1)!}\sum_{k=0}^{2j+1}\binom{2j+1}{k}(-1)^k\sum_{\ell=0}^{+\infty}\frac{(i\hbar/2)^{2\ell}}{(2\ell)!}\sum_{t=0}^{+\infty}\frac{(i\hbar/2)^{2t}}{(2t)!}\frac{1}{(-k-2\ell)!}\frac{2}{(1-2j+k-2\ell)!}\\\times\frac{1}{(-2j-1+k-2t)!}\frac{1}{(1-k-2t)!}\sum_{u=0}^{+\infty}\frac{(-i\hbar/2)^uE_u}{u!}\frac{(-2j-1-2\ell-2t)!}{(-2j-1-2\ell-2t-u)!}\\\times\frac{(2-2j-2\ell-2t)!}{(2-2j-2\ell-2t-u)!}\textbf{S}_{-2j-1-2\ell-2t-u,2-2j-2\ell-2t-u}=0
+\end{multline}
+where from the term $\dfrac{(-2j-1-2\ell-2t)!}{(-2j-1-2\ell-2t-u)!}$, for the factorials to be well-behaved, we set the whole commutator to 0. The same pattern of setting to 0 will occur if for either pair $m,r$ and $n,s$ are both zero to avoid retaining a $(-1)!$ term in the latter fractions. This allows us to declare $[\textbf{S}_{2,0},\textbf{S}_{1,0}]=0$
+
+For completeness, let's find $[\textbf{S}_{0,2},\textbf{S}_{1,0}]$:
+\begin{multline}
+	[\textbf{S}_{0,2},\textbf{S}_{1,0}]=2\sum_{j=0}^{+\infty}\frac{(i\hbar/2)^{2j+1}}{(2j+1)!}\sum_{k=0}^{2j+1}\binom{2j+1}{k}(-1)^k\sum_{\ell=0}^{+\infty}\frac{(i\hbar/2)^{2\ell}}{(2\ell)!}\sum_{t=0}^{+\infty}\frac{(i\hbar/2)^{2t}}{(2t)!}\frac{1}{(-k-2\ell)!}\frac{2}{(1-2j+k-2\ell)!}\\\times\frac{1}{(-2j+k-2t)!}\frac{1}{(-k-2t)!}\sum_{u=0}^{+\infty}\frac{(-i\hbar/2)^uE_u}{u!}\frac{(-2j-2\ell-2t)!}{(-2j-2\ell-2t-u)!}\\\times\frac{(1-2j-2\ell-2t)!}{(1-2j-2\ell-2t-u)!}\textbf{S}_{-2j-2\ell-2t-u,1-2j-2\ell-2t-u}
+\end{multline}
+where to avoid negative factorials, we set $j,k,\ell,t,u=0$.
+\begin{equation}
+	[\textbf{S}_{0,2},\textbf{S}_{1,0}]=2i\hbar\textbf{S}_{0,1}
+\end{equation}
+and so it is written
+\begin{equation}
+	[\textbf{H}_S,\textbf{S}_{0,1}]=-\frac{1}{\mu}i\hbar\textbf{S}_{1,0}
+\end{equation}
+and finding the partial derivative with respect to the momentum
+\begin{equation}
+	\frac{\partial\textbf{H}_S}{\partial\textbf{p}}=\frac{1}{\mu}\textbf{S}_{1,0}
+\end{equation}
+and that
+\begin{equation}
+	[\textbf{H}_S,\textbf{q}]=-i\hbar\frac{\partial\textbf{H}_S}{\partial\textbf{p}}
+\end{equation}
+
+In a similar manner, by finding the commutation relation with the momentum
+\begin{equation}
+	[\textbf{H}_S,\textbf{S}_{1,0}]=\frac{1}{2\mu}[\textbf{S}_{2,0},\textbf{S}_{1,0}]+\frac{1}{2}\mu\omega^2[\textbf{S}_{0,2},\textbf{S}_{1,0}]
+\end{equation}
+where the commutation relations are previously found. Thus
+\begin{equation}
+	[\textbf{H}_S,\textbf{S}_{1,0}]=\mu\omega^2i\hbar\textbf{S}_{0,1}
+\end{equation}
+and finding the derivative with respect to the position
+\begin{equation}
+	\frac{\partial\textbf{H}_S}{\partial\textbf{q}}=\mu\omega^2\textbf{S}_{0,1}
+\end{equation}
+
+Finally,
+\begin{equation}
+	[\textbf{H}_S,\textbf{p}]=i\hbar\frac{\partial\textbf{H}_S}{\partial\textbf{q}}
+\end{equation}
+
+\textbf{Born-Jordan quantization}. The variables are transformed such that
+\begin{equation}
+	p\mapsto\textbf{B}_{1,0}\qquad\qquad q\mapsto\textbf{B}_{0,1}
+\end{equation}
+and thus
+\begin{equation}
+	[\textbf{H}_{BJ},\textbf{B}_{0,1}]=\frac{1}{2\mu}[\textbf{B}_{2,0},\textbf{B}_{0,1}]+\frac{1}{2}\mu\omega^2[\textbf{B}_{0,2},\textbf{B}_{0,1}]
+\end{equation}
+for which the commutation relations are written by \cite{Domingo2015}
+\begin{multline}
+	[\textbf{B}_{m,n},\textbf{B}_{r,s}]=2\sum_{j=0}^{+\infty}\frac{(i\hbar/2)^{2j+1}}{(2j+1)!}\sum_{k=0}^{2j+1}\binom{2j+1}{k}(-1)^k\sum_{\ell=0}^{+\infty}\frac{(i\hbar/2)^{2\ell}}{(2\ell+1)!}\sum_{t=0}^{+\infty}\frac{(i\hbar/2)^{2t}}{(2t+1)!}\frac{m!}{(m-k-2\ell)!}\frac{n!}{(n-2j-1+k-2\ell)!}\\\times\frac{r!}{(r-2j-1+k-2t)!}\frac{s!}{(s-k-2t)!}\sum_{u=0}^{+\infty}\frac{(-i\hbar)^uB_u(1/2)}{u!}\frac{(m+r-2j-1-2\ell-2t)!}{(m+r-2j-1-2\ell-2t-u)!}\\\times\frac{(n+s-2j-1-2\ell-2t)!}{(n+s-2j-1-2\ell-2t-u)!}\textbf{B}_{m+r-2j-1-2\ell-2t-u,n+s-2j-1-2\ell-2t-u}
+\end{multline}
+which is in the same form of the commutation relation for the simplest symmetrization, and thus possessing the same weakness when either pair $m,r$ and $n,s$ are set both to 0. We find
+\begin{multline}
+	[\textbf{B}_{2,0},\textbf{B}_{0,1}]=2\sum_{j=0}^{+\infty}\frac{(i\hbar/2)^{2j+1}}{(2j+1)!}\sum_{k=0}^{2j+1}\binom{2j+1}{k}(-1)^k\sum_{\ell=0}^{+\infty}\frac{(i\hbar/2)^{2\ell}}{(2\ell+1)!}\sum_{t=0}^{+\infty}\frac{(i\hbar/2)^{2t}}{(2t+1)!}\frac{2}{(2-k-2\ell)!}\frac{1}{(-2j-1+k-2\ell)!}\\\times\frac{1}{(-2j-1+k-2t)!}\frac{1}{(1-k-2t)!}\sum_{u=0}^{+\infty}\frac{(-i\hbar)^uB_u(1/2)}{u!}\frac{(1-2j-2\ell-2t)!}{(1-2j-2\ell-2t-u)!}\\\times\frac{(-2j-2\ell-2t)!}{(-2j-2\ell-2t-u)!}\textbf{B}_{1-2j-2\ell-2t-u,-2j-2\ell-2t-u}
+\end{multline}
+and we set $j,\ell,t,u=0$ and $k=1$
+\begin{equation}
+	[\textbf{B}_{2,0},\textbf{B}_{0,1}]=-2i\hbar\textbf{B}_{1,0}
+\end{equation}
+and for $[\textbf{B}_{0,2},\textbf{B}_{0,1}]$
+\begin{multline}
+	[\textbf{B}_{0,2},\textbf{B}_{0,1}]=2\sum_{j=0}^{+\infty}\frac{(i\hbar/2)^{2j+1}}{(2j+1)!}\sum_{k=0}^{2j+1}\binom{2j+1}{k}(-1)^k\sum_{\ell=0}^{+\infty}\frac{(i\hbar/2)^{2\ell}}{(2\ell+1)!}\sum_{t=0}^{+\infty}\frac{(i\hbar/2)^{2t}}{(2t+1)!}\frac{1}{(-k-2\ell)!}\frac{2}{(1-2j+k-2\ell)!}\\\times\frac{1}{(-2j-1+k-2t)!}\frac{1}{(1-k-2t)!}\sum_{u=0}^{+\infty}\frac{(-i\hbar)^uB_u(1/2)}{u!}\frac{(-2j-1-2\ell-2t)!}{(-2j-1-2\ell-2t-u)!}\\\times\frac{(2-2j-2\ell-2t)!}{(2-2j-2\ell-2t-u)!}\textbf{B}_{-2j-1-2\ell-2t-u,2-2j-2\ell-2t-u}
+\end{multline}
+where the latter fractions would behave badly due to the $(-1)!$. Thus we set this and the commutator $[\textbf{B}_{2,0},\textbf{B}_{1,0}]=0$. For completeness, let's find $[\textbf{B}_{0,2},\textbf{B}_{1,0}]$
+\begin{multline}
+	[\textbf{B}_{0,2},\textbf{B}_{1,0}]=2\sum_{j=0}^{+\infty}\frac{(i\hbar/2)^{2j+1}}{(2j+1)!}\sum_{k=0}^{2j+1}\binom{2j+1}{k}(-1)^k\sum_{\ell=0}^{+\infty}\frac{(i\hbar/2)^{2\ell}}{(2\ell+1)!}\sum_{t=0}^{+\infty}\frac{(i\hbar/2)^{2t}}{(2t+1)!}\frac{1}{(-k-2\ell)!}\frac{2}{(-2j+k-2\ell)!}\\\times\frac{1}{(-2j+k-2t)!}\frac{1}{(-k-2t)!}\sum_{u=0}^{+\infty}\frac{(-i\hbar)^uB_u(1/2)}{u!}\frac{(-2j-2\ell-2t)!}{(-2j-2\ell-2t-u)!}\\\times\frac{(1-2j-2\ell-2t)!}{(1-2j-2\ell-2t-u)!}\textbf{B}_{-2j-2\ell-2t-u,1-2j-2\ell-2t-u}
+\end{multline}
+where only by setting all $j,k,\ell,t,u=0$ will we find
+\begin{equation}
+	[\textbf{B}_{0,2},\textbf{B}_{1,0}]=2i\hbar\textbf{B}_{0,1}
+\end{equation}
+and thus we write, for the commutation relation for $\textbf{H}_{BJ}$ for both position and momentum
+\begin{equation}
+	[\textbf{H}_{BJ},\textbf{B}_{0,1}]=-\frac{1}{\mu}i\hbar\textbf{B}_{1,0}\qquad\qquad[\textbf{H}_{BJ},\textbf{B}_{1,0}]=\mu\omega^2i\hbar\textbf{B}_{0,1}
+\end{equation}
+and derivatives with respect to momentum and position are
+\begin{equation}
+	\frac{\partial\textbf{H}_{BJ}}{\partial\textbf{p}}=\frac{1}{\mu}\textbf{B}_{1,0}\qquad\qquad\frac{\partial\textbf{H}_{BJ}}{\partial\textbf{q}}=\mu\omega^2\textbf{B}_{0,1}
+\end{equation}
+and finally
+\begin{equation}
+	[\textbf{H}_{BJ},\textbf{B}_{0,1}]=-i\hbar\frac{\partial\textbf{H}_{BJ}}{\partial\textbf{p}}\qquad\qquad[\textbf{H}_{BJ},\textbf{B}_{1,0}]=i\hbar\frac{\partial\textbf{H}_{BJ}}{\partial\textbf{q}}
+\end{equation}
+
+From the results, we see that all arbitrary quantizations satisfy the Hamilton equations of motion.
+\end{document}

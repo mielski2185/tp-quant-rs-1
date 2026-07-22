@@ -1,0 +1,35 @@
+\documentclass[a4paper]{article}
+
+\usepackage{amsthm,amsmath,mathtools,gensymb,braket}
+
+\title{July 14, 2026}
+\author{Miel Gabriel Lagdan}
+
+\begin{document}
+	\maketitle
+	Here, we introduce a potential substitution to the differential quotient of the first type.
+	\section{The Differential Quotient of First Type}
+	Born and Jordan on their paper "On Quantum Mechanics" provided an algorithm in finding the derivative of an operator function, that is
+	\begin{equation}\label{eqn:dqft}
+		\left(\frac{\partial\textbf{y}}{\partial\textbf{y}_k}\right)_1=\sum_{r=1}^s\delta_{l_r,k}\prod_{m=r+1}^s\textbf{y}_{l_m}\prod_{m=1}^{r-1}\textbf{y}_{l_m}
+	\end{equation}
+	that is the algorithm dictates that
+	\begin{enumerate}
+		\item For a given $r$, it verifies if $\textbf{y}_k=\textbf{y}_{l_r}$, if so, this makes $\delta_{l_r,k}=1$.
+		\item Every operator element after $r$ is copied. Then every operator element before $r$ is the copied after.
+	\end{enumerate}
+	
+	Bagunu and Galapon\footnote{Bagunu \& Galapon. Quantization of the Hamilton Equations of Motion.} was able to verify that any of the quantization images (that is \textit{Weyl}, \textit{simplest symmetrization}, and \textit{Born-Jordan}) will result in Born-Jordan images because of its basis. The paper was also able to modify Eq. \ref{eqn:dqft} to result in Weyl and simplest-symmetrization images.
+	
+	The paper also made a claim that due to the case-by-case modification of the differential quotient of first type, there is no method to generalize the differential quotient of first type.
+	
+	This investigation attempts to provide another formulation for the differential quotient of first type, by for the purposes of this investigation will be referred to as the DQST.
+	
+	\section{Attempts to Differentiate Operators}
+	Neudecker\footnote{Neudecker. Some Theorems on Matrix Differentiation with Special Reference to Kronecker Matrix Products} writes the following theorems must be considered to work with matrix differentials, by which we consider our operators to be matrices.
+	\begin{itemize}
+		\item They obey \textbf{Leibniz Rule}. That is, for conformable matrices $X$ and $Y$, $d(XY)=(dX)Y+X(dY)$
+		\item If $l$ is a linear scalar function of the matrix $X$, then $d(lX)=l(dX)$
+		\item $d~\text{vec}~X=\text{vec}~(dX)$
+	\end{itemize}
+\end{document}

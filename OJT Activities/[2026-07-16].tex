@@ -1,0 +1,64 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx,amsmath,mathtools,braket,bm,amsthm,amssymb,comment}
+
+\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
+
+\begin{document}
+	Cohen writes that a phase-space formulation is possible such that provided 
+	\begin{equation}
+		\Braket{\textbf{H}}=\int \psi^*(q)\textbf{H}(q,p)\psi(q)=\iint h(q,p)\textbf{F}(q,p)~dq~dp
+	\end{equation}
+	where $\textbf{F}(q,p)$ is the distribution. Cohen generalizes this distribution to be in the form
+	\begin{equation}\label{eqn:distribution function}
+		\textbf{F}(q,p,t;f)=\frac{1}{4\pi^2}\iiint e^{-i\theta q-i\tau p+i\theta u}f(\theta,\tau,t)\psi^*\left(u-\frac{1}{2}\tau\hbar,t\right)\psi\left(u+\frac{1}{2}\tau\hbar,t\right)~d\theta~d\tau~du
+	\end{equation}
+	where $f(\theta,\tau,t)$ satisfies the relation such that
+	\begin{equation}
+		f(0,\tau,t)=f(\theta,0,t)=1
+	\end{equation}.
+	
+	In this juncture, we choose a function $f$ such that
+	\begin{equation}
+		f(\theta,\tau,t)=\sum_{n=0}^\infty a_n\left(\frac{1}{2}\theta\tau\hbar\right)^n=1+a_1\left(\frac{1}{2}\theta\tau\hbar\right)+a_2\left(\frac{1}{2}\theta\tau\hbar\right)^2+a_3\left(\frac{1}{2}\theta\tau\hbar\right)^3+\cdots
+	\end{equation}
+	for which we solve for Eq. \ref{eqn:distribution function}. As per the condition, we set $a_0=1$ so that when $\theta,\tau=0$, then $f(\theta,\tau,t)=1$. The constants are to be determined later for $n=1,2,3,\ldots$. We find
+	\begin{multline}
+		\textbf{F}(q,p,t;f)=\frac{1}{4\pi^2}\iiint e^{-i\theta q-i\tau p+i\theta u}\left(1+a_1\left(\frac{1}{2}\theta\tau\hbar\right)+a_2\left(\frac{1}{2}\theta\tau\hbar\right)^2+\cdots\right)\\\times\psi^*\left(u-\frac{1}{2}\tau\hbar,t\right)\psi\left(u+\frac{1}{2}\tau\hbar,t\right)~d\theta~d\tau~du
+	\end{multline}
+	and rearrange for all functions to group the $\theta$'s to one integral.
+	\begin{multline}
+		\textbf{F}(q,p,t;f)=\frac{1}{4\pi^2}\iint e^{-i\tau p}\psi^*\left(u-\frac{1}{2}\tau\hbar,t\right)\psi\left(u+\frac{1}{2}\tau\hbar,t\right)\\\times\left[\int e^{i\theta(u-q)}\left(1+a_1\left(\frac{1}{2}\theta\tau\hbar\right)+a_2\left(\frac{1}{2}\theta\tau\hbar\right)^2+\cdots\right)~d\theta\right]~d\tau~du
+	\end{multline}
+	
+	We compute for the continuous integrals. We allow
+	\begin{align}
+		\int e^{i\theta(u-q)}~d\theta&=2\pi\delta(u-q) \\
+		a_1\frac{1}{2}\tau\hbar \int \theta e^{i\theta(u-q)}~d\theta&=-2\pi i a_1 \left(\frac{1}{2}\tau\hbar\right)\delta'(u-q) \\
+		a_2\left(\frac{1}{2}\tau\hbar\right)^2 \int \theta^2e^{i\theta(u-q)}~d\theta&=-2\pi a_2\left(\frac{1}{2}\tau\hbar\right)^2\delta''(u-q) \\
+		\vdots \\
+		a_n\left(\frac{1}{2}\tau\hbar\right)^n\int \theta^n \, e^{i \theta (u-q)} \, d\theta&= 2\pi a_n\left(\frac{1}{2}\tau\hbar\right)^n \frac{1}{i^n} \, \delta^{(n)}(u-q)
+	\end{align}
+	and thus
+	\begin{multline}
+		\textbf{F}(q,p,t;f)=\frac{1}{2\pi}\iint e^{-i\tau p}\psi^*\left(u-\frac{1}{2}\tau\hbar,t\right)\psi\left(u+\frac{1}{2}\tau\hbar,t\right)\\\times\left[\delta(u-q)-a_1i\left(\frac{1}{2}\tau\hbar\right)\delta'(u-q)-a_2\left(\frac{1}{2}\tau\hbar\right)^2\delta''(u-q)+\cdots\right]~d\tau~du
+	\end{multline}
+	
+	The bracketed term could be simplied to an exponential expansion such that
+	\begin{equation}
+		e^{-\frac{1}{2}\tau \hbar \frac{d}{du}} \delta(u - q)=\delta\left(u-q-\frac{1}{2}\tau\hbar\right)
+	\end{equation}
+	if the coefficients $a_0,a_1,a_2,a_3,\ldots$ are picked to be $a_n=(-1)^n/n!$ specifically. The equation thus allows such that
+	\begin{equation}
+		\textbf{F}(q,p,t;f)=\frac{1}{2\pi}\iint e^{-i\tau p}\psi^*\left(u-\frac{1}{2}\tau\hbar,t\right)\psi\left(u+\frac{1}{2}\tau\hbar,t\right)\\\delta\left(u-q-\frac{1}{2}\tau\hbar\right)~d\tau~du
+	\end{equation}
+	Recalling that
+	\begin{equation}
+		\int f(x)\delta(x-a)~dx=f(a)
+	\end{equation}
+	and thus
+	\begin{equation}
+		\boxed{\textbf{F}(q,p,t;f)=\frac{1}{2\pi}\int e^{-i\tau p}\psi^*\left(q,t\right)\psi\left(q+\tau\hbar,t\right)~d\tau}
+	\end{equation}
+	arriving at the \textbf{general distribution} for quantization.
+\end{document}

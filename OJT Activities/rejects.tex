@@ -1,0 +1,48 @@
+\begin{comment}
+	\begin{frame}[allowframebreaks]{\textbf{APPENDIX}: Partial Derivative of an Arbitrary Image $\textbf{A}_{-m,-n}$}
+		\begin{theorem}
+			Let $f=f(q,p)=p^{-m}q^{-n}$ with its arbitrarily-quantized quantum image $\textbf{F}(\textbf{q},\textbf{p})=\textbf{A}_{-m,-n}$. The partial derivative with respect to the momentum is given by
+			\begin{equation}
+				\frac{\partial f(q,p)}{\partial p}=-mp^{-m-1}q^{-n}\longrightarrow\frac{\partial\textbf{F}(\textbf{q},\textbf{p})}{\partial\textbf{p}}=-m\textbf{A}_{-m-1,-n}
+			\end{equation}
+		\end{theorem}
+		
+		\framebreak
+		\begin{proof}
+			Consider the quantized image such that
+			\begin{equation}
+				\textbf{A}_{-m,-n}=\sum_{j=0}^{-n}a_j^{(n)}\textbf{q}^j\textbf{p}^{-m}\textbf{q}^{-n-j}
+			\end{equation}
+			and perform the index shifts such that
+			\begin{equation}
+				\textbf{A}_{-m,-n}=\sum_{j=0}^{-n}a_j^{(n)}\textbf{q}^j\textbf{p}^{-m}\textbf{q}^{-n-j}=\sum_{j=-n}^0a_j^{(n)}\textbf{q}^j\textbf{p}^{-m}\textbf{q}^{-n-j}=-\sum_{j=0}^na_j^{(n)}\textbf{q}^j\textbf{p}^{-m}\textbf{q}^{-n-j}
+			\end{equation}
+			
+			We now compute for the partial derivative. Allow
+			\begin{equation}
+				\left(\frac{\partial \textbf{A}_{-m,-n}}{\partial\textbf{p}}\right)_2=-\lim_{\delta\to0}\sum_{j=0}^n\frac{a_j^{(n)}}{\delta}\textbf{q}^j\left[(\textbf{p}+\delta\textbf{I})^{-m}-\textbf{p}^{-m}\right]\textbf{q}^{-n-j}
+			\end{equation}
+			
+			\framebreak
+			We expand the binomial as is using binomial theorem for negative exponents.
+			{\footnotesize\begin{equation}
+					\left(\frac{\partial \textbf{A}_{-m,-n}}{\partial\textbf{p}}\right)_2=-\lim_{\delta\to0}\sum_{j=0}^n\frac{a_j^{(n)}}{\delta}\textbf{q}^j\left[\textbf{p}^{-m}-m\delta\textbf{p}^{-m-1}+\frac{m^2+m}{2!}\delta^2\textbf{p}^{-m-2}+\cdots-\textbf{p}^{-m}\right]\textbf{q}^{-n-j}
+			\end{equation}}
+			We simplify so that
+			{\footnotesize\begin{equation}
+					\left(\frac{\partial \textbf{A}_{-m,-n}}{\partial\textbf{p}}\right)_2=-\lim_{\delta\to0}\sum_{j=0}^na_j^{(n)}\textbf{q}^j\left[\textbf{p}^{-m}-m\textbf{p}^{-m-1}+\frac{m^2+m}{2!}\delta\textbf{p}^{-m-2}+\cdots-\textbf{p}^{-m}\right]\textbf{q}^{-n-j}
+			\end{equation}}
+			and finding the limit results
+			{\footnotesize\begin{equation}
+					\left(\frac{\partial \textbf{A}_{-m,-n}}{\partial\textbf{p}}\right)_2=m\sum_{j=0}^na_j^{(n)}\textbf{q}^j\textbf{p}^{-m-1}\textbf{q}^{-n-j}=-m\sum_{j=-n}^0a_j^{(n)}\textbf{q}^j\textbf{p}^{-m-1}\textbf{q}^{-n-j}
+			\end{equation}}
+			\framebreak
+			
+			where simplifying,
+			{\begin{equation}
+					\left(\frac{\partial \textbf{A}_{-m,-n}}{\partial\textbf{p}}\right)_2=-m\sum_{j=0}^{-n}a_j^{(n)}\textbf{q}^j\textbf{p}^{-m-1}\textbf{q}^{-n-j}=-m\textbf{A}_{-m-1,-n}
+			\end{equation}}
+		\end{proof}
+	\end{frame}
+	
+\end{comment}

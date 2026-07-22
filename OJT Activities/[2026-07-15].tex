@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx,amsmath,mathtools,braket,bm,amsthm,amssymb,comment}
+\usepackage{hyperref}
+\usepackage[top=1in,bottom=1in,left=0.5in,right=0.5in]{geometry}
+\allowdisplaybreaks
+\usepackage[sorting=none,style=numeric]{biblatex}
+\addbibresource{refs2.bib}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\usepackage[mathscr]{euscript}
+
+% Copied from mathrsfs.sty
+\DeclareSymbolFont{rsfs}{U}{rsfs}{m}{n}
+\DeclareSymbolFontAlphabet{\mathscrsfs}{rsfs}
+
+\title{\textbf{Generalized Weyl transform for operator ordering: polynomial functions in phase space} \cite{Domingo2015-sr}}
+\author{Herbert Domingo, Eric Galapon (Derived by Miel Lagdan)}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\noindent Herbert Domingo's paper entitled was investigated. In particular, we investigate the generalization of the mapping of polynomials to operators.
+	
+	\textbf{ID}: \textit{tpg-td no. 2 s. 2026}
+	
+	\tableofcontents
+
+\section{Introduction}
+Quantization, aside from the canonical quantization technique, provides useful algorithms for solving systems by which normal elevation of variables to operators simply cannot be applied due to failure to satisfy the commutation relation $[q,p]=i\hbar$.
+
+Linear variables are elevated to canonical operators easily, however polynomial variables (nonlinear), like those in the form $p^mq^n$ are vague to quantize due to the multiple orderings possible. Cohen \cite{Cohen1976-wr} explained that such systems which allow for the correct quantization images satisfies
+\begin{equation}
+	\Braket{\textbf{H}}=\int\psi^*\textbf{H}\psi=\int\int H(q,p)\textbf{F}(q,p)~dp~dq
+\end{equation}
+where \textbf{H} is the quantum mechanical operator associated with the polynomial function $H(q,p)$ and $\textbf{F}(q,p)$ is a probability distribution function.
+\newpage
+\printbibliography
+\end{document}

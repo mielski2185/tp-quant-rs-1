@@ -1,0 +1,317 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Bagunu2025}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=06802345a32104fa94b61dd6abc20b4b}{%
+           family={Bagunu},
+           familyi={B\bibinitperiod},
+           given={Ramon\bibnamedelimb Jose\bibnamedelima C},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=33f6c3eee23a0a79a934e5acbf038584}{%
+           family={Galapon},
+           familyi={G\bibinitperiod},
+           given={Eric\bibnamedelima A},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{027916e7e61857ad4f144d8471548037}
+      \strng{fullhash}{027916e7e61857ad4f144d8471548037}
+      \strng{fullhashraw}{027916e7e61857ad4f144d8471548037}
+      \strng{bibnamehash}{027916e7e61857ad4f144d8471548037}
+      \strng{authorbibnamehash}{027916e7e61857ad4f144d8471548037}
+      \strng{authornamehash}{027916e7e61857ad4f144d8471548037}
+      \strng{authorfullhash}{027916e7e61857ad4f144d8471548037}
+      \strng{authorfullhashraw}{027916e7e61857ad4f144d8471548037}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1402-4896}
+      \field{journaltitle}{Physica Scripta}
+      \field{month}{4}
+      \field{number}{5}
+      \field{title}{Quantization of the Hamilton equations of motion}
+      \field{volume}{100}
+      \field{year}{2025}
+      \field{pages}{055208}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1402-4896/adc047
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1088/1402-4896/adc047
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1088/1402-4896/adc047
+      \endverb
+    \endentry
+    \entry{Domingo2015}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=4fdb48e74428c9fe5cece05003c8e58f}{%
+           family={Domingo},
+           familyi={D\bibinitperiod},
+           given={Herbert\bibnamedelima B.},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=33f6c3eee23a0a79a934e5acbf038584}{%
+           family={Galapon},
+           familyi={G\bibinitperiod},
+           given={Eric\bibnamedelima A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{970969e49c69ebcb5507bd43a710624c}
+      \strng{fullhash}{970969e49c69ebcb5507bd43a710624c}
+      \strng{fullhashraw}{970969e49c69ebcb5507bd43a710624c}
+      \strng{bibnamehash}{970969e49c69ebcb5507bd43a710624c}
+      \strng{authorbibnamehash}{970969e49c69ebcb5507bd43a710624c}
+      \strng{authornamehash}{970969e49c69ebcb5507bd43a710624c}
+      \strng{authorfullhash}{970969e49c69ebcb5507bd43a710624c}
+      \strng{authorfullhashraw}{970969e49c69ebcb5507bd43a710624c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1089-7658}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Generalized Weyl transform for operator ordering: Polynomial functions in phase space}
+      \field{volume}{56}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.1063/1.4907561
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1063/1.4907561
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1063/1.4907561
+      \endverb
+    \endentry
+    \entry{deGossonshe}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b244e4422de01bc218199483cc1ea55b}{%
+           family={Gosson},
+           familyi={G\bibinitperiod},
+           given={Maurice\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{b244e4422de01bc218199483cc1ea55b}
+      \strng{fullhash}{b244e4422de01bc218199483cc1ea55b}
+      \strng{fullhashraw}{b244e4422de01bc218199483cc1ea55b}
+      \strng{bibnamehash}{b244e4422de01bc218199483cc1ea55b}
+      \strng{authorbibnamehash}{b244e4422de01bc218199483cc1ea55b}
+      \strng{authornamehash}{b244e4422de01bc218199483cc1ea55b}
+      \strng{authorfullhash}{b244e4422de01bc218199483cc1ea55b}
+      \strng{authorfullhashraw}{b244e4422de01bc218199483cc1ea55b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Born--Jordan Quantization and the Equivalence of Matrix and Wave Mechanics}
+      \field{year}{2014}
+      \verb{doi}
+      \verb 10.48550/ARXIV.1405.2519
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1405.2519
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1405.2519
+      \endverb
+      \keyw{Quantum Physics (quant-ph),Mathematical Physics (math-ph),Atomic Physics (physics.atom-ph),FOS: Physical sciences,FOS: Physical sciences}
+    \endentry
+    \entry{Born1926}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=bad172b2c82dbccc8e126f5da73356ce}{%
+           family={Born},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=32091bdebafd534f4c26640c3b776276}{%
+           family={Heisenberg},
+           familyi={H\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=40ae7753d523c197cc915f02665378ef}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{90d6ec2e15073b9b36cb4da7e0d8438e}
+      \strng{fullhash}{90d6ec2e15073b9b36cb4da7e0d8438e}
+      \strng{fullhashraw}{90d6ec2e15073b9b36cb4da7e0d8438e}
+      \strng{bibnamehash}{90d6ec2e15073b9b36cb4da7e0d8438e}
+      \strng{authorbibnamehash}{90d6ec2e15073b9b36cb4da7e0d8438e}
+      \strng{authornamehash}{90d6ec2e15073b9b36cb4da7e0d8438e}
+      \strng{authorfullhash}{90d6ec2e15073b9b36cb4da7e0d8438e}
+      \strng{authorfullhashraw}{90d6ec2e15073b9b36cb4da7e0d8438e}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1434-601X}
+      \field{month}{8}
+      \field{number}{8-9}
+      \field{title}{Zur Quantenmechanik. II.}
+      \field{volume}{35}
+      \field{year}{1926}
+      \field{pages}{557\bibrangedash 615}
+      \range{pages}{59}
+      \verb{doi}
+      \verb 10.1007/bf01379806
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/BF01379806
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/BF01379806
+      \endverb
+    \endentry
+    \entry{Suzuki}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=69cc1e3c555789f39f023984cb106915}{%
+           family={Suzuki},
+           familyi={S\bibinitperiod},
+           given={Masuo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{69cc1e3c555789f39f023984cb106915}
+      \strng{fullhash}{69cc1e3c555789f39f023984cb106915}
+      \strng{fullhashraw}{69cc1e3c555789f39f023984cb106915}
+      \strng{bibnamehash}{69cc1e3c555789f39f023984cb106915}
+      \strng{authorbibnamehash}{69cc1e3c555789f39f023984cb106915}
+      \strng{authornamehash}{69cc1e3c555789f39f023984cb106915}
+      \strng{authorfullhash}{69cc1e3c555789f39f023984cb106915}
+      \strng{authorfullhashraw}{69cc1e3c555789f39f023984cb106915}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{General Formulation of Quantum Analysis}
+      \field{year}{1998}
+      \verb{doi}
+      \verb 10.48550/ARXIV.PHYSICS/9803009
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/physics/9803009
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/physics/9803009
+      \endverb
+      \keyw{Mathematical Physics (math-ph),FOS: Physical sciences,FOS: Physical sciences}
+    \endentry
+    \entry{Hille1996-oh}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=bb69dc41625620506206ef1de7df3902}{%
+           family={Hille},
+           familyi={H\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=5494d15bf30c6045a1114407eca4252b}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Providence, RI}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Society}%
+      }
+      \strng{namehash}{f49ef22cf6c4a680743c7063c32a9f67}
+      \strng{fullhash}{f49ef22cf6c4a680743c7063c32a9f67}
+      \strng{fullhashraw}{f49ef22cf6c4a680743c7063c32a9f67}
+      \strng{bibnamehash}{f49ef22cf6c4a680743c7063c32a9f67}
+      \strng{authorbibnamehash}{f49ef22cf6c4a680743c7063c32a9f67}
+      \strng{authornamehash}{f49ef22cf6c4a680743c7063c32a9f67}
+      \strng{authorfullhash}{f49ef22cf6c4a680743c7063c32a9f67}
+      \strng{authorfullhashraw}{f49ef22cf6c4a680743c7063c32a9f67}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{series}{American Mathematical Society Colloquium Publications}
+      \field{title}{Functional analysis and semi-groups}
+      \field{year}{1996}
+    \endentry
+    \entry{Rudin1990-le}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=33be2fc2739d3493c6d6cc5d56a4c41e}{%
+           family={Rudin},
+           familyi={R\bibinitperiod},
+           given={Walter},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Maidenhead, England}%
+      }
+      \list{publisher}{1}{%
+        {McGraw Hill Higher Education}%
+      }
+      \strng{namehash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{fullhash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{fullhashraw}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{bibnamehash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{authorbibnamehash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{authornamehash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{authorfullhash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{authorfullhashraw}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{month}{10}
+      \field{series}{International Series in Pure \& Applied Mathematics}
+      \field{title}{Functional Analysis}
+      \field{year}{1990}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
